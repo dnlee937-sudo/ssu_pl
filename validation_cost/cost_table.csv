@@ -1,0 +1,7 @@
+﻿scope,internal,external,premium
+wash,45000,45000,0.0
+maint,45000,45000,0.0
+elec,65000,65000,0.0
+engine,240000,480000,1.0
+body_l+paint_l,150000,150000,0.0
+body_h+paint_h,300000,360000,0.19999999999999996

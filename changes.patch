@@ -1,0 +1,327 @@
+--- before/instance.py
++++ after/instance.py
+@@ -103,13 +103,13 @@
+ 
+ # ---------------------------------------------------------------- task catalogue  [실험 가정]
+ # internal: (cost, minutes, staff_group, equipment)   outsourced: (cost incl. round-trip tow, calendar minutes, supply)
+-# Synthetic unit prices, not quotations. Heavy body+paint outsourcing was revised
+-# on 2026-11-09: internal 300,000 -> outsourced 360,000 KRW incl. round-trip tow.
+-# The provisional 20% premium matches the existing light body+paint ratio.
++# Synthetic unit prices, not quotations. Edit the FIRST number in an O tuple or
++# BUNDLES tuple to reflect another external-price scenario; no model change is
++# needed. Small/medium work starts at cost parity. Heavy work stays cheaper IN.
+ CAT = {
+-    'wash':  dict(I=(45000, 60, 'gen', 'washbay'),   O=(75000, 6 * 60, 'sup_wash')),
+-    'maint': dict(I=(45000, 90, 'mech', 'lift'),     O=(95000, 24 * 60, 'sup_maint')),
+-    'elec':  dict(I=(65000, 120, 'mech', 'lift'),    O=(110000, 24 * 60, 'sup_maint')),
++    'wash':  dict(I=(45000, 60, 'gen', 'washbay'),   O=(45000, 6 * 60, 'sup_wash')),
++    'maint': dict(I=(45000, 90, 'mech', 'lift'),     O=(45000, 24 * 60, 'sup_maint')),
++    'elec':  dict(I=(65000, 120, 'mech', 'lift'),    O=(65000, 24 * 60, 'sup_maint')),
+     'engine': dict(I=(240000, 240, 'mech', 'lift'),  O=(480000, 72 * 60, 'sup_engine')),
+     'body_l': dict(I=(65000, 120, 'body', 'bodybay')),
+     'paint_l': dict(I=(85000, 120, 'body', 'paintline')),
+@@ -117,7 +117,7 @@
+     'paint_h': dict(I=(140000, 240, 'body', 'paintline')),
+     'insp':  dict(I=(15000, 30, 'insp', 'inspbay')),
+ }
+-BUNDLES = {('body_l', 'paint_l'): (180000, 48 * 60, 'sup_body'),
++BUNDLES = {('body_l', 'paint_l'): (150000, 48 * 60, 'sup_body'),
+            ('body_h', 'paint_h'): (360000, 72 * 60, 'sup_body')}
+ HANDOVER = 1   # slots of handover at departure and at return (staff 'gen' + one IN parking space)
+ 
+@@ -153,34 +153,37 @@
+         if key in BUNDLES:
+             c, m, s = BUNDLES[key]
+             modes.append(_outsourced_mode(k, k + 1, c, m, s, f'{key[0]}+{key[1]}:O'))
+-    # Compare identical work scopes; a bundle is compared to the SUM of its
+-    # internal alternatives. Its included towing charge must not be added again.
++    # Only heavy work has the specified strict premium. Small/medium external
++    # quotes may be equal or lower. Compare a bundle to the SUM of internal work.
+     for md in modes:
+         if md.kind != 'O':
+             continue
+         scope = tasks[md.f:md.g + 1]
+-        if all('I' in CAT[tt] for tt in scope):
++        heavy = any(tt in ('engine', 'body_h', 'paint_h') for tt in scope)
++        if heavy and all('I' in CAT[tt] for tt in scope):
+             internal_cost = sum(CAT[tt]['I'][0] for tt in scope)
+             if md.cost <= internal_cost:
+                 raise ValueError(
+-                    f'Outsourcing must cost more than the same internal work: '
++                    f'Heavy outsourcing must cost more than the same internal work: '
+                     f'{md.label}: external={md.cost}, internal={internal_cost}'
+                 )
+     return modes
+ 
+ 
+-def remaining_relaxation(tasks):
++def remaining_relaxation(tasks, modes=None):
+     """Minimum remaining cost and duration ignoring calendars and shared resources.
+ 
+     Modes cover consecutive tasks, including valid outsourcing bundles. Dynamic
+     programming over the task path gives lower bounds on every feasible schedule.
+-    Duration is returned in 5-minute slots, cost in KRW.
++    Duration is returned in 5-minute slots, cost in KRW. Optional modes must use
++    indices local to tasks. Passing them preserves the actual alternatives of a
++    planning window instead of reconstructing a catalogue for a test/custom input.
+     """
+     n = len(tasks)
+     cost = np.full(n + 1, np.inf)
+     duration = np.full(n + 1, np.inf)
+     cost[n] = duration[n] = 0.0
+-    modes = build_modes(tasks)
++    modes = build_modes(tasks) if modes is None else modes
+     for k in range(n - 1, -1, -1):
+         options = [md for md in modes if md.f == k]
+         if not options:
+--- before/model.py
++++ after/model.py
+@@ -25,7 +25,8 @@
+ import scipy.sparse as sp
+ import highspy
+ 
+-from instance import (SLOT_MIN, SLOTS_PER_DAY, REST_SLOTS, INF, business_mask)
++from instance import (SLOT_MIN, SLOTS_PER_DAY, REST_SLOTS, INF, business_mask,
++                      remaining_relaxation)
+ 
+ LOC = {'IN': 0, 'OUT': 1}
+ 
+@@ -60,6 +61,11 @@
+         self.bm = bm
+         V = W.vehs
+         nV = len(V)
++        # Eq. (3.14): P[k] is the minimum duration of the entire task suffix.
++        # Its adjacent differences telescope over a deferred suffix. A bundled
++        # alternative is therefore counted once, never once per covered task.
++        self.remaining_duration = [remaining_relaxation(v['tasks'], v['modes'])[1] for v in V]
++        self.p_rem = [p[:-1] - p[1:] for p in self.remaining_duration]
+         cost, lo, hi, integ = [], [], [], []
+         ncol = 0
+ 
+@@ -185,6 +191,9 @@
+         # ------------------------------------------------------------ u : rented OUT spaces per day
+         days = np.arange(t0 // SLOTS_PER_DAY, (t1 - 1) // SLOTS_PER_DAY + 1)
+         self.days = days
++        self.block_days = [tuple(range((t0 + b * m) // SLOTS_PER_DAY,
++                                       (min(t1, t0 + (b + 1) * m) - 1) // SLOTS_PER_DAY + 1))
++                           for b in range(NB)]
+         self.u0 = addcols(days.size, inst.rent_cost_day, 0, inst.rent_max, 1)
+         # ------------------------------------------------------------ L : lateness (minutes)
+         self.L0 = addcols(nV, inst.lateness_cost_min, 0, np.inf, 0)
+@@ -335,6 +344,7 @@
+         # (7) parking capacity per (loc, block)
+         cr0 = addrows(2 * NB, -np.inf, 0)
+         self.row_groups['cap'] = (cr0, 2 * NB)
++        cap_entries_start = len(R)
+         crow = lambda l, b: cr0 + l * NB + b
+         caprhs = np.zeros((2, NB))
+         caprhs[0, :] = inst.park_cap['IN']
+@@ -378,6 +388,25 @@
+         ent(crow(np.repeat([0, 1], NB), np.tile(np.arange(NB), 2)), self.sg0 + np.arange(2 * NB), -1)
+         rhi[-1][:] = caprhs.ravel()
+ 
++        # A coarse block may intersect several dates. Its occupancy bound must
++        # fit the rented spaces on EACH of those dates (including a partial last
++        # block); checking just the block's start date misses the next day's rent.
++        cap_parts = tuple(zip(R[cap_entries_start:], C[cap_entries_start:], Vv[cap_entries_start:]))
++        cross = [(b, d) for b, dates in enumerate(self.block_days) for d in dates[1:]]
++        self.cross_day_blocks = np.array([b for b, _ in cross], dtype=int)
++        calendar0 = addrows(len(cross), -np.inf, 0)
++        self.row_groups['cap_calendar'] = (calendar0, len(cross))
++        for q, (b, day) in enumerate(cross):
++            row = calendar0 + q
++            for rr, cc, vv in cap_parts:
++                sel = rr == crow(1, b)
++                if sel.any():
++                    ent(np.full(sel.sum(), row), cc[sel], vv[sel])
++            first_rent = self.u0 + np.searchsorted(days, self.block_days[b][0])
++            this_rent = self.u0 + np.searchsorted(days, day)
++            ent([row, row], [first_rent, this_rent], [1, -1])
++            rhi[-1][q] = caprhs[1, b]
++
+         # (8) recovery precondition: y[i,OUT, blk(s-pre)-1] >= sum z[i,k,s] (k from OUT)
+         sel = zsrc == 1
+         keys = {}
+@@ -431,7 +460,7 @@
+         zw = np.array([widx[(k, s)] - self.w0 for k, s in zip(zk, zs)], int)
+         ent(lr0 + zw, zcols, 1)
+ 
+-        # (11) lateness: L - 5*sum (s+p) x_insp - 5*t1*o_last - 5*sum pmin_k o_k >= -5*deadline
++        # (11) lateness, with suffix-duration differences p^rem from eq. (3.14).
+         late_v = [i for i, v in enumerate(V) if v['tasks'] and v['deadline'] < INF]
+         lt0 = addrows(len(late_v), 0, np.inf)
+         self.row_groups['late'] = (lt0, len(late_v))
+@@ -447,8 +476,7 @@
+                 nk = len(V[i]['tasks'])
+                 ent([lrow[i]], [oidx[(i, nk - 1)]], -SLOT_MIN * t1)
+                 for k in range(nk):
+-                    pmin = min(md.p for md in V[i]['modes'] if md.f <= k <= md.g)
+-                    ent([lrow[i]], [oidx[(i, k)]], -SLOT_MIN * pmin)
++                    ent([lrow[i]], [oidx[(i, k)]], -SLOT_MIN * self.p_rem[i][k])
+         # vehicles without lateness row: L fixed to 0
+         nolate = np.setdiff1d(np.arange(nV), np.array(late_v, int))
+ 
+@@ -473,8 +501,7 @@
+                     continue
+                 self.cost[oidx[(i, nk - 1)]] += ch * (t1 - v.get('hold_start', t0))
+                 for k in range(nk):
+-                    pmin = min(md.p for md in v['modes'] if md.f <= k <= md.g)
+-                    self.cost[oidx[(i, k)]] += ch * pmin
++                    self.cost[oidx[(i, k)]] += ch * self.p_rem[i][k]
+         self.integ = np.concatenate(integ)
+         self.hi[self.L0 + nolate] = 0
+         self.rlo = np.concatenate(rlo); self.rhi = np.concatenate(rhi)
+@@ -619,14 +646,19 @@
+                 if vid2i[vid] == i and v['modes'][b].g == nk - 1:
+                     comp = s + v['modes'][b].p
+             if comp is None:
+-                comp = self.t1 + sum(min(md.p for md in v['modes'] if md.f <= k <= md.g)
++                comp = self.t1 + sum(self.p_rem[i][k]
+                                      for k in range(nk) if (i, k) not in covered)
+             sol[self.L0 + i] = max(0.0, SLOT_MIN * (comp - v['deadline']))
+         # slack: overflow implied
+-        r0, n = self.row_groups['cap']
+-        act_ = self.A[r0:r0 + n] @ sol - self.rhi[r0:r0 + n]
+-        sg = np.maximum(0, act_ + sol[self.sg0:self.sg0 + 2 * NB])
+-        sol[self.sg0:self.sg0 + 2 * NB] = sg
++        for group, slack_cols in [
++            ('cap', self.sg0 + np.arange(2 * NB)),
++            ('cap_calendar', self.sg0 + NB + self.cross_day_blocks),
++        ]:
++            r0, n = self.row_groups[group]
++            if n:
++                act_ = self.A[r0:r0 + n] @ sol - self.rhi[r0:r0 + n]
++                need = np.maximum(0, act_ + sol[slack_cols])
++                np.maximum.at(sol, slack_cols, need)
+         return sol
+ 
+     def max_violation(self, sol):
+--- before/construct.py
++++ after/construct.py
+@@ -124,8 +124,7 @@
+                         opts.append((s, b, md)); break
+             if not opts:
+                 break
+-            rem_after = lambda md: sum(min(m2.p for m2 in v['modes'] if m2.f <= q <= m2.g)
+-                                       for q in range(md.g + 1, nk))
++            rem_after = lambda md: M.remaining_duration[i][md.g + 1]
+             internal = [o for o in opts if o[2].kind != 'O']
+             pick = None
+             if internal:
+@@ -223,13 +222,16 @@
+     for (vid_, k_, s_) in plan_trips:
+         note_tow(k_, s_)
+     capin = inst.park_cap['IN']
+-    bday = (t0 + np.arange(NB) * m) // SLOTS_PER_DAY
+-    dpos = np.searchsorted(M.days, bday)
++    day_positions = [np.searchsorted(M.days, dates) for dates in M.block_days]
++    blocks_by_day = [[] for _ in M.days]
++    for b, positions in enumerate(day_positions):
++        for q in positions:
++            blocks_by_day[q].append(b)
+     occ0 = occupancy()['OUT']
+     for q in range(len(M.days)):
+-        sel = dpos == q
+-        if sel.any():
+-            rent[q] = min(inst.rent_max, max(rent[q], int(occ0[sel].max()) - inst.park_cap['OUT']))
++        blocks = blocks_by_day[q]
++        if blocks:
++            rent[q] = min(inst.rent_max, max(rent[q], int(occ0[blocks].max()) - inst.park_cap['OUT']))
+     tried = set()
+     skipped = set()
+     occ = occupancy()
+@@ -274,9 +276,10 @@
+         rg = seg_blocks(arr1, end_out)
+         add = defaultdict(int)
+         for bb in rg:
+-            nd = occ['OUT'][bb] + 1 - inst.park_cap['OUT'] - rent[dpos[bb]]
+-            if nd > 0:
+-                add[dpos[bb]] = max(add[dpos[bb]], nd)
++            for pos in day_positions[bb]:
++                nd = occ['OUT'][bb] + 1 - inst.park_cap['OUT'] - rent[pos]
++                if nd > 0:
++                    add[pos] = max(add[pos], nd)
+         if any(rent[p_] + nd > inst.rent_max for p_, nd in add.items()):
+             continue
+         for p_, nd in add.items():
+--- before/paper_model_check.py
++++ after/paper_model_check.py
+@@ -28,6 +28,16 @@
+         W, m = M.W, M.m
+         inst, t0, t1 = W.inst, W.t0, W.t1
+         V = W.vehs
++        # Independently evaluate the suffix DP printed in the 261101 definition.
++        # Do not reuse the production helper or the production row coefficients.
++        suffix_duration = []
++        for v in V:
++            n_tasks = len(v['tasks'])
++            suffix = [0.0] * (n_tasks + 1)
++            for k in range(n_tasks - 1, -1, -1):
++                suffix[k] = min(md.p + suffix[md.g + 1]
++                                for md in v['modes'] if md.f == k)
++            suffix_duration.append(suffix)
+         self.M = M
+         n = M.ncol
+         rows = []                                      # (dict col->coef, lo, hi, tag)
+@@ -86,7 +96,7 @@
+         for i, lst in E.items():
+             rho = V[i]['pickup_req']
+             for (t, col) in lst:
+-                c[col] = inst.pickup_wait_cost_min * delta * (t - rho)
++                c[col] = inst.pickup_wait_cost_min * delta * max(0, t - rho)
+         for l in (0, 1):
+             for b in range(NB):
+                 c[S(l, b)] = M.cost[S(l, b)]            # c^pen (same coefficient as the code)
+@@ -100,10 +110,10 @@
+                 for (ii, j, t, col) in X:
+                     md = V[ii]['modes'][j]
+                     if ii == i and md.g == nk - 1:
+-                        c[col] += ch * delta * (t + md.p - t0)
+-                c[O[(i, nk - 1)]] += ch * delta * (t1 - t0)
++                        c[col] += ch * delta * (t + md.p - v.get('hold_start', t0))
++                c[O[(i, nk - 1)]] += ch * delta * (t1 - v.get('hold_start', t0))
+                 for k in range(nk):
+-                    c[O[(i, k)]] += ch * delta * min(md.p for md in v['modes'] if md.f <= k <= md.g)
++                    c[O[(i, k)]] += ch * delta * (suffix_duration[i][k] - suffix_duration[i][k + 1])
+         self.c = c
+ 
+         pmax = max([md.p for v in V for md in v['modes']] + [1])
+@@ -198,7 +208,8 @@
+                     rhs += eta[(i, l, tp)]
+                 add(dict(d), -np.inf, rhs, '3.7')
+         # (3.8)-(3.9) capacity with Y_ilb and G_lb
+-        Sres = {0: inst.park_cap['IN'] - np.asarray(W.fixed_park), 1: np.full(t1 - t0, inst.park_cap['OUT'])}
++        Sres = {0: inst.park_cap['IN'] - np.asarray(W.fixed_park),
++                1: np.full(t1 - t0, inst.park_cap['OUT']) - np.asarray(W.fixed_out_park)}
+         for l in (0, 1):
+             for b in range(NB):
+                 d = defaultdict(float)
+@@ -224,10 +235,16 @@
+                             hs = t if tt.src == 'IN' else t + tt.move - 1
+                             if hs in tb:
+                                 d[col] += 1
++                d[S(l, b)] -= 1
++                if l == 1:
++                    # Each date intersecting this half-open block needs enough
++                    # rented spaces, including at midnight and the last block.
++                    for day in sorted({dayof(t) for t in Tb(b)}):
++                        dated = dict(d)
++                        dated[U[day]] = dated.get(U[day], 0) - 1
++                        add(dated, -np.inf, rhs, '3.9')
+                 else:
+-                    d[U[dayof(t0 + b * m)]] -= 1                     # u_out,h(b)
+-                d[S(l, b)] -= 1
+-                add(dict(d), -np.inf, rhs, '3.9')
++                    add(dict(d), -np.inf, rhs, '3.9')
+         # (3.11) retrieval precondition
+         for (i, k, t, col) in Z:
+             tt = trips[k]
+@@ -291,7 +308,7 @@
+                     d[col] -= delta * (t + md.p)
+             d[O[(i, nk - 1)]] -= delta * t1
+             for k in range(nk):
+-                pr = min(md.p for md in v['modes'] if md.f <= k <= md.g)   # p^rem_ik
++                pr = suffix_duration[i][k] - suffix_duration[i][k + 1]
+                 d[O[(i, k)]] -= delta * pr
+             add(dict(d), -delta * v['deadline'], np.inf, '3.14')
+ 

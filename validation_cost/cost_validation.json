@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-10",
+  "prices_are_synthetic": true,
+  "heavy_premium_provisional": true,
+  "premium_basis": "Provisional heavy-work scenario; edit existing catalogue prices",
+  "small_medium_prices": "editable_existing_catalogue",
+  "rework_modelled": false,
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "solver": "1.8.0",
+  "binding": "SciPy bundled _highspy._core",
+  "catalogue": [
+    {
+      "scope": "wash",
+      "internal": 45000,
+      "external": 45000,
+      "premium": 0.0
+    },
+    {
+      "scope": "maint",
+      "internal": 45000,
+      "external": 45000,
+      "premium": 0.0
+    },
+    {
+      "scope": "elec",
+      "internal": 65000,
+      "external": 65000,
+      "premium": 0.0
+    },
+    {
+      "scope": "engine",
+      "internal": 240000,
+      "external": 480000,
+      "premium": 1.0
+    },
+    {
+      "scope": "body_l+paint_l",
+      "internal": 150000,
+      "external": 150000,
+      "premium": 0.0
+    },
+    {
+      "scope": "body_h+paint_h",
+      "internal": 300000,
+      "external": 360000,
+      "premium": 0.19999999999999996
+    }
+  ],
+  "generated_vehicles": 600,
+  "checked_outsource_alternatives": 738,
+  "cheap_bundle_guard_passed": true,
+  "discount_scenario_passed": true,
+  "cases": [
+    {
+      "body_workers": 3,
+      "status": "Optimal",
+      "work_cost": 315000,
+      "objective": 315000.0,
+      "selected_modes": [
+        "body_h:I",
+        "paint_h:I",
+        "insp:I"
+      ],
+      "checker_ok": true,
+      "max_row_violation": 0.0,
+      "final_inspection_internal": true
+    },
+    {
+      "body_workers": 0,
+      "status": "Optimal",
+      "work_cost": 375000,
+      "objective": 375000.0,
+      "selected_modes": [
+        "insp:I",
+        "body_h+paint_h:O"
+      ],
+      "checker_ok": true,
+      "max_row_violation": 0.0,
+      "final_inspection_internal": true
+    }
+  ],
+  "regressions": [
+    {
+      "script": "test_holding.py",
+      "passed": true,
+      "output": "holding checks PASS: 09 regular time and future-arrival reference in scheduled/deferred objective\n"
+    },
+    {
+      "script": "test_terminal.py",
+      "passed": true,
+      "output": "terminal checks PASS: bundle price, suffix cover, empty tasks, paid ongoing mode, outstanding duration, holding units\n"
+    },
+    {
+      "script": "test_state_gate.py",
+      "passed": true,
+      "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.130s\n\nOK\n"
+    }
+  ],
+  "full_experiments_rerun": false
+}

@@ -1,0 +1,5259 @@
+{
+  "date": "2026-11-10",
+  "synthetic_inputs": true,
+  "shared_candidate_sets": true,
+  "independent_reference_rows": true,
+  "full_experiments_rerun": false,
+  "equation_pairs": [
+    {
+      "label": "internal_sequence",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 132.08333333333331,
+      "paper_objective": 132.08333333333331,
+      "objective_coefficients_equal": true,
+      "code_rows": 495,
+      "reference_rows": 199,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 132.08333333333331,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 52.08333333333333
+          },
+          "completion_slots": {
+            "0": 111.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              0,
+              1,
+              110
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 132.08333333333331,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 52.08333333333333
+          },
+          "completion_slots": {
+            "0": 111.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              0,
+              1,
+              110
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "internal_sequence",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 132.08333333333331,
+      "paper_objective": 132.08333333333331,
+      "objective_coefficients_equal": true,
+      "code_rows": 475,
+      "reference_rows": 179,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 132.08333333333331,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 52.08333333333333
+          },
+          "completion_slots": {
+            "0": 111.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              0,
+              1,
+              110
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 132.08333333333331,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 52.08333333333333
+          },
+          "completion_slots": {
+            "0": 111.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              0,
+              1,
+              110
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "internal_sequence",
+      "m": 3,
+      "status": "Optimal",
+      "code_objective": 132.08333333333331,
+      "paper_objective": 132.08333333333331,
+      "objective_coefficients_equal": true,
+      "code_rows": 459,
+      "reference_rows": 163,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 132.08333333333331,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 52.08333333333333
+          },
+          "completion_slots": {
+            "0": 111.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              0,
+              1,
+              110
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 132.08333333333331,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 52.08333333333333
+          },
+          "completion_slots": {
+            "0": 111.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              0,
+              1,
+              110
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "outsourced_return_before_qc",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 186.80555555555557,
+      "paper_objective": 186.80555555555557,
+      "objective_coefficients_equal": true,
+      "code_rows": 495,
+      "reference_rows": 223,
+      "code": {
+        "code_residual": {
+          "linear": 2.6867397195928788e-14,
+          "integrality": 2.6867397195928788e-14
+        },
+        "reference_residual": {
+          "linear": 2.6867397195928788e-14,
+          "integrality": 2.6867397195928788e-14
+        },
+        "literal_objective": {
+          "total": 186.80555555555557,
+          "parts": {
+            "work": 100.00000000000001,
+            "remaining": 0.0,
+            "transport": -3.3306690738743652e-15,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 86.80555555555556
+          },
+          "completion_slots": {
+            "0": 113.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              0,
+              1,
+              112
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 2.6867397195928788e-14,
+          "integrality": 2.6867397195928788e-14
+        },
+        "reference_residual": {
+          "linear": 2.6867397195928788e-14,
+          "integrality": 2.6867397195928788e-14
+        },
+        "literal_objective": {
+          "total": 186.80555555555557,
+          "parts": {
+            "work": 100.00000000000001,
+            "remaining": 0.0,
+            "transport": -3.3306690738743652e-15,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 86.80555555555556
+          },
+          "completion_slots": {
+            "0": 113.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              0,
+              1,
+              112
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "outsourced_return_before_qc",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 186.80555555555557,
+      "paper_objective": 186.80555555555557,
+      "objective_coefficients_equal": true,
+      "code_rows": 475,
+      "reference_rows": 203,
+      "code": {
+        "code_residual": {
+          "linear": 4.263256414560601e-14,
+          "integrality": 2.4424906541753444e-15
+        },
+        "reference_residual": {
+          "linear": 4.263256414560601e-14,
+          "integrality": 2.4424906541753444e-15
+        },
+        "literal_objective": {
+          "total": 186.8055555555556,
+          "parts": {
+            "work": 100.00000000000003,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 86.80555555555556
+          },
+          "completion_slots": {
+            "0": 113.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              0,
+              1,
+              112
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 4.263256414560601e-14,
+          "integrality": 2.4424906541753444e-15
+        },
+        "reference_residual": {
+          "linear": 4.263256414560601e-14,
+          "integrality": 2.4424906541753444e-15
+        },
+        "literal_objective": {
+          "total": 186.8055555555556,
+          "parts": {
+            "work": 100.00000000000003,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 86.80555555555556
+          },
+          "completion_slots": {
+            "0": 113.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              0,
+              1,
+              112
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "outsourced_return_before_qc",
+      "m": 3,
+      "status": "Optimal",
+      "code_objective": 186.80555555555557,
+      "paper_objective": 186.80555555555557,
+      "objective_coefficients_equal": true,
+      "code_rows": 459,
+      "reference_rows": 187,
+      "code": {
+        "code_residual": {
+          "linear": 2.842170943040401e-14,
+          "integrality": 6.661338147750939e-16
+        },
+        "reference_residual": {
+          "linear": 2.842170943040401e-14,
+          "integrality": 6.661338147750939e-16
+        },
+        "literal_objective": {
+          "total": 186.80555555555557,
+          "parts": {
+            "work": 100.00000000000001,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 86.80555555555556
+          },
+          "completion_slots": {
+            "0": 113.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              0,
+              1,
+              112
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 2.842170943040401e-14,
+          "integrality": 6.661338147750939e-16
+        },
+        "reference_residual": {
+          "linear": 2.842170943040401e-14,
+          "integrality": 6.661338147750939e-16
+        },
+        "literal_objective": {
+          "total": 186.80555555555557,
+          "parts": {
+            "work": 100.00000000000001,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 86.80555555555556
+          },
+          "completion_slots": {
+            "0": 113.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              0,
+              1,
+              112
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "recover_then_work",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 114.44444444444444,
+      "paper_objective": 114.44444444444444,
+      "objective_coefficients_equal": true,
+      "code_rows": 492,
+      "reference_rows": 196,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 114.44444444444444,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 5.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 69.44444444444444
+          },
+          "completion_slots": {
+            "0": 112.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              111
+            ]
+          ],
+          "trips": [
+            [
+              0,
+              7,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 114.44444444444444,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 5.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 69.44444444444444
+          },
+          "completion_slots": {
+            "0": 112.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              111
+            ]
+          ],
+          "trips": [
+            [
+              0,
+              7,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "recover_then_work",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 114.44444444444444,
+      "paper_objective": 114.44444444444444,
+      "objective_coefficients_equal": true,
+      "code_rows": 472,
+      "reference_rows": 176,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 114.44444444444444,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 5.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 69.44444444444444
+          },
+          "completion_slots": {
+            "0": 112.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              111
+            ]
+          ],
+          "trips": [
+            [
+              0,
+              7,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 114.44444444444444,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 5.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 69.44444444444444
+          },
+          "completion_slots": {
+            "0": 112.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              111
+            ]
+          ],
+          "trips": [
+            [
+              0,
+              7,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "recover_then_work",
+      "m": 3,
+      "status": "Optimal",
+      "code_objective": 114.44444444444444,
+      "paper_objective": 114.44444444444444,
+      "objective_coefficients_equal": true,
+      "code_rows": 456,
+      "reference_rows": 160,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 114.44444444444444,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 5.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 69.44444444444444
+          },
+          "completion_slots": {
+            "0": 112.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              111
+            ]
+          ],
+          "trips": [
+            [
+              0,
+              7,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 114.44444444444444,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 5.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 69.44444444444444
+          },
+          "completion_slots": {
+            "0": 112.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              111
+            ]
+          ],
+          "trips": [
+            [
+              0,
+              7,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "two_car_shared_trip",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 228.88888888888889,
+      "paper_objective": 228.88888888888889,
+      "objective_coefficients_equal": true,
+      "code_rows": 549,
+      "reference_rows": 259,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 228.88888888888889,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 10.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 138.88888888888889
+          },
+          "completion_slots": {
+            "0": 112.0,
+            "1": 112.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              111
+            ],
+            [
+              1,
+              0,
+              111
+            ]
+          ],
+          "trips": [
+            [
+              0,
+              7,
+              108
+            ],
+            [
+              1,
+              7,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 228.88888888888889,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 10.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 138.88888888888889
+          },
+          "completion_slots": {
+            "0": 112.0,
+            "1": 112.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              111
+            ],
+            [
+              1,
+              0,
+              111
+            ]
+          ],
+          "trips": [
+            [
+              0,
+              7,
+              108
+            ],
+            [
+              1,
+              7,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "two_car_shared_trip",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 815.6944444444445,
+      "paper_objective": 815.6944444444445,
+      "objective_coefficients_equal": true,
+      "code_rows": 533,
+      "reference_rows": 243,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 815.6944444444445,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 10.0,
+            "rent": 0.0,
+            "late": 500.0,
+            "pickup_wait": 0.0,
+            "hold": 225.69444444444446
+          },
+          "completion_slots": {
+            "0": 117.0,
+            "1": 112.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              116
+            ],
+            [
+              1,
+              0,
+              111
+            ]
+          ],
+          "trips": [
+            [
+              0,
+              1,
+              114
+            ],
+            [
+              1,
+              7,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 815.6944444444445,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 10.0,
+            "rent": 0.0,
+            "late": 500.0,
+            "pickup_wait": 0.0,
+            "hold": 225.69444444444446
+          },
+          "completion_slots": {
+            "0": 117.0,
+            "1": 112.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              116
+            ],
+            [
+              1,
+              0,
+              111
+            ]
+          ],
+          "trips": [
+            [
+              0,
+              1,
+              114
+            ],
+            [
+              1,
+              7,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "two_car_shared_trip",
+      "m": 3,
+      "status": "Optimal",
+      "code_objective": 463.6111111111111,
+      "paper_objective": 463.6111111111111,
+      "objective_coefficients_equal": true,
+      "code_rows": 509,
+      "reference_rows": 219,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 463.6111111111111,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 10.0,
+            "rent": 0.0,
+            "late": 200.0,
+            "pickup_wait": 0.0,
+            "hold": 173.6111111111111
+          },
+          "completion_slots": {
+            "0": 114.0,
+            "1": 112.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              113
+            ],
+            [
+              1,
+              0,
+              111
+            ]
+          ],
+          "trips": [
+            [
+              0,
+              7,
+              108
+            ],
+            [
+              1,
+              7,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 463.6111111111111,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 10.0,
+            "rent": 0.0,
+            "late": 200.0,
+            "pickup_wait": 0.0,
+            "hold": 173.6111111111111
+          },
+          "completion_slots": {
+            "0": 114.0,
+            "1": 112.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              113
+            ],
+            [
+              1,
+              0,
+              111
+            ]
+          ],
+          "trips": [
+            [
+              0,
+              7,
+              108
+            ],
+            [
+              1,
+              7,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "parking_move_and_rent",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 30.0,
+      "paper_objective": 30.0,
+      "objective_coefficients_equal": true,
+      "code_rows": 544,
+      "reference_rows": 254,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 30.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 5.0,
+            "rent": 25.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [
+            [
+              0,
+              6,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 1
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 30.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 5.0,
+            "rent": 25.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [
+            [
+              0,
+              6,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 1
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "parking_move_and_rent",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 30.0,
+      "paper_objective": 30.0,
+      "objective_coefficients_equal": true,
+      "code_rows": 486,
+      "reference_rows": 196,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 30.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 5.0,
+            "rent": 25.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [
+            [
+              0,
+              0,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 1
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 30.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 5.0,
+            "rent": 25.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [
+            [
+              0,
+              0,
+              108
+            ]
+          ],
+          "exits": [],
+          "rent": {
+            "0": 1
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "parking_move_and_rent",
+      "m": 3,
+      "status": "Infeasible",
+      "code_objective": null,
+      "paper_objective": null,
+      "objective_coefficients_equal": true,
+      "code_rows": 462,
+      "reference_rows": 172
+    },
+    {
+      "label": "infeasible_two_waiters_one_space",
+      "m": 1,
+      "status": "Infeasible",
+      "code_objective": null,
+      "paper_objective": null,
+      "objective_coefficients_equal": true,
+      "code_rows": 545,
+      "reference_rows": 255
+    },
+    {
+      "label": "infeasible_two_waiters_one_space",
+      "m": 2,
+      "status": "Infeasible",
+      "code_objective": null,
+      "paper_objective": null,
+      "objective_coefficients_equal": true,
+      "code_rows": 489,
+      "reference_rows": 199
+    },
+    {
+      "label": "infeasible_two_waiters_one_space",
+      "m": 3,
+      "status": "Infeasible",
+      "code_objective": null,
+      "paper_objective": null,
+      "objective_coefficients_equal": true,
+      "code_rows": 465,
+      "reference_rows": 175
+    },
+    {
+      "label": "shared_worker_capacity",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 536.25,
+      "paper_objective": 536.25,
+      "objective_coefficients_equal": true,
+      "code_rows": 549,
+      "reference_rows": 259,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 536.25,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 300.0,
+            "pickup_wait": 0.0,
+            "hold": 156.25
+          },
+          "completion_slots": {
+            "0": 114.0,
+            "1": 111.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              111
+            ],
+            [
+              1,
+              0,
+              108
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 536.25,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 300.0,
+            "pickup_wait": 0.0,
+            "hold": 156.25
+          },
+          "completion_slots": {
+            "0": 114.0,
+            "1": 111.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              111
+            ],
+            [
+              1,
+              0,
+              108
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "shared_worker_capacity",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 536.25,
+      "paper_objective": 536.25,
+      "objective_coefficients_equal": true,
+      "code_rows": 533,
+      "reference_rows": 243,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 536.25,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 300.0,
+            "pickup_wait": 0.0,
+            "hold": 156.25
+          },
+          "completion_slots": {
+            "0": 111.0,
+            "1": 114.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              1,
+              0,
+              111
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 536.25,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 300.0,
+            "pickup_wait": 0.0,
+            "hold": 156.25
+          },
+          "completion_slots": {
+            "0": 111.0,
+            "1": 114.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              1,
+              0,
+              111
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "shared_worker_capacity",
+      "m": 3,
+      "status": "Optimal",
+      "code_objective": 536.25,
+      "paper_objective": 536.25,
+      "objective_coefficients_equal": true,
+      "code_rows": 509,
+      "reference_rows": 219,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 536.25,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 300.0,
+            "pickup_wait": 0.0,
+            "hold": 156.25
+          },
+          "completion_slots": {
+            "0": 111.0,
+            "1": 114.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              1,
+              0,
+              111
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 536.25,
+          "parts": {
+            "work": 80.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 300.0,
+            "pickup_wait": 0.0,
+            "hold": 156.25
+          },
+          "completion_slots": {
+            "0": 111.0,
+            "1": 114.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              108
+            ],
+            [
+              1,
+              0,
+              111
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "known_customer_pickup",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 0.0,
+      "paper_objective": 0.0,
+      "objective_coefficients_equal": true,
+      "code_rows": 491,
+      "reference_rows": 195,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 0.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [
+            [
+              0,
+              114
+            ]
+          ],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 0.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [
+            [
+              0,
+              114
+            ]
+          ],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "known_customer_pickup",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 0.0,
+      "paper_objective": 0.0,
+      "objective_coefficients_equal": true,
+      "code_rows": 451,
+      "reference_rows": 155,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 0.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [
+            [
+              0,
+              114
+            ]
+          ],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 0.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [
+            [
+              0,
+              114
+            ]
+          ],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "known_customer_pickup",
+      "m": 3,
+      "status": "Optimal",
+      "code_objective": 0.0,
+      "paper_objective": 0.0,
+      "objective_coefficients_equal": true,
+      "code_rows": 435,
+      "reference_rows": 139,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 0.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [
+            [
+              0,
+              114
+            ]
+          ],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 0.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [
+            [
+              0,
+              114
+            ]
+          ],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "unknown_customer_pickup",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 0.0,
+      "paper_objective": 0.0,
+      "objective_coefficients_equal": true,
+      "code_rows": 490,
+      "reference_rows": 194,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 0.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 0.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "unknown_customer_pickup",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 0.0,
+      "paper_objective": 0.0,
+      "objective_coefficients_equal": true,
+      "code_rows": 450,
+      "reference_rows": 154,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 0.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 0.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "unknown_customer_pickup",
+      "m": 3,
+      "status": "Optimal",
+      "code_objective": 0.0,
+      "paper_objective": 0.0,
+      "objective_coefficients_equal": true,
+      "code_rows": 434,
+      "reference_rows": 138,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 0.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 0.0,
+          "parts": {
+            "work": 0.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 0.0
+          },
+          "completion_slots": {}
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "approval_pending",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 474.0277777777777,
+      "paper_objective": 474.0277777777777,
+      "objective_coefficients_equal": true,
+      "code_rows": 491,
+      "reference_rows": 195,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 474.02777777777777,
+          "parts": {
+            "work": 0.0,
+            "remaining": 40.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 434.02777777777777
+          },
+          "completion_slots": {
+            "0": 133.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 474.02777777777777,
+          "parts": {
+            "work": 0.0,
+            "remaining": 40.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 434.02777777777777
+          },
+          "completion_slots": {
+            "0": 133.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "label": "approval_pending",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 474.0277777777777,
+      "paper_objective": 474.0277777777777,
+      "objective_coefficients_equal": true,
+      "code_rows": 451,
+      "reference_rows": 155,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 474.02777777777777,
+          "parts": {
+            "work": 0.0,
+            "remaining": 40.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 434.02777777777777
+          },
+          "completion_slots": {
+            "0": 133.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 474.02777777777777,
+          "parts": {
+            "work": 0.0,
+            "remaining": 40.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 434.02777777777777
+          },
+          "completion_slots": {
+            "0": 133.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "label": "approval_pending",
+      "m": 3,
+      "status": "Optimal",
+      "code_objective": 474.0277777777777,
+      "paper_objective": 474.0277777777777,
+      "objective_coefficients_equal": true,
+      "code_rows": 435,
+      "reference_rows": 139,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 474.02777777777777,
+          "parts": {
+            "work": 0.0,
+            "remaining": 40.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 434.02777777777777
+          },
+          "completion_slots": {
+            "0": 133.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 474.02777777777777,
+          "parts": {
+            "work": 0.0,
+            "remaining": 40.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 434.02777777777777
+          },
+          "completion_slots": {
+            "0": 133.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "label": "end_of_business_day",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 1348.3333333333333,
+      "paper_objective": 1348.3333333333333,
+      "objective_coefficients_equal": true,
+      "code_rows": 192,
+      "reference_rows": 42,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 1348.3333333333333,
+          "parts": {
+            "work": 0.0,
+            "remaining": 40.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 1100.0,
+            "pickup_wait": 0.0,
+            "hold": 208.33333333333331
+          },
+          "completion_slots": {
+            "0": 227.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 1348.3333333333333,
+          "parts": {
+            "work": 0.0,
+            "remaining": 40.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 1100.0,
+            "pickup_wait": 0.0,
+            "hold": 208.33333333333331
+          },
+          "completion_slots": {
+            "0": 227.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "label": "end_of_business_day",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 1348.3333333333333,
+      "paper_objective": 1348.3333333333333,
+      "objective_coefficients_equal": true,
+      "code_rows": 172,
+      "reference_rows": 22,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 1348.3333333333333,
+          "parts": {
+            "work": 0.0,
+            "remaining": 40.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 1100.0,
+            "pickup_wait": 0.0,
+            "hold": 208.33333333333331
+          },
+          "completion_slots": {
+            "0": 227.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 1348.3333333333333,
+          "parts": {
+            "work": 0.0,
+            "remaining": 40.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 1100.0,
+            "pickup_wait": 0.0,
+            "hold": 208.33333333333331
+          },
+          "completion_slots": {
+            "0": 227.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "label": "end_of_business_day",
+      "m": 3,
+      "status": "Optimal",
+      "code_objective": 1348.3333333333333,
+      "paper_objective": 1348.3333333333333,
+      "objective_coefficients_equal": true,
+      "code_rows": 168,
+      "reference_rows": 18,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 1348.3333333333333,
+          "parts": {
+            "work": 0.0,
+            "remaining": 40.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 1100.0,
+            "pickup_wait": 0.0,
+            "hold": 208.33333333333331
+          },
+          "completion_slots": {
+            "0": 227.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 1348.3333333333333,
+          "parts": {
+            "work": 0.0,
+            "remaining": 40.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 1100.0,
+            "pickup_wait": 0.0,
+            "hold": 208.33333333333331
+          },
+          "completion_slots": {
+            "0": 227.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "label": "approval_received_112",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 126.80555555555556,
+      "paper_objective": 126.80555555555556,
+      "objective_coefficients_equal": true,
+      "code_rows": 492,
+      "reference_rows": 196,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 126.80555555555556,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 86.80555555555556
+          },
+          "completion_slots": {
+            "0": 113.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              112
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 126.80555555555556,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 86.80555555555556
+          },
+          "completion_slots": {
+            "0": 113.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              112
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "approval_received_112",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 126.80555555555556,
+      "paper_objective": 126.80555555555556,
+      "objective_coefficients_equal": true,
+      "code_rows": 469,
+      "reference_rows": 173,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 126.80555555555556,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 86.80555555555556
+          },
+          "completion_slots": {
+            "0": 113.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              112
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 126.80555555555556,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 86.80555555555556
+          },
+          "completion_slots": {
+            "0": 113.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              112
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "approval_received_112",
+      "m": 3,
+      "status": "Optimal",
+      "code_objective": 126.80555555555556,
+      "paper_objective": 126.80555555555556,
+      "objective_coefficients_equal": true,
+      "code_rows": 453,
+      "reference_rows": 157,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 126.80555555555556,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 86.80555555555556
+          },
+          "completion_slots": {
+            "0": 113.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              112
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 126.80555555555556,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 86.80555555555556
+          },
+          "completion_slots": {
+            "0": 113.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              0,
+              0,
+              112
+            ]
+          ],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "current_catalog_bundle_all_deferred",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 327387.5,
+      "paper_objective": 327387.5,
+      "objective_coefficients_equal": true,
+      "code_rows": 498,
+      "reference_rows": 202,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 327387.5,
+          "parts": {
+            "work": 0.0,
+            "remaining": 315000.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 10200.0,
+            "pickup_wait": 0.0,
+            "hold": 2187.5
+          },
+          "completion_slots": {
+            "0": 234.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 327387.5,
+          "parts": {
+            "work": 0.0,
+            "remaining": 315000.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 10200.0,
+            "pickup_wait": 0.0,
+            "hold": 2187.5
+          },
+          "completion_slots": {
+            "0": 234.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "label": "current_catalog_bundle_all_deferred",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 327387.5,
+      "paper_objective": 327387.5,
+      "objective_coefficients_equal": true,
+      "code_rows": 458,
+      "reference_rows": 162,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 327387.5,
+          "parts": {
+            "work": 0.0,
+            "remaining": 315000.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 10200.0,
+            "pickup_wait": 0.0,
+            "hold": 2187.5
+          },
+          "completion_slots": {
+            "0": 234.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 327387.5,
+          "parts": {
+            "work": 0.0,
+            "remaining": 315000.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 10200.0,
+            "pickup_wait": 0.0,
+            "hold": 2187.5
+          },
+          "completion_slots": {
+            "0": 234.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "label": "current_catalog_bundle_all_deferred",
+      "m": 3,
+      "status": "Optimal",
+      "code_objective": 327387.5,
+      "paper_objective": 327387.5,
+      "objective_coefficients_equal": true,
+      "code_rows": 442,
+      "reference_rows": 146,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 327387.5,
+          "parts": {
+            "work": 0.0,
+            "remaining": 315000.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 10200.0,
+            "pickup_wait": 0.0,
+            "hold": 2187.5
+          },
+          "completion_slots": {
+            "0": 234.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 327387.5,
+          "parts": {
+            "work": 0.0,
+            "remaining": 315000.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 10200.0,
+            "pickup_wait": 0.0,
+            "hold": 2187.5
+          },
+          "completion_slots": {
+            "0": 234.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "label": "fast_bundle_counterexample",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 1328.1944444444443,
+      "paper_objective": 1328.1944444444443,
+      "objective_coefficients_equal": true,
+      "code_rows": 498,
+      "reference_rows": 202,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 1328.1944444444443,
+          "parts": {
+            "work": 0.0,
+            "remaining": 90.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 700.0,
+            "pickup_wait": 0.0,
+            "hold": 538.1944444444445
+          },
+          "completion_slots": {
+            "0": 139.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 1328.1944444444443,
+          "parts": {
+            "work": 0.0,
+            "remaining": 90.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 700.0,
+            "pickup_wait": 0.0,
+            "hold": 538.1944444444445
+          },
+          "completion_slots": {
+            "0": 139.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "label": "fast_bundle_counterexample",
+      "m": 2,
+      "status": "Optimal",
+      "code_objective": 1328.1944444444443,
+      "paper_objective": 1328.1944444444443,
+      "objective_coefficients_equal": true,
+      "code_rows": 458,
+      "reference_rows": 162,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 1328.1944444444443,
+          "parts": {
+            "work": 0.0,
+            "remaining": 90.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 700.0,
+            "pickup_wait": 0.0,
+            "hold": 538.1944444444445
+          },
+          "completion_slots": {
+            "0": 139.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 1328.1944444444443,
+          "parts": {
+            "work": 0.0,
+            "remaining": 90.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 700.0,
+            "pickup_wait": 0.0,
+            "hold": 538.1944444444445
+          },
+          "completion_slots": {
+            "0": 139.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "label": "fast_bundle_counterexample",
+      "m": 3,
+      "status": "Optimal",
+      "code_objective": 1328.1944444444443,
+      "paper_objective": 1328.1944444444443,
+      "objective_coefficients_equal": true,
+      "code_rows": 442,
+      "reference_rows": 146,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 1328.1944444444443,
+          "parts": {
+            "work": 0.0,
+            "remaining": 90.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 700.0,
+            "pickup_wait": 0.0,
+            "hold": 538.1944444444445
+          },
+          "completion_slots": {
+            "0": 139.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 1328.1944444444443,
+          "parts": {
+            "work": 0.0,
+            "remaining": 90.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 700.0,
+            "pickup_wait": 0.0,
+            "hold": 538.1944444444445
+          },
+          "completion_slots": {
+            "0": 139.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "label": "same_block_exchange",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 57.361111111111114,
+      "paper_objective": 57.361111111111114,
+      "objective_coefficients_equal": true,
+      "code_rows": 547,
+      "reference_rows": 257,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 57.361111111111114,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 17.36111111111111
+          },
+          "completion_slots": {
+            "1": 110.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              1,
+              0,
+              109
+            ]
+          ],
+          "trips": [],
+          "exits": [
+            [
+              0,
+              108
+            ]
+          ],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 57.361111111111114,
+          "parts": {
+            "work": 40.0,
+            "remaining": 0.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 17.36111111111111
+          },
+          "completion_slots": {
+            "1": 110.0
+          }
+        },
+        "plan": {
+          "modes": [
+            [
+              1,
+              0,
+              109
+            ]
+          ],
+          "trips": [],
+          "exits": [
+            [
+              0,
+              108
+            ]
+          ],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": []
+        }
+      }
+    },
+    {
+      "label": "same_block_exchange",
+      "m": 2,
+      "status": "Infeasible",
+      "code_objective": null,
+      "paper_objective": null,
+      "objective_coefficients_equal": true,
+      "code_rows": 509,
+      "reference_rows": 219
+    },
+    {
+      "label": "same_block_exchange",
+      "m": 3,
+      "status": "Infeasible",
+      "code_objective": null,
+      "paper_objective": null,
+      "objective_coefficients_equal": true,
+      "code_rows": 485,
+      "reference_rows": 195
+    }
+  ],
+  "mutations": [
+    {
+      "label": "missing_work_coverage",
+      "expected_tag": "3.2",
+      "violations": {
+        "3.2": 1.0,
+        "3.6": 1.0
+      },
+      "residual": {
+        "linear": 1.0,
+        "integrality": 0.0
+      }
+    },
+    {
+      "label": "non_suffix_deferral",
+      "expected_tag": "3.3",
+      "violations": {
+        "3.2": 1.0,
+        "3.3": 1.0
+      },
+      "residual": {
+        "linear": 1.0,
+        "integrality": 0.0
+      }
+    },
+    {
+      "label": "successor_before_predecessor",
+      "expected_tag": "3.4",
+      "violations": {
+        "3.4": 3.0
+      },
+      "residual": {
+        "linear": 3.0,
+        "integrality": 0.0
+      }
+    },
+    {
+      "label": "broken_vehicle_flow",
+      "expected_tag": "3.6",
+      "violations": {
+        "3.6": 1.0
+      },
+      "residual": {
+        "linear": 1.0,
+        "integrality": 0.0
+      }
+    },
+    {
+      "label": "missing_delivery_or_carry_choice",
+      "expected_tag": "3.5",
+      "violations": {
+        "3.5": 1.0
+      },
+      "residual": {
+        "linear": 1.0,
+        "integrality": 0.0
+      }
+    },
+    {
+      "label": "within_block_work_before_arrival",
+      "expected_tag": "3.7",
+      "violations": {
+        "3.7": 1.0
+      },
+      "residual": {
+        "linear": 1.0,
+        "integrality": 0.0
+      }
+    },
+    {
+      "label": "parking_capacity_overflow",
+      "expected_tag": "3.9",
+      "violations": {
+        "3.9": 1.0
+      },
+      "residual": {
+        "linear": 1.0,
+        "integrality": 0.0
+      }
+    },
+    {
+      "label": "rent_above_upper_bound",
+      "expected_tag": null,
+      "violations": {},
+      "residual": {
+        "linear": 1.0,
+        "integrality": 0.0
+      }
+    },
+    {
+      "label": "retrieve_car_not_in_external_parking",
+      "expected_tag": "3.11",
+      "violations": {
+        "3.11": 1.0
+      },
+      "residual": {
+        "linear": 1.0,
+        "integrality": 0.0
+      }
+    },
+    {
+      "label": "trip_count_participation_mismatch",
+      "expected_tag": "3.12",
+      "violations": {
+        "3.12": 1.0
+      },
+      "residual": {
+        "linear": 1.0,
+        "integrality": 0.0
+      }
+    },
+    {
+      "label": "shared_worker_double_booking",
+      "expected_tag": "3.13",
+      "violations": {
+        "3.13": 1.0
+      },
+      "residual": {
+        "linear": 1.0,
+        "integrality": 0.0
+      }
+    },
+    {
+      "label": "unreported_lateness",
+      "expected_tag": "3.14",
+      "violations": {
+        "3.14": 5.0
+      },
+      "residual": {
+        "linear": 5.0,
+        "integrality": 0.0
+      }
+    },
+    {
+      "label": "fractional_binary_variable",
+      "expected_tag": null,
+      "violations": {
+        "3.2": 0.5
+      },
+      "residual": {
+        "linear": 0.5,
+        "integrality": 0.5
+      }
+    }
+  ],
+  "duration_regression": {
+    "previous_minutes": 45,
+    "corrected_minutes": 35,
+    "encoded_lateness_minutes": 35.0,
+    "encoded_plan_max_violation": 0.0,
+    "negative_marginal_case": {
+      "label": "negative_duration_difference",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 858.7499999999999,
+      "paper_objective": 858.7499999999999,
+      "objective_coefficients_equal": true,
+      "code_rows": 498,
+      "reference_rows": 202,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 858.75,
+          "parts": {
+            "work": 0.0,
+            "remaining": 90.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 300.0,
+            "pickup_wait": 0.0,
+            "hold": 468.75
+          },
+          "completion_slots": {
+            "0": 135.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 858.75,
+          "parts": {
+            "work": 0.0,
+            "remaining": 90.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 300.0,
+            "pickup_wait": 0.0,
+            "hold": 468.75
+          },
+          "completion_slots": {
+            "0": 135.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      }
+    },
+    "no_finite_deadline_case": {
+      "label": "holding_without_finite_deadline",
+      "m": 1,
+      "status": "Optimal",
+      "code_objective": 628.1944444444443,
+      "paper_objective": 628.1944444444443,
+      "objective_coefficients_equal": true,
+      "code_rows": 497,
+      "reference_rows": 201,
+      "code": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 628.1944444444445,
+          "parts": {
+            "work": 0.0,
+            "remaining": 90.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 538.1944444444445
+          },
+          "completion_slots": {
+            "0": 139.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      },
+      "reference": {
+        "code_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "reference_residual": {
+          "linear": 0.0,
+          "integrality": 0.0
+        },
+        "literal_objective": {
+          "total": 628.1944444444445,
+          "parts": {
+            "work": 0.0,
+            "remaining": 90.0,
+            "transport": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "pickup_wait": 0.0,
+            "hold": 538.1944444444445
+          },
+          "completion_slots": {
+            "0": 139.0
+          }
+        },
+        "plan": {
+          "modes": [],
+          "trips": [],
+          "exits": [],
+          "rent": {
+            "0": 0
+          },
+          "sigma": 0.0,
+          "defer": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "midnight": [
+    {
+      "start": 287,
+      "end": 289,
+      "m": 1,
+      "fixed_cars": 0,
+      "objective": 50.0,
+      "rent": {
+        "0": 1,
+        "1": 1
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "0": 1,
+        "1": 1
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 0
+    },
+    {
+      "start": 287,
+      "end": 289,
+      "m": 2,
+      "fixed_cars": 0,
+      "objective": 50.0,
+      "rent": {
+        "0": 1,
+        "1": 1
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "0": 1,
+        "1": 1
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 1
+    },
+    {
+      "start": 287,
+      "end": 289,
+      "m": 3,
+      "fixed_cars": 0,
+      "objective": 50.0,
+      "rent": {
+        "0": 1,
+        "1": 1
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "0": 1,
+        "1": 1
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 1
+    },
+    {
+      "start": 287,
+      "end": 288,
+      "m": 1,
+      "fixed_cars": 0,
+      "objective": 25.0,
+      "rent": {
+        "0": 1
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "0": 1
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 0
+    },
+    {
+      "start": 287,
+      "end": 288,
+      "m": 2,
+      "fixed_cars": 0,
+      "objective": 25.0,
+      "rent": {
+        "0": 1
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "0": 1
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 0
+    },
+    {
+      "start": 287,
+      "end": 288,
+      "m": 3,
+      "fixed_cars": 0,
+      "objective": 25.0,
+      "rent": {
+        "0": 1
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "0": 1
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 0
+    },
+    {
+      "start": 286,
+      "end": 289,
+      "m": 1,
+      "fixed_cars": 0,
+      "objective": 50.0,
+      "rent": {
+        "0": 1,
+        "1": 1
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "0": 1,
+        "1": 1
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 0
+    },
+    {
+      "start": 286,
+      "end": 289,
+      "m": 2,
+      "fixed_cars": 0,
+      "objective": 50.0,
+      "rent": {
+        "0": 1,
+        "1": 1
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "0": 1,
+        "1": 1
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 0
+    },
+    {
+      "start": 286,
+      "end": 289,
+      "m": 3,
+      "fixed_cars": 0,
+      "objective": 50.0,
+      "rent": {
+        "0": 1,
+        "1": 1
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "0": 1,
+        "1": 1
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 1
+    },
+    {
+      "start": 288,
+      "end": 290,
+      "m": 1,
+      "fixed_cars": 0,
+      "objective": 25.0,
+      "rent": {
+        "1": 1
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "1": 1
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 0
+    },
+    {
+      "start": 288,
+      "end": 290,
+      "m": 2,
+      "fixed_cars": 0,
+      "objective": 25.0,
+      "rent": {
+        "1": 1
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "1": 1
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 0
+    },
+    {
+      "start": 288,
+      "end": 290,
+      "m": 3,
+      "fixed_cars": 0,
+      "objective": 25.0,
+      "rent": {
+        "1": 1
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "1": 1
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 0
+    }
+  ],
+  "fixed_outside_occupancy": [
+    {
+      "start": 287,
+      "end": 289,
+      "m": 1,
+      "fixed_cars": 1,
+      "objective": 100.0,
+      "rent": {
+        "0": 2,
+        "1": 2
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "0": 2,
+        "1": 2
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 0
+    },
+    {
+      "start": 287,
+      "end": 289,
+      "m": 2,
+      "fixed_cars": 1,
+      "objective": 100.0,
+      "rent": {
+        "0": 2,
+        "1": 2
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "0": 2,
+        "1": 2
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 1
+    },
+    {
+      "start": 287,
+      "end": 289,
+      "m": 3,
+      "fixed_cars": 1,
+      "objective": 100.0,
+      "rent": {
+        "0": 2,
+        "1": 2
+      },
+      "checker_ok": true,
+      "initial_rent": {
+        "0": 2,
+        "1": 2
+      },
+      "initial_max_violation": 0.0,
+      "extra_calendar_rows": 1
+    }
+  ],
+  "slack_and_rejection": {
+    "missing_next_day_rent_rejected": true,
+    "elastic_overflow_detected": 1,
+    "no_space_status": "Infeasible"
+  },
+  "rolling": [
+    {
+      "m": 1,
+      "checker_ok": true,
+      "replans": 2,
+      "work_starts": 3,
+      "transfers": 1,
+      "deliveries": 3,
+      "lns_iterations": 6,
+      "evaluation": {
+        "econ": 47000.0,
+        "work": 45000,
+        "work_internal": 45000,
+        "work_outsourced": 0,
+        "trips": 2000,
+        "n_staff_trips": 1,
+        "n_tow": 0,
+        "rent": 0.0,
+        "late_cost": 0.0,
+        "late_min": 0.0,
+        "late_cnt": 0,
+        "completed": 3,
+        "ontime": 3,
+        "pickup_wait_cost": 0.0,
+        "storage_billed": 0.0,
+        "status": {
+          "released": 3
+        },
+        "residual_work_lb": 0.0,
+        "residual_late_lb": 0.0,
+        "max_in": 3,
+        "max_out": 1,
+        "daily_inventory_17h": [
+          3,
+          0
+        ],
+        "unfinished_vehicle_days": 0.8541666666666666,
+        "hold_cost": 4270.833333333333
+      },
+      "log": [
+        {
+          "t0": 108,
+          "day": 0,
+          "n_veh": 3,
+          "stats": {
+            "m": 1,
+            "ncol": 2907,
+            "nrow": 6871,
+            "nnz": 10018,
+            "n_int": 2328,
+            "n_x": 52,
+            "n_y": 1728,
+            "n_z": 404,
+            "n_w": 139,
+            "n_e": 0,
+            "n_o": 3,
+            "rows": {
+              "cover": 3,
+              "defer": 0,
+              "prec": 0,
+              "release": 0,
+              "flow": 1728,
+              "cap": 576,
+              "cap_calendar": 0,
+              "precond": 102,
+              "res": 4320,
+              "trip": 139,
+              "late": 3
+            },
+            "build_s": 0.008,
+            "nnz_y": 5278
+          },
+          "build_s": 0.010794720001285896,
+          "construct_s": 0.01203193800029112,
+          "construct_overflow": 0,
+          "sigma0": 0.0,
+          "encode_maxviol": 0.0,
+          "conflict_rounds": 0,
+          "init_check": true,
+          "init_viol": [],
+          "init_obj": 47520.83333333333,
+          "init_parts": {
+            "hold": 520.8333333333321,
+            "work": 45000.0,
+            "residual": 0.0,
+            "pickup_wait": 0.0,
+            "trips": 2000.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "sigma": 0.0
+          },
+          "init_s": 0.012386804002744611,
+          "op_use": {
+            "random": 1,
+            "related": 1,
+            "trip": 1
+          },
+          "op_acc": {},
+          "lns_iter": 3,
+          "lns_acc": 0,
+          "final_obj": 47520.83333333333,
+          "final_parts": {
+            "hold": 520.8333333333321,
+            "work": 45000.0,
+            "residual": 0.0,
+            "pickup_wait": 0.0,
+            "trips": 2000.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "sigma": 0.0
+          },
+          "history": [
+            [
+              0.01,
+              47520.83333333333
+            ]
+          ],
+          "valid": true,
+          "prefix_check": true,
+          "total_s": 0.08257635599875357,
+          "maxrss_mb": 67.78125
+        },
+        {
+          "t0": 396,
+          "day": 1,
+          "n_veh": 3,
+          "stats": {
+            "m": 1,
+            "ncol": 2904,
+            "nrow": 6871,
+            "nnz": 9302,
+            "n_int": 2325,
+            "n_x": 0,
+            "n_y": 1728,
+            "n_z": 417,
+            "n_w": 139,
+            "n_e": 36,
+            "n_o": 0,
+            "rows": {
+              "cover": 0,
+              "defer": 0,
+              "prec": 0,
+              "release": 3,
+              "flow": 1728,
+              "cap": 576,
+              "cap_calendar": 0,
+              "precond": 105,
+              "res": 4320,
+              "trip": 139,
+              "late": 0
+            },
+            "build_s": 0.006,
+            "nnz_y": 5280
+          },
+          "build_s": 0.008849573001498356,
+          "construct_s": 0.009987792000174522,
+          "construct_overflow": 0,
+          "sigma0": 0.0,
+          "encode_maxviol": 0.0,
+          "conflict_rounds": 0,
+          "init_check": true,
+          "init_viol": [],
+          "init_obj": 0.0,
+          "init_parts": {
+            "hold": 0.0,
+            "work": 0.0,
+            "residual": 0.0,
+            "pickup_wait": 0.0,
+            "trips": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "sigma": 0.0
+          },
+          "init_s": 0.010365501999331173,
+          "op_use": {
+            "trip": 2,
+            "related": 1
+          },
+          "op_acc": {},
+          "lns_iter": 3,
+          "lns_acc": 0,
+          "final_obj": 0.0,
+          "final_parts": {
+            "hold": 0.0,
+            "work": 0.0,
+            "residual": 0.0,
+            "pickup_wait": 0.0,
+            "trips": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "sigma": 0.0
+          },
+          "history": [
+            [
+              0.01,
+              0.0
+            ]
+          ],
+          "valid": true,
+          "prefix_check": true,
+          "total_s": 0.04079836399614578,
+          "maxrss_mb": 67.78125
+        }
+      ]
+    },
+    {
+      "m": 2,
+      "checker_ok": true,
+      "replans": 2,
+      "work_starts": 3,
+      "transfers": 1,
+      "deliveries": 3,
+      "lns_iterations": 6,
+      "evaluation": {
+        "econ": 47000.0,
+        "work": 45000,
+        "work_internal": 45000,
+        "work_outsourced": 0,
+        "trips": 2000,
+        "n_staff_trips": 1,
+        "n_tow": 0,
+        "rent": 0.0,
+        "late_cost": 0.0,
+        "late_min": 0.0,
+        "late_cnt": 0,
+        "completed": 3,
+        "ontime": 3,
+        "pickup_wait_cost": 0.0,
+        "storage_billed": 0.0,
+        "status": {
+          "released": 3
+        },
+        "residual_work_lb": 0.0,
+        "residual_late_lb": 0.0,
+        "max_in": 3,
+        "max_out": 1,
+        "daily_inventory_17h": [
+          3,
+          0
+        ],
+        "unfinished_vehicle_days": 0.8541666666666666,
+        "hold_cost": 4270.833333333333
+      },
+      "log": [
+        {
+          "t0": 108,
+          "day": 0,
+          "n_veh": 3,
+          "stats": {
+            "m": 2,
+            "ncol": 1755,
+            "nrow": 5823,
+            "nnz": 7997,
+            "n_int": 1464,
+            "n_x": 52,
+            "n_y": 864,
+            "n_z": 404,
+            "n_w": 139,
+            "n_e": 0,
+            "n_o": 3,
+            "rows": {
+              "cover": 3,
+              "defer": 0,
+              "prec": 0,
+              "release": 0,
+              "flow": 864,
+              "guard": 104,
+              "cap": 288,
+              "cap_calendar": 0,
+              "precond": 102,
+              "res": 4320,
+              "trip": 139,
+              "late": 3
+            },
+            "build_s": 0.01,
+            "nnz_y": 2780
+          },
+          "build_s": 0.011712856001395267,
+          "construct_s": 0.012598623005033005,
+          "construct_overflow": 0,
+          "sigma0": 0.0,
+          "encode_maxviol": 0.0,
+          "conflict_rounds": 0,
+          "init_check": true,
+          "init_viol": [],
+          "init_obj": 47520.83333333333,
+          "init_parts": {
+            "hold": 520.8333333333321,
+            "work": 45000.0,
+            "residual": 0.0,
+            "pickup_wait": 0.0,
+            "trips": 2000.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "sigma": 0.0
+          },
+          "init_s": 0.012930705001053866,
+          "op_use": {
+            "random": 1,
+            "related": 1,
+            "trip": 1
+          },
+          "op_acc": {},
+          "lns_iter": 3,
+          "lns_acc": 0,
+          "final_obj": 47520.83333333333,
+          "final_parts": {
+            "hold": 520.8333333333321,
+            "work": 45000.0,
+            "residual": 0.0,
+            "pickup_wait": 0.0,
+            "trips": 2000.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "sigma": 0.0
+          },
+          "history": [
+            [
+              0.01,
+              47520.83333333333
+            ]
+          ],
+          "valid": true,
+          "prefix_check": true,
+          "total_s": 0.08937967900419608,
+          "maxrss_mb": 67.78125
+        },
+        {
+          "t0": 396,
+          "day": 1,
+          "n_veh": 3,
+          "stats": {
+            "m": 2,
+            "ncol": 1752,
+            "nrow": 5827,
+            "nnz": 7190,
+            "n_int": 1461,
+            "n_x": 0,
+            "n_y": 864,
+            "n_z": 417,
+            "n_w": 139,
+            "n_e": 36,
+            "n_o": 0,
+            "rows": {
+              "cover": 0,
+              "defer": 0,
+              "prec": 0,
+              "release": 3,
+              "flow": 864,
+              "guard": 108,
+              "cap": 288,
+              "cap_calendar": 0,
+              "precond": 105,
+              "res": 4320,
+              "trip": 139,
+              "late": 0
+            },
+            "build_s": 0.008,
+            "nnz_y": 2784
+          },
+          "build_s": 0.01133398299862165,
+          "construct_s": 0.012744733001454733,
+          "construct_overflow": 0,
+          "sigma0": 0.0,
+          "encode_maxviol": 0.0,
+          "conflict_rounds": 0,
+          "init_check": true,
+          "init_viol": [],
+          "init_obj": 0.0,
+          "init_parts": {
+            "hold": 0.0,
+            "work": 0.0,
+            "residual": 0.0,
+            "pickup_wait": 0.0,
+            "trips": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "sigma": 0.0
+          },
+          "init_s": 0.013299651000124868,
+          "op_use": {
+            "trip": 2,
+            "related": 1
+          },
+          "op_acc": {},
+          "lns_iter": 3,
+          "lns_acc": 0,
+          "final_obj": 0.0,
+          "final_parts": {
+            "hold": 0.0,
+            "work": 0.0,
+            "residual": 0.0,
+            "pickup_wait": 0.0,
+            "trips": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "sigma": 0.0
+          },
+          "history": [
+            [
+              0.01,
+              0.0
+            ]
+          ],
+          "valid": true,
+          "prefix_check": true,
+          "total_s": 0.04475880300014978,
+          "maxrss_mb": 67.78125
+        }
+      ]
+    },
+    {
+      "m": 3,
+      "checker_ok": true,
+      "replans": 2,
+      "work_starts": 3,
+      "transfers": 1,
+      "deliveries": 3,
+      "lns_iterations": 6,
+      "evaluation": {
+        "econ": 47000.0,
+        "work": 45000,
+        "work_internal": 45000,
+        "work_outsourced": 0,
+        "trips": 2000,
+        "n_staff_trips": 1,
+        "n_tow": 0,
+        "rent": 0.0,
+        "late_cost": 0.0,
+        "late_min": 0.0,
+        "late_cnt": 0,
+        "completed": 3,
+        "ontime": 3,
+        "pickup_wait_cost": 0.0,
+        "storage_billed": 0.0,
+        "status": {
+          "released": 3
+        },
+        "residual_work_lb": 0.0,
+        "residual_late_lb": 0.0,
+        "max_in": 3,
+        "max_out": 1,
+        "daily_inventory_17h": [
+          3,
+          0
+        ],
+        "unfinished_vehicle_days": 0.8541666666666666,
+        "hold_cost": 4270.833333333333
+      },
+      "log": [
+        {
+          "t0": 108,
+          "day": 0,
+          "n_veh": 3,
+          "stats": {
+            "m": 3,
+            "ncol": 1371,
+            "nrow": 5439,
+            "nnz": 7041,
+            "n_int": 1176,
+            "n_x": 52,
+            "n_y": 576,
+            "n_z": 404,
+            "n_w": 139,
+            "n_e": 0,
+            "n_o": 3,
+            "rows": {
+              "cover": 3,
+              "defer": 0,
+              "prec": 0,
+              "release": 0,
+              "flow": 576,
+              "guard": 104,
+              "cap": 192,
+              "cap_calendar": 0,
+              "precond": 102,
+              "res": 4320,
+              "trip": 139,
+              "late": 3
+            },
+            "build_s": 0.01,
+            "nnz_y": 1916
+          },
+          "build_s": 0.012355416001810227,
+          "construct_s": 0.013414064000244252,
+          "construct_overflow": 0,
+          "sigma0": 0.0,
+          "encode_maxviol": 0.0,
+          "conflict_rounds": 0,
+          "init_check": true,
+          "init_viol": [],
+          "init_obj": 47520.83333333333,
+          "init_parts": {
+            "hold": 520.8333333333321,
+            "work": 45000.0,
+            "residual": 0.0,
+            "pickup_wait": 0.0,
+            "trips": 2000.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "sigma": 0.0
+          },
+          "init_s": 0.013943464000476524,
+          "op_use": {
+            "random": 1,
+            "related": 1,
+            "trip": 1
+          },
+          "op_acc": {},
+          "lns_iter": 3,
+          "lns_acc": 0,
+          "final_obj": 47520.83333333333,
+          "final_parts": {
+            "hold": 520.8333333333321,
+            "work": 45000.0,
+            "residual": 0.0,
+            "pickup_wait": 0.0,
+            "trips": 2000.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "sigma": 0.0
+          },
+          "history": [
+            [
+              0.01,
+              47520.83333333333
+            ]
+          ],
+          "valid": true,
+          "prefix_check": true,
+          "total_s": 0.09250662999693304,
+          "maxrss_mb": 67.78125
+        },
+        {
+          "t0": 396,
+          "day": 1,
+          "n_veh": 3,
+          "stats": {
+            "m": 3,
+            "ncol": 1368,
+            "nrow": 5443,
+            "nnz": 6236,
+            "n_int": 1173,
+            "n_x": 0,
+            "n_y": 576,
+            "n_z": 417,
+            "n_w": 139,
+            "n_e": 36,
+            "n_o": 0,
+            "rows": {
+              "cover": 0,
+              "defer": 0,
+              "prec": 0,
+              "release": 3,
+              "flow": 576,
+              "guard": 108,
+              "cap": 192,
+              "cap_calendar": 0,
+              "precond": 105,
+              "res": 4320,
+              "trip": 139,
+              "late": 0
+            },
+            "build_s": 0.01,
+            "nnz_y": 1920
+          },
+          "build_s": 0.0117583140017814,
+          "construct_s": 0.012491310000768863,
+          "construct_overflow": 0,
+          "sigma0": 0.0,
+          "encode_maxviol": 0.0,
+          "conflict_rounds": 0,
+          "init_check": true,
+          "init_viol": [],
+          "init_obj": 0.0,
+          "init_parts": {
+            "hold": 0.0,
+            "work": 0.0,
+            "residual": 0.0,
+            "pickup_wait": 0.0,
+            "trips": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "sigma": 0.0
+          },
+          "init_s": 0.012874810003268067,
+          "op_use": {
+            "trip": 2,
+            "related": 1
+          },
+          "op_acc": {},
+          "lns_iter": 3,
+          "lns_acc": 0,
+          "final_obj": 0.0,
+          "final_parts": {
+            "hold": 0.0,
+            "work": 0.0,
+            "residual": 0.0,
+            "pickup_wait": 0.0,
+            "trips": 0.0,
+            "rent": 0.0,
+            "late": 0.0,
+            "sigma": 0.0
+          },
+          "history": [
+            [
+              0.01,
+              0.0
+            ]
+          ],
+          "valid": true,
+          "prefix_check": true,
+          "total_s": 0.05045975200482644,
+          "maxrss_mb": 67.78125
+        }
+      ]
+    }
+  ],
+  "pricing_validation": {
+    "date": "2026-11-10",
+    "prices_are_synthetic": true,
+    "heavy_premium_provisional": true,
+    "premium_basis": "Provisional heavy-work scenario; edit existing catalogue prices",
+    "small_medium_prices": "editable_existing_catalogue",
+    "rework_modelled": false,
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "solver": "1.8.0",
+    "binding": "SciPy bundled _highspy._core",
+    "catalogue": [
+      {
+        "scope": "wash",
+        "internal": 45000,
+        "external": 45000,
+        "premium": 0.0
+      },
+      {
+        "scope": "maint",
+        "internal": 45000,
+        "external": 45000,
+        "premium": 0.0
+      },
+      {
+        "scope": "elec",
+        "internal": 65000,
+        "external": 65000,
+        "premium": 0.0
+      },
+      {
+        "scope": "engine",
+        "internal": 240000,
+        "external": 480000,
+        "premium": 1.0
+      },
+      {
+        "scope": "body_l+paint_l",
+        "internal": 150000,
+        "external": 150000,
+        "premium": 0.0
+      },
+      {
+        "scope": "body_h+paint_h",
+        "internal": 300000,
+        "external": 360000,
+        "premium": 0.19999999999999996
+      }
+    ],
+    "generated_vehicles": 600,
+    "checked_outsource_alternatives": 738,
+    "cheap_bundle_guard_passed": true,
+    "discount_scenario_passed": true,
+    "cases": [
+      {
+        "body_workers": 3,
+        "status": "Optimal",
+        "work_cost": 315000,
+        "objective": 315000.0,
+        "selected_modes": [
+          "body_h:I",
+          "paint_h:I",
+          "insp:I"
+        ],
+        "checker_ok": true,
+        "max_row_violation": 0.0,
+        "final_inspection_internal": true
+      },
+      {
+        "body_workers": 0,
+        "status": "Optimal",
+        "work_cost": 375000,
+        "objective": 375000.0,
+        "selected_modes": [
+          "insp:I",
+          "body_h+paint_h:O"
+        ],
+        "checker_ok": true,
+        "max_row_violation": 0.0,
+        "final_inspection_internal": true
+      }
+    ],
+    "regressions": [
+      {
+        "script": "test_holding.py",
+        "passed": true,
+        "output": "holding checks PASS: 09 regular time and future-arrival reference in scheduled/deferred objective\n"
+      },
+      {
+        "script": "test_terminal.py",
+        "passed": true,
+        "output": "terminal checks PASS: bundle price, suffix cover, empty tasks, paid ongoing mode, outstanding duration, holding units\n"
+      },
+      {
+        "script": "test_state_gate.py",
+        "passed": true,
+        "output": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.130s\n\nOK\n"
+      }
+    ],
+    "full_experiments_rerun": false
+  },
+  "summary": {
+    "equation_pairs": 45,
+    "optimal_pairs": 39,
+    "infeasible_pairs": 6,
+    "injected_violations": 13,
+    "calendar_cases": 15,
+    "rolling_runs": 3,
+    "source_regression_scripts": 3,
+    "seconds": 1.169
+  }
+}

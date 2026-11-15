@@ -1,0 +1,96 @@
+name: experiment
+
+on:
+  workflow_dispatch:
+    inputs:
+      stage:
+        description: '실험 단계 (A: 규칙 기반 대 LNS 120회, B: 주차 블록 120회, all: 전체 240회)'
+        type: choice
+        options: [A, B, C, all]
+        default: A
+      budget:
+        description: '재계획 1회 시간 예산(초). 본실험은 120'
+        default: '120'
+      obs_days:
+        description: '관측 일수. 비우면 14일, 시험 실행은 2'
+        default: ''
+      daily:
+        description: '일일 오더만 골라 돌릴 때 (예: 10,20). 비우면 전체'
+        default: ''
+      seeds:
+        description: '시나리오만 골라 돌릴 때 (예: 1,2). 비우면 전체'
+        default: ''
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: 수식 대조 검증과 단위검사 (실패하면 실험을 시작하지 않는다)
+        run: |
+          python verify_ch3_final.py
+          for t in tests/test_*.py; do python "$t"; done
+      - id: m
+        env:
+          STAGE: ${{ inputs.stage }}
+          DAILY: ${{ inputs.daily }}
+          SEEDS: ${{ inputs.seeds }}
+        run: |
+          ARGS="--stage $STAGE"
+          if [ -n "$DAILY" ]; then ARGS="$ARGS --daily $DAILY"; fi
+          if [ -n "$SEEDS" ]; then ARGS="$ARGS --seeds $SEEDS"; fi
+          python run_main.py list $ARGS | grep '^d' \
+            | python -c "import sys,json;print('matrix='+json.dumps({'name':[l.strip() for l in sys.stdin]}))" >> "$GITHUB_OUTPUT"
+
+  run:
+    needs: plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJson(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: run ${{ matrix.name }}
+        env:
+          NAME: ${{ matrix.name }}
+          BUDGET: ${{ inputs.budget }}
+          OBS: ${{ inputs.obs_days }}
+        run: |
+          EXTRA=""
+          if [ -n "$OBS" ]; then EXTRA="--obs-days $OBS"; fi
+          python run_main.py one "$NAME" --budget "$BUDGET" --outdir results/main $EXTRA
+          lscpu > "results/main/$NAME.cpu.txt"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: run-${{ matrix.name }}
+          path: results/main/${{ matrix.name }}.*
+          retention-days: 30
+
+  collect:
+    needs: run
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: run-*
+          merge-multiple: true
+          path: results/main
+      - run: ls results/main | wc -l
+      - uses: actions/upload-artifact@v4
+        with:
+          name: results-all
+          path: results/main
+          retention-days: 90

@@ -1,0 +1,40 @@
+Equation comparisons: 45 PASS
+Duration and mutation regressions: PASS
+Calendar and initial schedule regressions: PASS
+Rolling execution: 5/10/15 minutes PASS
+{
+  "generated_vehicles": 600,
+  "checked_outsource_alternatives": 738,
+  "cheap_bundle_guard_passed": true,
+  "cases": [
+    {
+      "body_workers": 3,
+      "status": "Optimal",
+      "work_cost": 315000,
+      "objective": 315000.0,
+      "selected_modes": [
+        "body_h:I",
+        "paint_h:I",
+        "insp:I"
+      ],
+      "checker_ok": true,
+      "max_row_violation": 0.0,
+      "final_inspection_internal": true
+    },
+    {
+      "body_workers": 0,
+      "status": "Optimal",
+      "work_cost": 375000,
+      "objective": 375000.0,
+      "selected_modes": [
+        "insp:I",
+        "body_h+paint_h:O"
+      ],
+      "checker_ok": true,
+      "max_row_violation": 0.0,
+      "final_inspection_internal": true
+    }
+  ]
+}
+PASS: 3 regression scripts; previous full experiment results were not reused.
+{"equation_pairs": 45, "optimal_pairs": 39, "infeasible_pairs": 6, "injected_violations": 13, "calendar_cases": 15, "rolling_runs": 3, "source_regression_scripts": 3, "seconds": 1.169}

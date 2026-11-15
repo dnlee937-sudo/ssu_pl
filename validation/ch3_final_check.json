@@ -1,0 +1,439 @@
+{
+ "pairs": 54,
+ "with_excess": 6,
+ "seconds": 2.4,
+ "rows": [
+  {
+   "label": "internal_sequence",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 132.08333333333334,
+   "code_rows": 515,
+   "reference_rows": 291
+  },
+  {
+   "label": "internal_sequence",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 132.08333333333331,
+   "code_rows": 495,
+   "reference_rows": 271
+  },
+  {
+   "label": "internal_sequence",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 132.08333333333331,
+   "code_rows": 479,
+   "reference_rows": 255
+  },
+  {
+   "label": "outsourced_return_before_qc",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 186.80555555555554,
+   "code_rows": 515,
+   "reference_rows": 315
+  },
+  {
+   "label": "outsourced_return_before_qc",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 186.80555555555554,
+   "code_rows": 495,
+   "reference_rows": 295
+  },
+  {
+   "label": "outsourced_return_before_qc",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 186.80555555555554,
+   "code_rows": 479,
+   "reference_rows": 279
+  },
+  {
+   "label": "recover_then_work",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 114.44444444444444,
+   "code_rows": 512,
+   "reference_rows": 288
+  },
+  {
+   "label": "recover_then_work",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 114.44444444444444,
+   "code_rows": 492,
+   "reference_rows": 268
+  },
+  {
+   "label": "recover_then_work",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 114.44444444444444,
+   "code_rows": 476,
+   "reference_rows": 252
+  },
+  {
+   "label": "two_car_shared_trip",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 228.88888888888889,
+   "code_rows": 569,
+   "reference_rows": 351
+  },
+  {
+   "label": "two_car_shared_trip",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 815.6944444444445,
+   "code_rows": 553,
+   "reference_rows": 335
+  },
+  {
+   "label": "two_car_shared_trip",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 463.6111111111111,
+   "code_rows": 529,
+   "reference_rows": 311
+  },
+  {
+   "label": "parking_move_and_rent",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 30.0,
+   "code_rows": 564,
+   "reference_rows": 346
+  },
+  {
+   "label": "parking_move_and_rent",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 30.0,
+   "code_rows": 506,
+   "reference_rows": 288
+  },
+  {
+   "label": "parking_move_and_rent",
+   "m": 3,
+   "F_star": 15.0,
+   "Z_star": 30.0,
+   "code_rows": 482,
+   "reference_rows": 264
+  },
+  {
+   "label": "infeasible_two_waiters_one_space",
+   "m": 1,
+   "F_star": 120.0,
+   "Z_star": 0.0,
+   "code_rows": 565,
+   "reference_rows": 347
+  },
+  {
+   "label": "infeasible_two_waiters_one_space",
+   "m": 2,
+   "F_star": 120.0,
+   "Z_star": 0.0,
+   "code_rows": 509,
+   "reference_rows": 291
+  },
+  {
+   "label": "infeasible_two_waiters_one_space",
+   "m": 3,
+   "F_star": 120.0,
+   "Z_star": 0.0,
+   "code_rows": 485,
+   "reference_rows": 267
+  },
+  {
+   "label": "shared_worker_capacity",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 536.25,
+   "code_rows": 569,
+   "reference_rows": 351
+  },
+  {
+   "label": "shared_worker_capacity",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 536.25,
+   "code_rows": 553,
+   "reference_rows": 335
+  },
+  {
+   "label": "shared_worker_capacity",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 536.25,
+   "code_rows": 529,
+   "reference_rows": 311
+  },
+  {
+   "label": "known_customer_pickup",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 0.0,
+   "code_rows": 511,
+   "reference_rows": 287
+  },
+  {
+   "label": "known_customer_pickup",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 0.0,
+   "code_rows": 471,
+   "reference_rows": 247
+  },
+  {
+   "label": "known_customer_pickup",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 0.0,
+   "code_rows": 455,
+   "reference_rows": 231
+  },
+  {
+   "label": "unknown_customer_pickup",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 0.0,
+   "code_rows": 510,
+   "reference_rows": 286
+  },
+  {
+   "label": "unknown_customer_pickup",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 0.0,
+   "code_rows": 470,
+   "reference_rows": 246
+  },
+  {
+   "label": "unknown_customer_pickup",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 0.0,
+   "code_rows": 454,
+   "reference_rows": 230
+  },
+  {
+   "label": "approval_pending",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 474.0277777777777,
+   "code_rows": 511,
+   "reference_rows": 287
+  },
+  {
+   "label": "approval_pending",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 474.0277777777777,
+   "code_rows": 471,
+   "reference_rows": 247
+  },
+  {
+   "label": "approval_pending",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 474.0277777777777,
+   "code_rows": 455,
+   "reference_rows": 231
+  },
+  {
+   "label": "end_of_business_day",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 1348.3333333333333,
+   "code_rows": 193,
+   "reference_rows": 44
+  },
+  {
+   "label": "end_of_business_day",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 1348.3333333333333,
+   "code_rows": 174,
+   "reference_rows": 25
+  },
+  {
+   "label": "end_of_business_day",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 1348.3333333333333,
+   "code_rows": 170,
+   "reference_rows": 21
+  },
+  {
+   "label": "approval_received_112",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 126.80555555555556,
+   "code_rows": 512,
+   "reference_rows": 288
+  },
+  {
+   "label": "approval_received_112",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 126.80555555555556,
+   "code_rows": 489,
+   "reference_rows": 265
+  },
+  {
+   "label": "approval_received_112",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 126.80555555555556,
+   "code_rows": 473,
+   "reference_rows": 249
+  },
+  {
+   "label": "current_catalog_bundle_all_deferred",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 327387.5,
+   "code_rows": 518,
+   "reference_rows": 294
+  },
+  {
+   "label": "current_catalog_bundle_all_deferred",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 327387.5,
+   "code_rows": 478,
+   "reference_rows": 254
+  },
+  {
+   "label": "current_catalog_bundle_all_deferred",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 327387.5,
+   "code_rows": 462,
+   "reference_rows": 238
+  },
+  {
+   "label": "fast_bundle_counterexample",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 1328.1944444444443,
+   "code_rows": 518,
+   "reference_rows": 294
+  },
+  {
+   "label": "fast_bundle_counterexample",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 1328.1944444444443,
+   "code_rows": 478,
+   "reference_rows": 254
+  },
+  {
+   "label": "fast_bundle_counterexample",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 1328.1944444444443,
+   "code_rows": 462,
+   "reference_rows": 238
+  },
+  {
+   "label": "same_block_exchange",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 57.361111111111114,
+   "code_rows": 567,
+   "reference_rows": 349
+  },
+  {
+   "label": "same_block_exchange",
+   "m": 2,
+   "F_star": 10.0,
+   "Z_star": 57.361111111111114,
+   "code_rows": 529,
+   "reference_rows": 311
+  },
+  {
+   "label": "same_block_exchange",
+   "m": 3,
+   "F_star": 15.0,
+   "Z_star": 74.72222222222223,
+   "code_rows": 505,
+   "reference_rows": 287
+  },
+  {
+   "label": "overnight_interruption",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 3465.4166666666665,
+   "code_rows": 4184,
+   "reference_rows": 1146
+  },
+  {
+   "label": "overnight_interruption",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 3465.4166666666665,
+   "code_rows": 3794,
+   "reference_rows": 756
+  },
+  {
+   "label": "overnight_interruption",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 3465.4166666666665,
+   "code_rows": 3650,
+   "reference_rows": 612
+  },
+  {
+   "label": "technician_joins_trip",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 201.25,
+   "code_rows": 512,
+   "reference_rows": 288
+  },
+  {
+   "label": "technician_joins_trip",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 201.25,
+   "code_rows": 492,
+   "reference_rows": 268
+  },
+  {
+   "label": "technician_joins_trip",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 201.25,
+   "code_rows": 476,
+   "reference_rows": 252
+  },
+  {
+   "label": "alternative_crossing_horizon",
+   "m": 1,
+   "F_star": 0.0,
+   "Z_star": 2718.1944444444443,
+   "code_rows": 515,
+   "reference_rows": 291
+  },
+  {
+   "label": "alternative_crossing_horizon",
+   "m": 2,
+   "F_star": 0.0,
+   "Z_star": 2718.1944444444443,
+   "code_rows": 495,
+   "reference_rows": 271
+  },
+  {
+   "label": "alternative_crossing_horizon",
+   "m": 3,
+   "F_star": 0.0,
+   "Z_star": 2718.1944444444443,
+   "code_rows": 479,
+   "reference_rows": 255
+  }
+ ]
+}

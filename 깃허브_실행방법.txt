@@ -1,0 +1,20 @@
+깃허브에서 실험 돌리는 방법 (무료: 공개 저장소)
+
+1. github.com 에서 새 저장소를 만든다. Public(공개)을 고른다.
+2. 이 폴더 안의 파일 전체를 저장소에 올린다. (.github 폴더가 반드시 함께 올라가야 한다)
+   - 웹에서: 저장소 화면 > Add file > Upload files
+   - .github 폴더는 숨김 폴더라 끌어다 놓을 때 빠질 수 있다. 빠졌으면
+     Add file > Create new file 에서 파일 이름에 .github/workflows/experiment.yml 을 적고 내용을 붙여 넣는다.
+3. 저장소의 Actions 탭 > experiment > Run workflow 를 누른다.
+4. 처음에는 시험 실행으로 확인한다.
+     stage = A,  budget = 15,  obs_days = 2,  daily = 10,  seeds = 1     (6회, 몇 분이면 끝남)
+5. 시험이 통과하면 본실험을 돌린다.
+     stage = A,  budget = 120, 나머지는 비움                          (120회)
+     stage = B,  budget = 120, 나머지는 비움                          (120회)
+6. 끝나면 실행 화면 맨 아래 Artifacts 의 results-all 을 내려받는다. 실행마다 결과 json 과 CPU 정보(cpu.txt)가 들어 있다.
+
+참고
+- 무료 계정은 동시에 20개까지 돌고 나머지는 줄을 선다. 전체 240회는 대략 8시간.
+- 작업 하나는 실험 하나만 돌린다(1스레드). 서버마다 CPU가 달라 120초 동안의 탐색량에 차이가 날 수 있으므로
+  cpu.txt 를 남겨 두고, 논문에는 계산 환경을 그대로 적는다.
+- 공개 저장소는 누구나 코드를 볼 수 있다.
