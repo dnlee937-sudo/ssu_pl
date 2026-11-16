@@ -1,0 +1,9219 @@
+{
+ "name": "d20_park_s5_lns_m2",
+ "daily": 20,
+ "cond": "park",
+ "seed": 5,
+ "policy": "lns",
+ "m": 2,
+ "budget": 120.0,
+ "hold_cost_day": 5000.0,
+ "caps": {
+  "gen": 12,
+  "mech": 8,
+  "body": 6,
+  "insp": 4,
+  "lift": 16,
+  "bodybay": 6,
+  "paintline": 2,
+  "washbay": 4,
+  "inspbay": 4,
+  "supportcar": 2,
+  "sup_wash": 8,
+  "sup_maint": 8,
+  "sup_engine": 4,
+  "sup_body": 4,
+  "sup_tow": 4
+ },
+ "park_in": 12,
+ "park_out": 36,
+ "rent_max": 30,
+ "n_vehicles": 220,
+ "meta": {
+  "daily": 20,
+  "seed": 5,
+  "days": 14,
+  "n_init": 20,
+  "p_approval": 0.2,
+  "p_fault": 0.03
+ },
+ "n_new": 200,
+ "n_init": 20,
+ "checker_ok": true,
+ "n_viol": 0,
+ "violations": [],
+ "excess_in_space_min": 50525,
+ "excess_in_slots": 1056,
+ "tech_trip_persons": 80,
+ "staff_persons": {
+  "body": 6,
+  "gen": 11,
+  "insp": 4,
+  "mech": 8
+ },
+ "eval": {
+  "econ": 31491600.0,
+  "work": 25220000,
+  "work_internal": 22905000,
+  "work_outsourced": 2315000,
+  "trips": 3754000,
+  "n_staff_trips": 247,
+  "n_tow": 326,
+  "rent": 1485000.0,
+  "late_cost": 942600.0,
+  "late_min": 47130.0,
+  "late_cnt": 21,
+  "completed": 180,
+  "ontime": 159,
+  "pickup_wait_cost": 90000.0,
+  "storage_billed": 1286458.3333333326,
+  "status": {
+   "released": 130,
+   "done_waiting_customer": 53,
+   "returned_released": 1,
+   "open_overdue": 6,
+   "open_in_time": 23,
+   "returned_settled": 2,
+   "wait_approval": 5
+  },
+  "residual_work_lb": 5185000.0,
+  "residual_late_lb": 396600.0,
+  "max_in": 25,
+  "max_out": 66,
+  "daily_inventory_17h": [
+   37,
+   47,
+   49,
+   57,
+   59,
+   68,
+   68,
+   47,
+   63,
+   70,
+   71,
+   81,
+   89,
+   89
+  ],
+  "unfinished_vehicle_days": 383.6180555555555,
+  "hold_cost": 1918090.2777777775
+ },
+ "replans": 16,
+ "replans_valid": 16,
+ "replans_over_budget": 0,
+ "cum_plan_s": 1842.2817161210005,
+ "wall_s": 1842.3142938613892,
+ "maxrss_mb": 558.6015625,
+ "log": [
+  {
+   "t0": 108,
+   "t1": 1080,
+   "day": 0,
+   "n_veh": 40,
+   "stats": {
+    "m": 2,
+    "ncol": 67324,
+    "nrow": 71057,
+    "nnz": 606525,
+    "n_int": 66312,
+    "n_x": 4300,
+    "n_y": 38880,
+    "n_z": 21212,
+    "n_w": 556,
+    "n_e": 44,
+    "n_o": 79,
+    "rows": {
+     "cover": 79,
+     "defer": 42,
+     "prec": 42,
+     "release": 1,
+     "flow": 38880,
+     "guard": 5488,
+     "cap": 972,
+     "handover": 486,
+     "cap_calendar": 0,
+     "precond": 5348,
+     "res": 18720,
+     "trip": 556,
+     "crew": 412,
+     "late": 30
+    },
+    "build_s": 0.549,
+    "nnz_y": 127256
+   },
+   "build_s": 0.6349999139999909,
+   "cand_construct": [
+    10.0,
+    3991725.694444444
+   ],
+   "cand_defer_all": [
+    78880.0,
+    5877075.694444445
+   ],
+   "init_source": "construct",
+   "init_s": 0.7042142320000266,
+   "init_F": 10.0,
+   "init_obj": 3991725.694444444,
+   "init_parts": {
+    "hold": 157725.69444444447,
+    "work": 3080000.0,
+    "residual": 620000.0,
+    "pickup_wait": 0.0,
+    "trips": 134000.0,
+    "rent": 0.0,
+    "late": 0.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 10.0,
+   "stage1_iter": 28,
+   "stage1_s": 40.057030853000015,
+   "op_use": {
+    "random": 13,
+    "trip": 13,
+    "overflow": 4,
+    "related": 14,
+    "cost": 8
+   },
+   "op_acc": {
+    "cost": 2,
+    "related": 1,
+    "random": 1
+   },
+   "lns_iter": 52,
+   "lns_acc": 4,
+   "final_F": 10.0,
+   "final_obj": 3959725.6944444417,
+   "final_parts": {
+    "hold": 157725.6944444444,
+    "work": 3079999.999999997,
+    "residual": 620000.0,
+    "pickup_wait": 0.0,
+    "trips": 102000.0,
+    "rent": 0.0,
+    "late": 0.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.07014630399999,
+   "maxrss_mb": 450.171875
+  },
+  {
+   "t0": 396,
+   "t1": 1368,
+   "day": 1,
+   "n_veh": 60,
+   "stats": {
+    "m": 2,
+    "ncol": 98711,
+    "nrow": 104811,
+    "nnz": 731266,
+    "n_int": 97679,
+    "n_x": 4196,
+    "n_y": 58320,
+    "n_z": 32257,
+    "n_w": 556,
+    "n_e": 1010,
+    "n_o": 82,
+    "rows": {
+     "cover": 82,
+     "defer": 50,
+     "prec": 50,
+     "release": 18,
+     "flow": 58320,
+     "guard": 8350,
+     "cap": 972,
+     "handover": 486,
+     "cap_calendar": 0,
+     "precond": 8129,
+     "res": 27360,
+     "trip": 556,
+     "crew": 412,
+     "late": 25
+    },
+    "build_s": 0.728,
+    "nnz_y": 191076
+   },
+   "build_s": 0.8373510339999939,
+   "cand_construct": [
+    40.0,
+    4343289.583333333
+   ],
+   "cand_defer_all": [
+    93110.0,
+    6918843.75
+   ],
+   "init_source": "construct",
+   "init_s": 0.9098623600000337,
+   "init_F": 40.0,
+   "init_obj": 4343289.583333333,
+   "init_parts": {
+    "hold": 153489.58333333334,
+    "work": 3265000.0,
+    "residual": 730000.0,
+    "pickup_wait": 0.0,
+    "trips": 150000.0,
+    "rent": 25000.0,
+    "late": 19800.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 20.0,
+   "stage1_iter": 57,
+   "stage1_s": 40.16613990499991,
+   "op_use": {
+    "trip": 21,
+    "related": 25,
+    "overflow": 13,
+    "random": 22,
+    "cost": 1
+   },
+   "op_acc": {
+    "trip": 5,
+    "random": 7,
+    "related": 1,
+    "cost": 1
+   },
+   "lns_iter": 82,
+   "lns_acc": 14,
+   "final_F": 20.0,
+   "final_obj": 4629897.916666666,
+   "final_parts": {
+    "hold": 208697.9166666667,
+    "work": 3020000.0,
+    "residual": 975000.0,
+    "pickup_wait": 64200.0,
+    "trips": 146000.0,
+    "rent": 15000.000000000011,
+    "late": 201000.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.09792966500004,
+   "maxrss_mb": 466.84765625
+  },
+  {
+   "t0": 684,
+   "t1": 2232,
+   "day": 2,
+   "n_veh": 70,
+   "stats": {
+    "m": 2,
+    "ncol": 156013,
+    "nrow": 167162,
+    "nnz": 1059579,
+    "n_int": 154395,
+    "n_x": 5297,
+    "n_y": 108360,
+    "n_z": 37647,
+    "n_w": 556,
+    "n_e": 1174,
+    "n_o": 100,
+    "rows": {
+     "cover": 100,
+     "defer": 65,
+     "prec": 65,
+     "release": 19,
+     "flow": 108360,
+     "guard": 9746,
+     "cap": 1548,
+     "handover": 774,
+     "cap_calendar": 0,
+     "precond": 9487,
+     "res": 36000,
+     "trip": 556,
+     "crew": 412,
+     "late": 29
+    },
+    "build_s": 0.877,
+    "nnz_y": 343886
+   },
+   "build_s": 1.036626189000117,
+   "cand_construct": [
+    100.0,
+    5886700.0
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.1372088800001166,
+   "init_F": 100.0,
+   "init_obj": 5886700.0,
+   "init_parts": {
+    "hold": 252500.0,
+    "work": 4575000.0,
+    "residual": 595000.0,
+    "pickup_wait": 0.0,
+    "trips": 296000.0,
+    "rent": 125000.0,
+    "late": 43200.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 40.0,
+   "stage1_iter": 28,
+   "stage1_s": 40.64727377600002,
+   "op_use": {
+    "random": 13,
+    "overflow": 9,
+    "trip": 7,
+    "related": 14,
+    "cost": 5
+   },
+   "op_acc": {
+    "random": 6,
+    "overflow": 1,
+    "trip": 1
+   },
+   "lns_iter": 48,
+   "lns_acc": 8,
+   "final_F": 40.0,
+   "final_obj": 6756345.833333335,
+   "final_parts": {
+    "hold": 418645.83333333366,
+    "work": 3645000.0,
+    "residual": 1525000.0,
+    "pickup_wait": 0.0,
+    "trips": 424000.0000000008,
+    "rent": 129999.99999999971,
+    "late": 613700.0000000002,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.17614048500013,
+   "maxrss_mb": 466.84765625
+  },
+  {
+   "t0": 972,
+   "t1": 2520,
+   "day": 3,
+   "n_veh": 74,
+   "stats": {
+    "m": 2,
+    "ncol": 164879,
+    "nrow": 174489,
+    "nnz": 1148110,
+    "n_int": 163257,
+    "n_x": 5836,
+    "n_y": 114552,
+    "n_z": 39849,
+    "n_w": 556,
+    "n_e": 1098,
+    "n_o": 105,
+    "rows": {
+     "cover": 105,
+     "defer": 66,
+     "prec": 66,
+     "release": 19,
+     "flow": 114552,
+     "guard": 10316,
+     "cap": 1548,
+     "handover": 774,
+     "cap_calendar": 0,
+     "precond": 10041,
+     "res": 36000,
+     "trip": 556,
+     "crew": 412,
+     "late": 33
+    },
+    "build_s": 0.929,
+    "nnz_y": 363555
+   },
+   "build_s": 1.1003120130001207,
+   "cand_construct": [
+    90.0,
+    6109061.111111111
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.212643911999976,
+   "init_F": 90.0,
+   "init_obj": 6109061.111111111,
+   "init_parts": {
+    "hold": 262361.1111111111,
+    "work": 4610000.0,
+    "residual": 555000.0,
+    "pickup_wait": 0.0,
+    "trips": 332000.0,
+    "rent": 320000.0,
+    "late": 29700.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 50.0,
+   "stage1_iter": 19,
+   "stage1_s": 41.674671064999984,
+   "op_use": {
+    "overflow": 7,
+    "related": 9,
+    "trip": 9,
+    "random": 7,
+    "cost": 5
+   },
+   "op_acc": {
+    "overflow": 2,
+    "related": 1,
+    "random": 1,
+    "trip": 1
+   },
+   "lns_iter": 37,
+   "lns_acc": 5,
+   "final_F": 50.0,
+   "final_obj": 7067227.777777778,
+   "final_parts": {
+    "hold": 484027.77777777775,
+    "work": 4070000.0,
+    "residual": 1155000.0,
+    "pickup_wait": 7800.0,
+    "trips": 638000.0,
+    "rent": 270000.0,
+    "late": 442400.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.11788363000005,
+   "maxrss_mb": 471.5625
+  },
+  {
+   "t0": 1003,
+   "t1": 2520,
+   "day": 3,
+   "n_veh": 71,
+   "stats": {
+    "m": 2,
+    "ncol": 152354,
+    "nrow": 164862,
+    "nnz": 960851,
+    "n_int": 150765,
+    "n_x": 4770,
+    "n_y": 107778,
+    "n_z": 35486,
+    "n_w": 511,
+    "n_e": 970,
+    "n_o": 89,
+    "rows": {
+     "cover": 89,
+     "defer": 52,
+     "prec": 52,
+     "release": 18,
+     "flow": 107778,
+     "guard": 9172,
+     "cap": 1518,
+     "handover": 759,
+     "cap_calendar": 5,
+     "precond": 8960,
+     "res": 35535,
+     "trip": 511,
+     "crew": 379,
+     "late": 33
+    },
+    "build_s": 0.837,
+    "nnz_y": 341537
+   },
+   "build_s": 0.9917303339998398,
+   "cand_construct": [
+    200.0,
+    5151688.888888888
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.0989211619998969,
+   "init_F": 200.0,
+   "init_obj": 5151688.888888888,
+   "init_parts": {
+    "hold": 236388.88888888888,
+    "work": 3640000.0,
+    "residual": 495000.0,
+    "pickup_wait": 600.0,
+    "trips": 350000.0,
+    "rent": 280000.0,
+    "late": 149700.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 20.0,
+   "stage1_iter": 10,
+   "stage1_s": 40.26053450299992,
+   "op_use": {
+    "related": 5,
+    "random": 6,
+    "overflow": 2,
+    "trip": 8,
+    "cost": 8
+   },
+   "op_acc": {
+    "random": 3,
+    "trip": 2,
+    "related": 2,
+    "cost": 1
+   },
+   "lns_iter": 29,
+   "lns_acc": 8,
+   "final_F": 20.0,
+   "final_obj": 7908613.88888889,
+   "final_parts": {
+    "hold": 539513.8888888888,
+    "work": 3725000.0,
+    "residual": 770000.0,
+    "pickup_wait": 600.0,
+    "trips": 1106000.0,
+    "rent": 760000.0,
+    "late": 1007500.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.10456329699991,
+   "maxrss_mb": 471.5625
+  },
+  {
+   "t0": 1260,
+   "t1": 2808,
+   "day": 4,
+   "n_veh": 82,
+   "stats": {
+    "m": 2,
+    "ncol": 182764,
+    "nrow": 184816,
+    "nnz": 1358209,
+    "n_int": 181134,
+    "n_x": 6909,
+    "n_y": 126936,
+    "n_z": 44194,
+    "n_w": 556,
+    "n_e": 1156,
+    "n_o": 121,
+    "rows": {
+     "cover": 121,
+     "defer": 74,
+     "prec": 74,
+     "release": 20,
+     "flow": 126936,
+     "guard": 11442,
+     "cap": 1548,
+     "handover": 774,
+     "cap_calendar": 0,
+     "precond": 11136,
+     "res": 31680,
+     "trip": 556,
+     "crew": 412,
+     "late": 42
+    },
+    "build_s": 1.038,
+    "nnz_y": 402878
+   },
+   "build_s": 1.234304123000129,
+   "cand_construct": [
+    7790.0,
+    8016788.194444444
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.4150838919999842,
+   "init_F": 7790.0,
+   "init_obj": 8016788.194444444,
+   "init_parts": {
+    "hold": 439288.19444444444,
+    "work": 5630000.0,
+    "residual": 510000.0,
+    "pickup_wait": 0.0,
+    "trips": 404000.0,
+    "rent": 585000.0,
+    "late": 448500.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 30.0,
+   "stage1_iter": 11,
+   "stage1_s": 41.65517380000006,
+   "op_use": {
+    "random": 4,
+    "trip": 10,
+    "related": 10,
+    "overflow": 1,
+    "cost": 5
+   },
+   "op_acc": {
+    "trip": 3,
+    "related": 3,
+    "cost": 2,
+    "random": 1
+   },
+   "lns_iter": 30,
+   "lns_acc": 9,
+   "final_F": 30.0,
+   "final_obj": 11030459.026671529,
+   "final_parts": {
+    "hold": 898559.0277881944,
+    "work": 5060000.0,
+    "residual": 1320000.0,
+    "pickup_wait": 150000.0,
+    "trips": 935999.9988000001,
+    "rent": 640000.0000833332,
+    "late": 2025900.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.18942031400002,
+   "maxrss_mb": 494.546875
+  },
+  {
+   "t0": 1291,
+   "t1": 2808,
+   "day": 4,
+   "n_veh": 79,
+   "stats": {
+    "m": 2,
+    "ncol": 170173,
+    "nrow": 174862,
+    "nnz": 1221201,
+    "n_int": 168576,
+    "n_x": 6145,
+    "n_y": 119922,
+    "n_z": 39622,
+    "n_w": 511,
+    "n_e": 1100,
+    "n_o": 113,
+    "rows": {
+     "cover": 113,
+     "defer": 67,
+     "prec": 67,
+     "release": 20,
+     "flow": 119922,
+     "guard": 10240,
+     "cap": 1518,
+     "handover": 759,
+     "cap_calendar": 5,
+     "precond": 10004,
+     "res": 31215,
+     "trip": 511,
+     "crew": 379,
+     "late": 41
+    },
+    "build_s": 0.963,
+    "nnz_y": 380089
+   },
+   "build_s": 1.1525554600000305,
+   "cand_construct": [
+    11490.0,
+    7338881.944444445
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.328314520000049,
+   "init_F": 11490.0,
+   "init_obj": 7338881.944444445,
+   "init_parts": {
+    "hold": 477881.9444444444,
+    "work": 5090000.0,
+    "residual": 450000.0,
+    "pickup_wait": 0.0,
+    "trips": 442000.0,
+    "rent": 505000.0,
+    "late": 374000.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 30.0,
+   "stage1_iter": 11,
+   "stage1_s": 42.15539789299987,
+   "op_use": {
+    "related": 5,
+    "trip": 5,
+    "random": 10,
+    "overflow": 5,
+    "cost": 4
+   },
+   "op_acc": {
+    "random": 4,
+    "overflow": 1,
+    "trip": 1,
+    "related": 1
+   },
+   "lns_iter": 29,
+   "lns_acc": 7,
+   "final_F": 30.0,
+   "final_obj": 8421319.444444444,
+   "final_parts": {
+    "hold": 651319.4444444444,
+    "work": 4745000.0,
+    "residual": 855000.0,
+    "pickup_wait": 79800.0,
+    "trips": 476000.0,
+    "rent": 545000.0,
+    "late": 1069200.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.10012333899999,
+   "maxrss_mb": 494.546875
+  },
+  {
+   "t0": 2124,
+   "t1": 3096,
+   "day": 7,
+   "n_veh": 89,
+   "stats": {
+    "m": 2,
+    "ncol": 147515,
+    "nrow": 132652,
+    "nnz": 1289003,
+    "n_int": 146454,
+    "n_x": 7886,
+    "n_y": 86508,
+    "n_z": 48171,
+    "n_w": 556,
+    "n_e": 1926,
+    "n_o": 137,
+    "rows": {
+     "cover": 137,
+     "defer": 89,
+     "prec": 89,
+     "release": 30,
+     "flow": 86508,
+     "guard": 12472,
+     "cap": 972,
+     "handover": 486,
+     "cap_calendar": 0,
+     "precond": 12137,
+     "res": 18720,
+     "trip": 556,
+     "crew": 412,
+     "late": 43
+    },
+    "build_s": 1.156,
+    "nnz_y": 283573
+   },
+   "build_s": 1.3522714549999364,
+   "cand_construct": [
+    11650.0,
+    9579954.166666666
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.5156025279998175,
+   "init_F": 11650.0,
+   "init_obj": 9579954.166666666,
+   "init_parts": {
+    "hold": 268854.16666666674,
+    "work": 6745000.0,
+    "residual": 920000.0,
+    "pickup_wait": 79200.0,
+    "trips": 570000.0,
+    "rent": 285000.0,
+    "late": 711900.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 6610.0,
+   "stage1_iter": 12,
+   "stage1_s": 42.886710494,
+   "op_use": {
+    "related": 11,
+    "trip": 8,
+    "overflow": 2,
+    "random": 7,
+    "cost": 3
+   },
+   "op_acc": {
+    "related": 3,
+    "random": 2,
+    "cost": 1,
+    "trip": 1
+   },
+   "lns_iter": 31,
+   "lns_acc": 7,
+   "final_F": 6610.0,
+   "final_obj": 10568616.665906666,
+   "final_parts": {
+    "hold": 337916.66666666674,
+    "work": 6865000.0,
+    "residual": 980000.0,
+    "pickup_wait": 79199.99903999959,
+    "trips": 1102000.0002000001,
+    "rent": 285000.0,
+    "late": 919500.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.13705223099987,
+   "maxrss_mb": 494.546875
+  },
+  {
+   "t0": 2412,
+   "t1": 3384,
+   "day": 8,
+   "n_veh": 81,
+   "stats": {
+    "m": 2,
+    "ncol": 132313,
+    "nrow": 130712,
+    "nnz": 1120890,
+    "n_int": 131260,
+    "n_x": 6967,
+    "n_y": 78732,
+    "n_z": 42727,
+    "n_w": 556,
+    "n_e": 886,
+    "n_o": 136,
+    "rows": {
+     "cover": 136,
+     "defer": 87,
+     "prec": 87,
+     "release": 16,
+     "flow": 78732,
+     "guard": 11060,
+     "cap": 972,
+     "handover": 486,
+     "cap_calendar": 0,
+     "precond": 10767,
+     "res": 27360,
+     "trip": 556,
+     "crew": 412,
+     "late": 40
+    },
+    "build_s": 1.024,
+    "nnz_y": 257528
+   },
+   "build_s": 1.2015894809999281,
+   "cand_construct": [
+    200.0,
+    8847209.027777778
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.3334605549998741,
+   "init_F": 200.0,
+   "init_obj": 8847209.027777778,
+   "init_parts": {
+    "hold": 342309.02777777787,
+    "work": 6275000.0,
+    "residual": 1310000.0,
+    "pickup_wait": 0.0,
+    "trips": 374000.0,
+    "rent": 405000.0,
+    "late": 140900.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 170.0,
+   "stage1_iter": 12,
+   "stage1_s": 43.299567404999834,
+   "op_use": {
+    "overflow": 7,
+    "related": 5,
+    "trip": 9,
+    "random": 6,
+    "cost": 4
+   },
+   "op_acc": {
+    "overflow": 1,
+    "cost": 3,
+    "trip": 1,
+    "related": 3
+   },
+   "lns_iter": 31,
+   "lns_acc": 8,
+   "final_F": 170.0,
+   "final_obj": 9262146.527771264,
+   "final_parts": {
+    "hold": 443246.52777777787,
+    "work": 5560000.0,
+    "residual": 2025000.0,
+    "pickup_wait": 0.0,
+    "trips": 545999.9999934861,
+    "rent": 385000.0,
+    "late": 302900.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.37224844599996,
+   "maxrss_mb": 494.546875
+  },
+  {
+   "t0": 2700,
+   "t1": 4248,
+   "day": 9,
+   "n_veh": 93,
+   "stats": {
+    "m": 2,
+    "ncol": 206935,
+    "nrow": 209189,
+    "nnz": 1435948,
+    "n_int": 205294,
+    "n_x": 8207,
+    "n_y": 143964,
+    "n_z": 50014,
+    "n_w": 556,
+    "n_e": 1150,
+    "n_o": 141,
+    "rows": {
+     "cover": 141,
+     "defer": 89,
+     "prec": 89,
+     "release": 20,
+     "flow": 143964,
+     "guard": 12946,
+     "cap": 1548,
+     "handover": 774,
+     "cap_calendar": 0,
+     "precond": 12602,
+     "res": 36000,
+     "trip": 556,
+     "crew": 412,
+     "late": 47
+    },
+    "build_s": 1.184,
+    "nnz_y": 456864
+   },
+   "build_s": 1.411224534999974,
+   "cand_construct": [
+    4240.0,
+    9434367.361111112
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.5979774679999537,
+   "init_F": 4240.0,
+   "init_obj": 9434367.361111112,
+   "init_parts": {
+    "hold": 413767.3611111111,
+    "work": 6750000.0,
+    "residual": 910000.0,
+    "pickup_wait": 0.0,
+    "trips": 482000.0,
+    "rent": 820000.0,
+    "late": 58600.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 1240.0,
+   "stage1_iter": 11,
+   "stage1_s": 43.1751883070001,
+   "op_use": {
+    "overflow": 5,
+    "random": 4,
+    "related": 7,
+    "trip": 5,
+    "cost": 8
+   },
+   "op_acc": {
+    "random": 2
+   },
+   "lns_iter": 29,
+   "lns_acc": 2,
+   "final_F": 1240.0,
+   "final_obj": 10472963.194444444,
+   "final_parts": {
+    "hold": 498663.1944444445,
+    "work": 6780000.0,
+    "residual": 1000000.0,
+    "pickup_wait": 5400.0,
+    "trips": 966000.0,
+    "rent": 900000.0,
+    "late": 322900.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.19192479800017,
+   "maxrss_mb": 505.43359375
+  },
+  {
+   "t0": 2731,
+   "t1": 4248,
+   "day": 9,
+   "n_veh": 89,
+   "stats": {
+    "m": 2,
+    "ncol": 190045,
+    "nrow": 196862,
+    "nnz": 1198116,
+    "n_int": 188438,
+    "n_x": 6084,
+    "n_y": 135102,
+    "n_z": 44494,
+    "n_w": 511,
+    "n_e": 968,
+    "n_o": 118,
+    "rows": {
+     "cover": 118,
+     "defer": 71,
+     "prec": 71,
+     "release": 18,
+     "flow": 135102,
+     "guard": 11498,
+     "cap": 1518,
+     "handover": 759,
+     "cap_calendar": 5,
+     "precond": 11234,
+     "res": 35535,
+     "trip": 511,
+     "crew": 379,
+     "late": 42
+    },
+    "build_s": 1.053,
+    "nnz_y": 428127
+   },
+   "build_s": 1.253709057999913,
+   "cand_construct": [
+    2100.0,
+    7866659.722222222
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.4250262219998149,
+   "init_F": 2100.0,
+   "init_obj": 7866659.722222222,
+   "init_parts": {
+    "hold": 393159.72222222225,
+    "work": 5215000.0,
+    "residual": 1095000.0,
+    "pickup_wait": 0.0,
+    "trips": 364000.0,
+    "rent": 775000.0,
+    "late": 24500.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 1120.0,
+   "stage1_iter": 10,
+   "stage1_s": 41.09037357499983,
+   "op_use": {
+    "trip": 7,
+    "random": 4,
+    "overflow": 1,
+    "related": 9,
+    "cost": 7
+   },
+   "op_acc": {
+    "trip": 1,
+    "overflow": 1,
+    "random": 1
+   },
+   "lns_iter": 28,
+   "lns_acc": 3,
+   "final_F": 1120.0,
+   "final_obj": 9599413.888888888,
+   "final_parts": {
+    "hold": 554513.888888889,
+    "work": 5035000.0,
+    "residual": 1275000.0,
+    "pickup_wait": 120600.0,
+    "trips": 1122000.0,
+    "rent": 880000.0,
+    "late": 612300.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.11847869999974,
+   "maxrss_mb": 534.078125
+  },
+  {
+   "t0": 2780,
+   "t1": 4248,
+   "day": 9,
+   "n_veh": 82,
+   "stats": {
+    "m": 2,
+    "ncol": 164473,
+    "nrow": 176997,
+    "nnz": 915480,
+    "n_int": 162923,
+    "n_x": 3991,
+    "n_y": 120376,
+    "n_z": 36303,
+    "n_w": 447,
+    "n_e": 704,
+    "n_o": 88,
+    "rows": {
+     "cover": 88,
+     "defer": 54,
+     "prec": 54,
+     "release": 15,
+     "flow": 120376,
+     "guard": 9422,
+     "cap": 1468,
+     "handover": 734,
+     "cap_calendar": 0,
+     "precond": 9177,
+     "res": 34800,
+     "trip": 447,
+     "crew": 331,
+     "late": 30
+    },
+    "build_s": 0.732,
+    "nnz_y": 379397
+   },
+   "build_s": 0.8947772110000187,
+   "cand_construct": [
+    2800.0,
+    6211519.444444444
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.0119183679998969,
+   "init_F": 2800.0,
+   "init_obj": 6211519.444444444,
+   "init_parts": {
+    "hold": 361319.4444444445,
+    "work": 3865000.0,
+    "residual": 1015000.0,
+    "pickup_wait": 3600.0,
+    "trips": 248000.0,
+    "rent": 700000.0,
+    "late": 18600.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 40.0,
+   "stage1_iter": 13,
+   "stage1_s": 43.86426878700013,
+   "op_use": {
+    "overflow": 5,
+    "random": 9,
+    "trip": 5,
+    "related": 7,
+    "cost": 5
+   },
+   "op_acc": {
+    "overflow": 2,
+    "random": 4,
+    "trip": 3,
+    "cost": 1
+   },
+   "lns_iter": 31,
+   "lns_acc": 10,
+   "final_F": 40.0,
+   "final_obj": 6703386.10661111,
+   "final_parts": {
+    "hold": 452986.1111111111,
+    "work": 3559999.9955,
+    "residual": 1320000.0,
+    "pickup_wait": 3600.0,
+    "trips": 420000.0,
+    "rent": 680000.0,
+    "late": 266800.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.254336513,
+   "maxrss_mb": 534.078125
+  },
+  {
+   "t0": 2988,
+   "t1": 4536,
+   "day": 10,
+   "n_veh": 100,
+   "stats": {
+    "m": 2,
+    "ncol": 221894,
+    "nrow": 222097,
+    "nnz": 1515188,
+    "n_int": 220246,
+    "n_x": 7991,
+    "n_y": 154800,
+    "n_z": 54053,
+    "n_w": 556,
+    "n_e": 1440,
+    "n_o": 140,
+    "rows": {
+     "cover": 140,
+     "defer": 90,
+     "prec": 90,
+     "release": 24,
+     "flow": 154800,
+     "guard": 13996,
+     "cap": 1548,
+     "handover": 774,
+     "cap_calendar": 0,
+     "precond": 13619,
+     "res": 36000,
+     "trip": 556,
+     "crew": 412,
+     "late": 47
+    },
+    "build_s": 1.253,
+    "nnz_y": 491384
+   },
+   "build_s": 1.4951961169999777,
+   "cand_construct": [
+    8110.0,
+    9501475.0
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.685017321000032,
+   "init_F": 8110.0,
+   "init_obj": 9501475.0,
+   "init_parts": {
+    "hold": 459375.0,
+    "work": 6405000.0,
+    "residual": 1115000.0,
+    "pickup_wait": 0.0,
+    "trips": 464000.0,
+    "rent": 895000.0,
+    "late": 163100.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 3120.0,
+   "stage1_iter": 11,
+   "stage1_s": 41.34229825400007,
+   "op_use": {
+    "trip": 7,
+    "related": 3,
+    "overflow": 6,
+    "random": 10,
+    "cost": 4
+   },
+   "op_acc": {
+    "related": 1,
+    "overflow": 2,
+    "random": 1,
+    "trip": 1
+   },
+   "lns_iter": 30,
+   "lns_acc": 5,
+   "final_F": 3120.0,
+   "final_obj": 11310020.833233332,
+   "final_parts": {
+    "hold": 618020.8333333334,
+    "work": 6450000.0,
+    "residual": 1190000.0,
+    "pickup_wait": 225600.0,
+    "trips": 1303999.9999,
+    "rent": 885000.0,
+    "late": 637400.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.14666673300007,
+   "maxrss_mb": 541.47265625
+  },
+  {
+   "t0": 3019,
+   "t1": 4536,
+   "day": 10,
+   "n_veh": 95,
+   "stats": {
+    "m": 2,
+    "ncol": 202981,
+    "nrow": 207674,
+    "nnz": 1335964,
+    "n_int": 201368,
+    "n_x": 6325,
+    "n_y": 144210,
+    "n_z": 47809,
+    "n_w": 511,
+    "n_e": 1230,
+    "n_o": 118,
+    "rows": {
+     "cover": 118,
+     "defer": 74,
+     "prec": 74,
+     "release": 22,
+     "flow": 144210,
+     "guard": 12356,
+     "cap": 1518,
+     "handover": 759,
+     "cap_calendar": 5,
+     "precond": 12071,
+     "res": 35535,
+     "trip": 511,
+     "crew": 379,
+     "late": 41
+    },
+    "build_s": 1.117,
+    "nnz_y": 457152
+   },
+   "build_s": 1.3324889710002026,
+   "cand_construct": [
+    8960.0,
+    8218659.722222222
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.504967292999936,
+   "init_F": 8960.0,
+   "init_obj": 8218659.722222222,
+   "init_parts": {
+    "hold": 438159.72222222225,
+    "work": 5505000.0,
+    "residual": 915000.0,
+    "pickup_wait": 0.0,
+    "trips": 394000.0,
+    "rent": 825000.0,
+    "late": 141500.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 3140.0,
+   "stage1_iter": 11,
+   "stage1_s": 40.91741779799986,
+   "op_use": {
+    "random": 10,
+    "overflow": 2,
+    "trip": 7,
+    "related": 7,
+    "cost": 3
+   },
+   "op_acc": {
+    "random": 4,
+    "related": 1
+   },
+   "lns_iter": 29,
+   "lns_acc": 5,
+   "final_F": 3140.0,
+   "final_obj": 9831668.055555556,
+   "final_parts": {
+    "hold": 670868.0555555555,
+    "work": 5540000.0,
+    "residual": 1180000.0,
+    "pickup_wait": 25200.0,
+    "trips": 790000.0,
+    "rent": 880000.0,
+    "late": 745600.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.13533491899989,
+   "maxrss_mb": 541.47265625
+  },
+  {
+   "t0": 3068,
+   "t1": 4536,
+   "day": 10,
+   "n_veh": 84,
+   "stats": {
+    "m": 2,
+    "ncol": 168900,
+    "nrow": 180519,
+    "nnz": 1051044,
+    "n_int": 167348,
+    "n_x": 4344,
+    "n_y": 123312,
+    "n_z": 37430,
+    "n_w": 447,
+    "n_e": 710,
+    "n_o": 91,
+    "rows": {
+     "cover": 91,
+     "defer": 56,
+     "prec": 56,
+     "release": 15,
+     "flow": 123312,
+     "guard": 9714,
+     "cap": 1468,
+     "handover": 734,
+     "cap_calendar": 0,
+     "precond": 9462,
+     "res": 34800,
+     "trip": 447,
+     "crew": 331,
+     "late": 32
+    },
+    "build_s": 0.756,
+    "nnz_y": 388776
+   },
+   "build_s": 0.9312996420003401,
+   "cand_construct": [
+    4640.0,
+    6690995.138888889
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.059553280000273,
+   "init_F": 4640.0,
+   "init_obj": 6690995.138888889,
+   "init_parts": {
+    "hold": 395295.1388888889,
+    "work": 4605000.0,
+    "residual": 635000.0,
+    "pickup_wait": 1200.0,
+    "trips": 258000.0,
+    "rent": 760000.0,
+    "late": 36500.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 910.0,
+   "stage1_iter": 18,
+   "stage1_s": 43.57596120800008,
+   "op_use": {
+    "random": 10,
+    "trip": 10,
+    "overflow": 5,
+    "related": 7,
+    "cost": 4
+   },
+   "op_acc": {
+    "random": 2,
+    "trip": 3,
+    "related": 1,
+    "cost": 1
+   },
+   "lns_iter": 36,
+   "lns_acc": 7,
+   "final_F": 910.0,
+   "final_obj": 8115957.638888888,
+   "final_parts": {
+    "hold": 534357.638888889,
+    "work": 4370000.0,
+    "residual": 870000.0,
+    "pickup_wait": 1200.0,
+    "trips": 1242000.0,
+    "rent": 745000.0,
+    "late": 353400.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 115.26040720800029,
+   "maxrss_mb": 541.47265625
+  },
+  {
+   "t0": 3276,
+   "t1": 4824,
+   "day": 11,
+   "n_veh": 101,
+   "stats": {
+    "m": 2,
+    "ncol": 223697,
+    "nrow": 219671,
+    "nnz": 1573878,
+    "n_int": 222048,
+    "n_x": 7623,
+    "n_y": 156348,
+    "n_z": 54782,
+    "n_w": 556,
+    "n_e": 1340,
+    "n_o": 134,
+    "rows": {
+     "cover": 134,
+     "defer": 82,
+     "prec": 82,
+     "release": 23,
+     "flow": 156348,
+     "guard": 14184,
+     "cap": 1548,
+     "handover": 774,
+     "cap_calendar": 0,
+     "precond": 13802,
+     "res": 31680,
+     "trip": 556,
+     "crew": 412,
+     "late": 45
+    },
+    "build_s": 1.256,
+    "nnz_y": 496389
+   },
+   "build_s": 1.505110163000154,
+   "cand_construct": [
+    64670.0,
+    9548104.861111112
+   ],
+   "cand_defer_all": null,
+   "init_source": "construct",
+   "init_s": 1.756884555000397,
+   "init_F": 64670.0,
+   "init_obj": 9548104.861111112,
+   "init_parts": {
+    "hold": 552204.861111111,
+    "work": 6755000.0,
+    "residual": 910000.0,
+    "pickup_wait": 0.0,
+    "trips": 456000.0,
+    "rent": 830000.0,
+    "late": 44900.0,
+    "sigma": 0.0
+   },
+   "stage1_F": 51390.0,
+   "stage1_iter": 11,
+   "stage1_s": 42.29654808100031,
+   "op_use": {
+    "overflow": 2,
+    "trip": 12,
+    "random": 6,
+    "related": 3,
+    "cost": 6
+   },
+   "op_acc": {
+    "random": 2,
+    "trip": 1
+   },
+   "lns_iter": 29,
+   "lns_acc": 3,
+   "final_F": 51390.0,
+   "final_obj": 11439734.027777778,
+   "final_parts": {
+    "hold": 787934.0277777778,
+    "work": 6500000.0,
+    "residual": 1165000.0,
+    "pickup_wait": 177000.0,
+    "trips": 1002000.0,
+    "rent": 870000.0,
+    "late": 937800.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 114.80905953900037,
+   "maxrss_mb": 558.6015625
+  }
+ ],
+ "trajectory": {
+  "modes": [
+   [
+    1,
+    0,
+    "insp:I",
+    0,
+    0,
+    108
+   ],
+   [
+    6,
+    0,
+    "engine:I",
+    0,
+    0,
+    108
+   ],
+   [
+    6,
+    0,
+    "wash:I",
+    1,
+    1,
+    156
+   ],
+   [
+    6,
+    0,
+    "insp:I",
+    2,
+    2,
+    168
+   ],
+   [
+    7,
+    0,
+    "insp:I",
+    0,
+    0,
+    108
+   ],
+   [
+    8,
+    0,
+    "wash:I",
+    0,
+    0,
+    108
+   ],
+   [
+    8,
+    0,
+    "insp:I",
+    1,
+    1,
+    120
+   ],
+   [
+    9,
+    0,
+    "insp:I",
+    0,
+    0,
+    138
+   ],
+   [
+    10,
+    0,
+    "insp:I",
+    0,
+    0,
+    120
+   ],
+   [
+    11,
+    0,
+    "insp:I",
+    0,
+    0,
+    138
+   ],
+   [
+    12,
+    0,
+    "wash:I",
+    0,
+    0,
+    144
+   ],
+   [
+    12,
+    0,
+    "insp:I",
+    1,
+    1,
+    156
+   ],
+   [
+    14,
+    0,
+    "maint:I",
+    0,
+    0,
+    120
+   ],
+   [
+    14,
+    0,
+    "insp:I",
+    1,
+    1,
+    138
+   ],
+   [
+    15,
+    0,
+    "insp:I",
+    0,
+    0,
+    126
+   ],
+   [
+    16,
+    0,
+    "elec:I",
+    0,
+    0,
+    144
+   ],
+   [
+    16,
+    0,
+    "insp:I",
+    1,
+    1,
+    168
+   ],
+   [
+    17,
+    0,
+    "maint:I",
+    0,
+    0,
+    132
+   ],
+   [
+    17,
+    0,
+    "insp:I",
+    1,
+    1,
+    150
+   ],
+   [
+    19,
+    0,
+    "insp:I",
+    0,
+    0,
+    126
+   ],
+   [
+    20,
+    0,
+    "body_h:I",
+    0,
+    0,
+    120
+   ],
+   [
+    20,
+    0,
+    "paint_h:I",
+    1,
+    1,
+    168
+   ],
+   [
+    21,
+    0,
+    "wash:I",
+    0,
+    0,
+    114
+   ],
+   [
+    21,
+    0,
+    "insp:I",
+    1,
+    1,
+    126
+   ],
+   [
+    22,
+    0,
+    "maint:I",
+    0,
+    0,
+    120
+   ],
+   [
+    22,
+    0,
+    "insp:I",
+    1,
+    1,
+    138
+   ],
+   [
+    23,
+    0,
+    "maint:I",
+    0,
+    0,
+    120
+   ],
+   [
+    23,
+    0,
+    "wash:I",
+    1,
+    1,
+    138
+   ],
+   [
+    23,
+    0,
+    "insp:I",
+    2,
+    2,
+    150
+   ],
+   [
+    24,
+    0,
+    "wash:I",
+    0,
+    0,
+    114
+   ],
+   [
+    24,
+    0,
+    "insp:I",
+    1,
+    1,
+    126
+   ],
+   [
+    25,
+    0,
+    "wash:I",
+    0,
+    0,
+    120
+   ],
+   [
+    25,
+    0,
+    "insp:I",
+    1,
+    1,
+    132
+   ],
+   [
+    26,
+    0,
+    "maint:I",
+    0,
+    0,
+    132
+   ],
+   [
+    26,
+    0,
+    "insp:I",
+    1,
+    1,
+    150
+   ],
+   [
+    27,
+    0,
+    "body_h:I",
+    0,
+    0,
+    132
+   ],
+   [
+    28,
+    0,
+    "body_h:I",
+    0,
+    0,
+    132
+   ],
+   [
+    29,
+    0,
+    "wash:I",
+    0,
+    0,
+    144
+   ],
+   [
+    29,
+    0,
+    "insp:I",
+    1,
+    1,
+    156
+   ],
+   [
+    30,
+    0,
+    "wash:I",
+    0,
+    0,
+    150
+   ],
+   [
+    30,
+    0,
+    "insp:I",
+    1,
+    1,
+    162
+   ],
+   [
+    31,
+    0,
+    "wash:I",
+    0,
+    0,
+    150
+   ],
+   [
+    31,
+    0,
+    "insp:I",
+    1,
+    1,
+    162
+   ],
+   [
+    32,
+    0,
+    "maint:I",
+    0,
+    0,
+    156
+   ],
+   [
+    32,
+    0,
+    "wash:I",
+    1,
+    1,
+    174
+   ],
+   [
+    32,
+    0,
+    "insp:I",
+    2,
+    2,
+    186
+   ],
+   [
+    34,
+    0,
+    "body_l:I",
+    0,
+    0,
+    180
+   ],
+   [
+    36,
+    0,
+    "maint:I",
+    0,
+    0,
+    192
+   ],
+   [
+    36,
+    0,
+    "insp:I",
+    1,
+    1,
+    210
+   ],
+   [
+    38,
+    0,
+    "maint:I",
+    0,
+    0,
+    192
+   ],
+   [
+    38,
+    0,
+    "insp:I",
+    1,
+    1,
+    210
+   ],
+   [
+    0,
+    0,
+    "body_l:I",
+    0,
+    0,
+    408
+   ],
+   [
+    0,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    432
+   ],
+   [
+    0,
+    0,
+    "wash:I",
+    2,
+    2,
+    456
+   ],
+   [
+    0,
+    0,
+    "insp:I",
+    3,
+    3,
+    468
+   ],
+   [
+    4,
+    0,
+    "insp:I",
+    0,
+    0,
+    426
+   ],
+   [
+    20,
+    2,
+    "wash:I",
+    0,
+    0,
+    396
+   ],
+   [
+    20,
+    2,
+    "insp:I",
+    1,
+    1,
+    408
+   ],
+   [
+    27,
+    1,
+    "paint_h:I",
+    0,
+    0,
+    396
+   ],
+   [
+    27,
+    1,
+    "wash:I",
+    1,
+    1,
+    462
+   ],
+   [
+    27,
+    1,
+    "insp:I",
+    2,
+    2,
+    474
+   ],
+   [
+    28,
+    1,
+    "paint_h:I",
+    0,
+    0,
+    456
+   ],
+   [
+    34,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    396
+   ],
+   [
+    35,
+    0,
+    "engine:I",
+    0,
+    0,
+    396
+   ],
+   [
+    35,
+    0,
+    "insp:I",
+    1,
+    1,
+    444
+   ],
+   [
+    39,
+    0,
+    "wash:I",
+    0,
+    0,
+    396
+   ],
+   [
+    39,
+    0,
+    "insp:I",
+    1,
+    1,
+    408
+   ],
+   [
+    40,
+    0,
+    "engine:I",
+    0,
+    0,
+    396
+   ],
+   [
+    40,
+    0,
+    "wash:I",
+    1,
+    1,
+    456
+   ],
+   [
+    40,
+    0,
+    "insp:I",
+    2,
+    2,
+    468
+   ],
+   [
+    41,
+    0,
+    "elec:I",
+    0,
+    0,
+    456
+   ],
+   [
+    41,
+    0,
+    "insp:I",
+    1,
+    1,
+    480
+   ],
+   [
+    42,
+    0,
+    "wash:I",
+    0,
+    0,
+    402
+   ],
+   [
+    42,
+    0,
+    "insp:I",
+    1,
+    1,
+    414
+   ],
+   [
+    44,
+    0,
+    "elec:I",
+    0,
+    0,
+    420
+   ],
+   [
+    44,
+    0,
+    "wash:I",
+    1,
+    1,
+    444
+   ],
+   [
+    44,
+    0,
+    "insp:I",
+    2,
+    2,
+    456
+   ],
+   [
+    46,
+    0,
+    "body_l:I",
+    0,
+    0,
+    420
+   ],
+   [
+    46,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    444
+   ],
+   [
+    46,
+    0,
+    "wash:I",
+    2,
+    2,
+    468
+   ],
+   [
+    46,
+    0,
+    "insp:I",
+    3,
+    3,
+    480
+   ],
+   [
+    47,
+    0,
+    "maint:I",
+    0,
+    0,
+    432
+   ],
+   [
+    47,
+    0,
+    "wash:I",
+    1,
+    1,
+    450
+   ],
+   [
+    47,
+    0,
+    "insp:I",
+    2,
+    2,
+    462
+   ],
+   [
+    48,
+    0,
+    "wash:I",
+    0,
+    0,
+    432
+   ],
+   [
+    48,
+    0,
+    "insp:I",
+    1,
+    1,
+    444
+   ],
+   [
+    49,
+    0,
+    "wash:I",
+    0,
+    0,
+    444
+   ],
+   [
+    49,
+    0,
+    "insp:I",
+    1,
+    1,
+    456
+   ],
+   [
+    50,
+    0,
+    "body_h:I",
+    0,
+    0,
+    444
+   ],
+   [
+    51,
+    0,
+    "wash:I",
+    0,
+    0,
+    450
+   ],
+   [
+    51,
+    0,
+    "insp:I",
+    1,
+    1,
+    462
+   ],
+   [
+    52,
+    0,
+    "elec:O",
+    0,
+    0,
+    480
+   ],
+   [
+    56,
+    0,
+    "wash:I",
+    0,
+    0,
+    468
+   ],
+   [
+    56,
+    0,
+    "insp:I",
+    1,
+    1,
+    480
+   ],
+   [
+    57,
+    0,
+    "body_l:I",
+    0,
+    0,
+    468
+   ],
+   [
+    58,
+    0,
+    "wash:I",
+    0,
+    0,
+    468
+   ],
+   [
+    58,
+    0,
+    "insp:I",
+    1,
+    1,
+    480
+   ],
+   [
+    59,
+    0,
+    "maint:I",
+    0,
+    0,
+    480
+   ],
+   [
+    3,
+    0,
+    "paint_h:I",
+    0,
+    0,
+    732
+   ],
+   [
+    3,
+    0,
+    "wash:I",
+    1,
+    1,
+    780
+   ],
+   [
+    28,
+    2,
+    "wash:I",
+    0,
+    0,
+    684
+   ],
+   [
+    28,
+    2,
+    "insp:I",
+    1,
+    1,
+    696
+   ],
+   [
+    34,
+    2,
+    "wash:I",
+    0,
+    0,
+    702
+   ],
+   [
+    34,
+    2,
+    "insp:I",
+    1,
+    1,
+    714
+   ],
+   [
+    37,
+    0,
+    "maint:I",
+    0,
+    0,
+    720
+   ],
+   [
+    37,
+    0,
+    "insp:I",
+    1,
+    1,
+    738
+   ],
+   [
+    43,
+    0,
+    "maint:I",
+    0,
+    0,
+    696
+   ],
+   [
+    43,
+    0,
+    "wash:I",
+    1,
+    1,
+    714
+   ],
+   [
+    43,
+    0,
+    "insp:I",
+    2,
+    2,
+    726
+   ],
+   [
+    45,
+    0,
+    "elec:I",
+    0,
+    0,
+    708
+   ],
+   [
+    45,
+    0,
+    "insp:I",
+    1,
+    1,
+    732
+   ],
+   [
+    50,
+    1,
+    "paint_h:I",
+    0,
+    0,
+    684
+   ],
+   [
+    50,
+    1,
+    "wash:I",
+    1,
+    1,
+    732
+   ],
+   [
+    50,
+    1,
+    "insp:I",
+    2,
+    2,
+    744
+   ],
+   [
+    52,
+    1,
+    "insp:I",
+    0,
+    0,
+    768
+   ],
+   [
+    54,
+    0,
+    "body_l:I",
+    0,
+    0,
+    684
+   ],
+   [
+    54,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    708
+   ],
+   [
+    54,
+    0,
+    "wash:I",
+    2,
+    2,
+    732
+   ],
+   [
+    54,
+    0,
+    "insp:I",
+    3,
+    3,
+    744
+   ],
+   [
+    57,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    684
+   ],
+   [
+    57,
+    1,
+    "wash:I",
+    1,
+    1,
+    708
+   ],
+   [
+    57,
+    1,
+    "insp:I",
+    2,
+    2,
+    720
+   ],
+   [
+    59,
+    1,
+    "wash:I",
+    0,
+    0,
+    684
+   ],
+   [
+    59,
+    1,
+    "insp:I",
+    1,
+    1,
+    696
+   ],
+   [
+    60,
+    0,
+    "elec:I",
+    0,
+    0,
+    696
+   ],
+   [
+    60,
+    0,
+    "wash:I",
+    1,
+    1,
+    720
+   ],
+   [
+    60,
+    0,
+    "insp:I",
+    2,
+    2,
+    732
+   ],
+   [
+    62,
+    0,
+    "wash:I",
+    0,
+    0,
+    702
+   ],
+   [
+    62,
+    0,
+    "insp:I",
+    1,
+    1,
+    714
+   ],
+   [
+    64,
+    0,
+    "wash:I",
+    0,
+    0,
+    708
+   ],
+   [
+    64,
+    0,
+    "insp:I",
+    1,
+    1,
+    720
+   ],
+   [
+    66,
+    0,
+    "body_h:I",
+    0,
+    0,
+    720
+   ],
+   [
+    68,
+    0,
+    "body_l:I",
+    0,
+    0,
+    720
+   ],
+   [
+    68,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    744
+   ],
+   [
+    68,
+    0,
+    "wash:I",
+    2,
+    2,
+    768
+   ],
+   [
+    68,
+    0,
+    "insp:I",
+    3,
+    3,
+    780
+   ],
+   [
+    69,
+    0,
+    "maint:I",
+    0,
+    0,
+    732
+   ],
+   [
+    69,
+    0,
+    "wash:I",
+    1,
+    1,
+    750
+   ],
+   [
+    69,
+    0,
+    "insp:I",
+    2,
+    2,
+    762
+   ],
+   [
+    73,
+    0,
+    "body_l+paint_l:O",
+    0,
+    1,
+    744
+   ],
+   [
+    74,
+    0,
+    "maint:I",
+    0,
+    0,
+    756
+   ],
+   [
+    74,
+    0,
+    "wash:I",
+    1,
+    1,
+    774
+   ],
+   [
+    74,
+    0,
+    "insp:I",
+    2,
+    2,
+    786
+   ],
+   [
+    75,
+    0,
+    "body_l:I",
+    0,
+    0,
+    756
+   ],
+   [
+    78,
+    0,
+    "body_l:I",
+    0,
+    0,
+    768
+   ],
+   [
+    3,
+    2,
+    "insp:I",
+    0,
+    0,
+    972
+   ],
+   [
+    33,
+    0,
+    "maint:I",
+    0,
+    0,
+    996
+   ],
+   [
+    53,
+    0,
+    "elec:I",
+    0,
+    0,
+    996
+   ],
+   [
+    55,
+    0,
+    "maint:I",
+    0,
+    0,
+    996
+   ],
+   [
+    66,
+    1,
+    "paint_h:I",
+    0,
+    0,
+    996
+   ],
+   [
+    67,
+    0,
+    "maint:I",
+    0,
+    0,
+    996
+   ],
+   [
+    75,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    996
+   ],
+   [
+    78,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    972
+   ],
+   [
+    79,
+    0,
+    "body_h:I",
+    0,
+    0,
+    972
+   ],
+   [
+    81,
+    0,
+    "body_l:I",
+    0,
+    0,
+    984
+   ],
+   [
+    82,
+    0,
+    "maint:I",
+    0,
+    0,
+    984
+   ],
+   [
+    82,
+    0,
+    "insp:I",
+    1,
+    1,
+    1002
+   ],
+   [
+    83,
+    0,
+    "wash:O",
+    0,
+    0,
+    984
+   ],
+   [
+    84,
+    0,
+    "elec:I",
+    0,
+    0,
+    996
+   ],
+   [
+    85,
+    0,
+    "wash:I",
+    0,
+    0,
+    996
+   ],
+   [
+    86,
+    0,
+    "body_l:I",
+    0,
+    0,
+    996
+   ],
+   [
+    33,
+    1,
+    "insp:I",
+    0,
+    0,
+    1020
+   ],
+   [
+    55,
+    1,
+    "wash:I",
+    0,
+    0,
+    1014
+   ],
+   [
+    55,
+    1,
+    "insp:I",
+    1,
+    1,
+    1026
+   ],
+   [
+    63,
+    0,
+    "wash:I",
+    0,
+    0,
+    1020
+   ],
+   [
+    63,
+    0,
+    "insp:I",
+    1,
+    1,
+    1032
+   ],
+   [
+    66,
+    2,
+    "wash:I",
+    0,
+    0,
+    1050
+   ],
+   [
+    66,
+    2,
+    "insp:I",
+    1,
+    1,
+    1062
+   ],
+   [
+    80,
+    0,
+    "wash:I",
+    0,
+    0,
+    1038
+   ],
+   [
+    80,
+    0,
+    "insp:I",
+    1,
+    1,
+    1050
+   ],
+   [
+    81,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    1020
+   ],
+   [
+    81,
+    1,
+    "wash:I",
+    1,
+    1,
+    1044
+   ],
+   [
+    81,
+    1,
+    "insp:I",
+    2,
+    2,
+    1056
+   ],
+   [
+    83,
+    1,
+    "insp:I",
+    0,
+    0,
+    1056
+   ],
+   [
+    84,
+    1,
+    "wash:I",
+    0,
+    0,
+    1020
+   ],
+   [
+    84,
+    1,
+    "insp:I",
+    1,
+    1,
+    1032
+   ],
+   [
+    91,
+    0,
+    "maint:O",
+    0,
+    0,
+    1068
+   ],
+   [
+    92,
+    0,
+    "elec:O",
+    0,
+    0,
+    1068
+   ],
+   [
+    94,
+    0,
+    "wash:I",
+    0,
+    0,
+    1038
+   ],
+   [
+    94,
+    0,
+    "insp:I",
+    1,
+    1,
+    1050
+   ],
+   [
+    96,
+    0,
+    "wash:I",
+    0,
+    0,
+    1044
+   ],
+   [
+    96,
+    0,
+    "insp:I",
+    1,
+    1,
+    1056
+   ],
+   [
+    98,
+    0,
+    "elec:I",
+    0,
+    0,
+    1056
+   ],
+   [
+    67,
+    1,
+    "wash:O",
+    0,
+    0,
+    1284
+   ],
+   [
+    72,
+    0,
+    "body_h+paint_h:O",
+    0,
+    1,
+    1272
+   ],
+   [
+    78,
+    2,
+    "wash:I",
+    0,
+    0,
+    1266
+   ],
+   [
+    86,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    1272
+   ],
+   [
+    100,
+    0,
+    "body_l:I",
+    0,
+    0,
+    1260
+   ],
+   [
+    53,
+    1,
+    "insp:I",
+    0,
+    0,
+    1302
+   ],
+   [
+    61,
+    0,
+    "maint:I",
+    0,
+    0,
+    1308
+   ],
+   [
+    61,
+    0,
+    "insp:I",
+    1,
+    1,
+    1326
+   ],
+   [
+    67,
+    2,
+    "insp:I",
+    0,
+    0,
+    1356
+   ],
+   [
+    70,
+    0,
+    "elec:I",
+    0,
+    0,
+    1332
+   ],
+   [
+    70,
+    0,
+    "wash:I",
+    1,
+    1,
+    1356
+   ],
+   [
+    75,
+    2,
+    "wash:I",
+    0,
+    0,
+    1296
+   ],
+   [
+    75,
+    2,
+    "insp:I",
+    1,
+    1,
+    1308
+   ],
+   [
+    78,
+    3,
+    "insp:I",
+    0,
+    0,
+    1350
+   ],
+   [
+    85,
+    1,
+    "insp:I",
+    0,
+    0,
+    1356
+   ],
+   [
+    86,
+    2,
+    "wash:I",
+    0,
+    0,
+    1296
+   ],
+   [
+    86,
+    2,
+    "insp:I",
+    1,
+    1,
+    1308
+   ],
+   [
+    90,
+    0,
+    "wash:I",
+    0,
+    0,
+    1314
+   ],
+   [
+    90,
+    0,
+    "insp:I",
+    1,
+    1,
+    1326
+   ],
+   [
+    91,
+    1,
+    "insp:I",
+    0,
+    0,
+    1356
+   ],
+   [
+    92,
+    1,
+    "wash:I",
+    0,
+    0,
+    1356
+   ],
+   [
+    103,
+    0,
+    "maint:I",
+    0,
+    0,
+    1332
+   ],
+   [
+    103,
+    0,
+    "wash:I",
+    1,
+    1,
+    1350
+   ],
+   [
+    103,
+    0,
+    "insp:I",
+    2,
+    2,
+    1362
+   ],
+   [
+    106,
+    0,
+    "engine:I",
+    0,
+    0,
+    1296
+   ],
+   [
+    106,
+    0,
+    "insp:I",
+    1,
+    1,
+    1344
+   ],
+   [
+    107,
+    0,
+    "maint:I",
+    0,
+    0,
+    1296
+   ],
+   [
+    107,
+    0,
+    "insp:I",
+    1,
+    1,
+    1314
+   ],
+   [
+    108,
+    0,
+    "wash:I",
+    0,
+    0,
+    1296
+   ],
+   [
+    108,
+    0,
+    "insp:I",
+    1,
+    1,
+    1308
+   ],
+   [
+    109,
+    0,
+    "body_h:I",
+    0,
+    0,
+    1296
+   ],
+   [
+    110,
+    0,
+    "wash:I",
+    0,
+    0,
+    1302
+   ],
+   [
+    110,
+    0,
+    "insp:I",
+    1,
+    1,
+    1314
+   ],
+   [
+    113,
+    0,
+    "wash:I",
+    0,
+    0,
+    1314
+   ],
+   [
+    113,
+    0,
+    "insp:I",
+    1,
+    1,
+    1326
+   ],
+   [
+    115,
+    0,
+    "wash:I",
+    0,
+    0,
+    1332
+   ],
+   [
+    115,
+    0,
+    "insp:I",
+    1,
+    1,
+    1344
+   ],
+   [
+    116,
+    0,
+    "maint:I",
+    0,
+    0,
+    1344
+   ],
+   [
+    116,
+    0,
+    "insp:I",
+    1,
+    1,
+    1362
+   ],
+   [
+    117,
+    0,
+    "wash:I",
+    0,
+    0,
+    1338
+   ],
+   [
+    117,
+    0,
+    "insp:I",
+    1,
+    1,
+    1350
+   ],
+   [
+    5,
+    0,
+    "insp:I",
+    0,
+    0,
+    2136
+   ],
+   [
+    71,
+    0,
+    "maint:I",
+    0,
+    0,
+    2160
+   ],
+   [
+    71,
+    0,
+    "insp:I",
+    1,
+    1,
+    2178
+   ],
+   [
+    72,
+    2,
+    "wash:I",
+    0,
+    0,
+    2136
+   ],
+   [
+    72,
+    2,
+    "insp:I",
+    1,
+    1,
+    2148
+   ],
+   [
+    76,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2196
+   ],
+   [
+    77,
+    0,
+    "body_h+paint_h:O",
+    0,
+    1,
+    2160
+   ],
+   [
+    87,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2184
+   ],
+   [
+    87,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    2208
+   ],
+   [
+    88,
+    0,
+    "maint:I",
+    0,
+    0,
+    2148
+   ],
+   [
+    88,
+    0,
+    "insp:I",
+    1,
+    1,
+    2166
+   ],
+   [
+    89,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2208
+   ],
+   [
+    92,
+    2,
+    "insp:I",
+    0,
+    0,
+    2148
+   ],
+   [
+    93,
+    0,
+    "maint:I",
+    0,
+    0,
+    2160
+   ],
+   [
+    93,
+    0,
+    "wash:I",
+    1,
+    1,
+    2178
+   ],
+   [
+    93,
+    0,
+    "insp:I",
+    2,
+    2,
+    2190
+   ],
+   [
+    95,
+    0,
+    "wash:I",
+    0,
+    0,
+    2178
+   ],
+   [
+    95,
+    0,
+    "insp:I",
+    1,
+    1,
+    2190
+   ],
+   [
+    98,
+    1,
+    "wash:I",
+    0,
+    0,
+    2154
+   ],
+   [
+    98,
+    1,
+    "insp:I",
+    1,
+    1,
+    2166
+   ],
+   [
+    99,
+    0,
+    "wash:I",
+    0,
+    0,
+    2154
+   ],
+   [
+    99,
+    0,
+    "insp:I",
+    1,
+    1,
+    2166
+   ],
+   [
+    100,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    2124
+   ],
+   [
+    104,
+    0,
+    "maint:I",
+    0,
+    0,
+    2124
+   ],
+   [
+    104,
+    0,
+    "insp:I",
+    1,
+    1,
+    2148
+   ],
+   [
+    105,
+    0,
+    "body_l+paint_l:O",
+    0,
+    1,
+    2136
+   ],
+   [
+    118,
+    0,
+    "maint:I",
+    0,
+    0,
+    2196
+   ],
+   [
+    118,
+    0,
+    "wash:I",
+    1,
+    1,
+    2214
+   ],
+   [
+    118,
+    0,
+    "insp:I",
+    2,
+    2,
+    2226
+   ],
+   [
+    119,
+    0,
+    "body_h+paint_h:O",
+    0,
+    1,
+    2136
+   ],
+   [
+    120,
+    0,
+    "wash:I",
+    0,
+    0,
+    2130
+   ],
+   [
+    120,
+    0,
+    "insp:I",
+    1,
+    1,
+    2160
+   ],
+   [
+    121,
+    0,
+    "maint:I",
+    0,
+    0,
+    2148
+   ],
+   [
+    121,
+    0,
+    "insp:I",
+    1,
+    1,
+    2166
+   ],
+   [
+    123,
+    0,
+    "maint:I",
+    0,
+    0,
+    2148
+   ],
+   [
+    123,
+    0,
+    "wash:I",
+    1,
+    1,
+    2166
+   ],
+   [
+    123,
+    0,
+    "insp:I",
+    2,
+    2,
+    2178
+   ],
+   [
+    124,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2160
+   ],
+   [
+    124,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    2184
+   ],
+   [
+    124,
+    0,
+    "wash:I",
+    2,
+    2,
+    2208
+   ],
+   [
+    124,
+    0,
+    "insp:I",
+    3,
+    3,
+    2220
+   ],
+   [
+    126,
+    0,
+    "elec:I",
+    0,
+    0,
+    2172
+   ],
+   [
+    126,
+    0,
+    "insp:I",
+    1,
+    1,
+    2196
+   ],
+   [
+    129,
+    0,
+    "body_h:I",
+    0,
+    0,
+    2184
+   ],
+   [
+    130,
+    0,
+    "elec:I",
+    0,
+    0,
+    2184
+   ],
+   [
+    130,
+    0,
+    "insp:I",
+    1,
+    1,
+    2208
+   ],
+   [
+    131,
+    0,
+    "body_h+paint_h:O",
+    0,
+    1,
+    2220
+   ],
+   [
+    132,
+    0,
+    "elec:I",
+    0,
+    0,
+    2196
+   ],
+   [
+    132,
+    0,
+    "insp:I",
+    1,
+    1,
+    2220
+   ],
+   [
+    133,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2196
+   ],
+   [
+    134,
+    0,
+    "maint:I",
+    0,
+    0,
+    2196
+   ],
+   [
+    134,
+    0,
+    "wash:I",
+    1,
+    1,
+    2214
+   ],
+   [
+    134,
+    0,
+    "insp:I",
+    2,
+    2,
+    2226
+   ],
+   [
+    137,
+    0,
+    "elec:I",
+    0,
+    0,
+    2208
+   ],
+   [
+    139,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2208
+   ],
+   [
+    65,
+    0,
+    "body_h:I",
+    0,
+    0,
+    2412
+   ],
+   [
+    65,
+    0,
+    "paint_h:I",
+    1,
+    1,
+    2472
+   ],
+   [
+    70,
+    2,
+    "insp:I",
+    0,
+    0,
+    2424
+   ],
+   [
+    76,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    2412
+   ],
+   [
+    76,
+    1,
+    "wash:O",
+    1,
+    1,
+    2436
+   ],
+   [
+    76,
+    1,
+    "insp:I",
+    2,
+    2,
+    2508
+   ],
+   [
+    79,
+    1,
+    "paint_h:I",
+    0,
+    0,
+    2424
+   ],
+   [
+    79,
+    1,
+    "wash:I",
+    1,
+    1,
+    2472
+   ],
+   [
+    79,
+    1,
+    "insp:I",
+    2,
+    2,
+    2484
+   ],
+   [
+    87,
+    2,
+    "wash:I",
+    0,
+    0,
+    2412
+   ],
+   [
+    87,
+    2,
+    "insp:I",
+    1,
+    1,
+    2424
+   ],
+   [
+    89,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    2436
+   ],
+   [
+    89,
+    1,
+    "wash:I",
+    1,
+    1,
+    2460
+   ],
+   [
+    89,
+    1,
+    "insp:I",
+    2,
+    2,
+    2472
+   ],
+   [
+    97,
+    0,
+    "engine:I",
+    0,
+    0,
+    2412
+   ],
+   [
+    97,
+    0,
+    "wash:I",
+    1,
+    1,
+    2460
+   ],
+   [
+    97,
+    0,
+    "insp:I",
+    2,
+    2,
+    2472
+   ],
+   [
+    100,
+    2,
+    "wash:I",
+    0,
+    0,
+    2430
+   ],
+   [
+    100,
+    2,
+    "insp:I",
+    1,
+    1,
+    2442
+   ],
+   [
+    101,
+    0,
+    "maint:I",
+    0,
+    0,
+    2424
+   ],
+   [
+    102,
+    0,
+    "body_h:I",
+    0,
+    0,
+    2460
+   ],
+   [
+    111,
+    0,
+    "maint:I",
+    0,
+    0,
+    2412
+   ],
+   [
+    111,
+    0,
+    "wash:I",
+    1,
+    1,
+    2430
+   ],
+   [
+    111,
+    0,
+    "insp:I",
+    2,
+    2,
+    2442
+   ],
+   [
+    112,
+    0,
+    "wash:O",
+    0,
+    0,
+    2412
+   ],
+   [
+    114,
+    0,
+    "wash:I",
+    0,
+    0,
+    2412
+   ],
+   [
+    114,
+    0,
+    "insp:I",
+    1,
+    1,
+    2424
+   ],
+   [
+    133,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    2484
+   ],
+   [
+    133,
+    1,
+    "wash:I",
+    1,
+    1,
+    2508
+   ],
+   [
+    137,
+    1,
+    "insp:I",
+    0,
+    0,
+    2412
+   ],
+   [
+    138,
+    0,
+    "engine:I",
+    0,
+    0,
+    2412
+   ],
+   [
+    138,
+    0,
+    "insp:I",
+    1,
+    1,
+    2460
+   ],
+   [
+    139,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    2460
+   ],
+   [
+    139,
+    1,
+    "wash:I",
+    1,
+    1,
+    2484
+   ],
+   [
+    139,
+    1,
+    "insp:I",
+    2,
+    2,
+    2496
+   ],
+   [
+    140,
+    0,
+    "elec:O",
+    0,
+    0,
+    2496
+   ],
+   [
+    141,
+    0,
+    "body_h:I",
+    0,
+    0,
+    2424
+   ],
+   [
+    144,
+    0,
+    "wash:I",
+    0,
+    0,
+    2430
+   ],
+   [
+    144,
+    0,
+    "insp:I",
+    1,
+    1,
+    2442
+   ],
+   [
+    145,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2436
+   ],
+   [
+    147,
+    0,
+    "elec:I",
+    0,
+    0,
+    2448
+   ],
+   [
+    147,
+    0,
+    "insp:I",
+    1,
+    1,
+    2472
+   ],
+   [
+    149,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2460
+   ],
+   [
+    150,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2460
+   ],
+   [
+    151,
+    0,
+    "body_h:I",
+    0,
+    0,
+    2472
+   ],
+   [
+    152,
+    0,
+    "wash:I",
+    0,
+    0,
+    2472
+   ],
+   [
+    152,
+    0,
+    "insp:I",
+    1,
+    1,
+    2484
+   ],
+   [
+    155,
+    0,
+    "wash:I",
+    0,
+    0,
+    2478
+   ],
+   [
+    155,
+    0,
+    "insp:I",
+    1,
+    1,
+    2490
+   ],
+   [
+    157,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2484
+   ],
+   [
+    159,
+    0,
+    "wash:I",
+    0,
+    0,
+    2496
+   ],
+   [
+    159,
+    0,
+    "insp:I",
+    1,
+    1,
+    2508
+   ],
+   [
+    65,
+    2,
+    "wash:I",
+    0,
+    0,
+    2700
+   ],
+   [
+    65,
+    2,
+    "insp:I",
+    1,
+    1,
+    2712
+   ],
+   [
+    105,
+    2,
+    "wash:I",
+    0,
+    0,
+    2712
+   ],
+   [
+    105,
+    2,
+    "insp:I",
+    1,
+    1,
+    2724
+   ],
+   [
+    127,
+    0,
+    "body_h:I",
+    0,
+    0,
+    2700
+   ],
+   [
+    133,
+    3,
+    "insp:I",
+    0,
+    0,
+    2700
+   ],
+   [
+    142,
+    0,
+    "wash:I",
+    0,
+    0,
+    2700
+   ],
+   [
+    142,
+    0,
+    "insp:I",
+    1,
+    1,
+    2712
+   ],
+   [
+    145,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    2700
+   ],
+   [
+    145,
+    1,
+    "wash:I",
+    1,
+    1,
+    2724
+   ],
+   [
+    146,
+    0,
+    "maint:I",
+    0,
+    0,
+    2712
+   ],
+   [
+    146,
+    0,
+    "wash:I",
+    1,
+    1,
+    2730
+   ],
+   [
+    149,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    2700
+   ],
+   [
+    149,
+    1,
+    "wash:I",
+    1,
+    1,
+    2724
+   ],
+   [
+    150,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    2724
+   ],
+   [
+    151,
+    1,
+    "paint_h:I",
+    0,
+    0,
+    2724
+   ],
+   [
+    160,
+    0,
+    "body_h:I",
+    0,
+    0,
+    2712
+   ],
+   [
+    161,
+    0,
+    "wash:I",
+    0,
+    0,
+    2712
+   ],
+   [
+    161,
+    0,
+    "insp:I",
+    1,
+    1,
+    2724
+   ],
+   [
+    163,
+    0,
+    "maint:I",
+    0,
+    0,
+    2724
+   ],
+   [
+    164,
+    0,
+    "maint:I",
+    0,
+    0,
+    2724
+   ],
+   [
+    167,
+    0,
+    "elec:I",
+    0,
+    0,
+    2724
+   ],
+   [
+    168,
+    0,
+    "wash:I",
+    0,
+    0,
+    2730
+   ],
+   [
+    112,
+    1,
+    "insp:I",
+    0,
+    0,
+    2772
+   ],
+   [
+    122,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2736
+   ],
+   [
+    122,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    2760
+   ],
+   [
+    128,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2772
+   ],
+   [
+    143,
+    0,
+    "maint:I",
+    0,
+    0,
+    2736
+   ],
+   [
+    145,
+    3,
+    "insp:I",
+    0,
+    0,
+    2736
+   ],
+   [
+    146,
+    2,
+    "insp:I",
+    0,
+    0,
+    2742
+   ],
+   [
+    148,
+    0,
+    "wash:I",
+    0,
+    0,
+    2742
+   ],
+   [
+    148,
+    0,
+    "insp:I",
+    1,
+    1,
+    2754
+   ],
+   [
+    149,
+    3,
+    "insp:I",
+    0,
+    0,
+    2736
+   ],
+   [
+    150,
+    2,
+    "wash:I",
+    0,
+    0,
+    2748
+   ],
+   [
+    150,
+    2,
+    "insp:I",
+    1,
+    1,
+    2760
+   ],
+   [
+    151,
+    2,
+    "wash:I",
+    0,
+    0,
+    2778
+   ],
+   [
+    153,
+    0,
+    "wash:I",
+    0,
+    0,
+    2742
+   ],
+   [
+    153,
+    0,
+    "insp:I",
+    1,
+    1,
+    2754
+   ],
+   [
+    163,
+    1,
+    "insp:I",
+    0,
+    0,
+    2742
+   ],
+   [
+    164,
+    1,
+    "insp:I",
+    0,
+    0,
+    2742
+   ],
+   [
+    166,
+    0,
+    "wash:I",
+    0,
+    0,
+    2736
+   ],
+   [
+    166,
+    0,
+    "insp:I",
+    1,
+    1,
+    2748
+   ],
+   [
+    167,
+    1,
+    "wash:I",
+    0,
+    0,
+    2760
+   ],
+   [
+    167,
+    1,
+    "insp:I",
+    1,
+    1,
+    2772
+   ],
+   [
+    168,
+    1,
+    "insp:I",
+    0,
+    0,
+    2742
+   ],
+   [
+    170,
+    0,
+    "elec:I",
+    0,
+    0,
+    2748
+   ],
+   [
+    170,
+    0,
+    "insp:I",
+    1,
+    1,
+    2772
+   ],
+   [
+    171,
+    0,
+    "body_h:I",
+    0,
+    0,
+    2748
+   ],
+   [
+    173,
+    0,
+    "engine:I",
+    0,
+    0,
+    2760
+   ],
+   [
+    174,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2760
+   ],
+   [
+    175,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2760
+   ],
+   [
+    176,
+    0,
+    "body_l:I",
+    0,
+    0,
+    2760
+   ],
+   [
+    177,
+    0,
+    "maint:I",
+    0,
+    0,
+    2772
+   ],
+   [
+    122,
+    2,
+    "wash:I",
+    0,
+    0,
+    2784
+   ],
+   [
+    122,
+    2,
+    "insp:I",
+    1,
+    1,
+    2796
+   ],
+   [
+    140,
+    1,
+    "insp:I",
+    0,
+    0,
+    2796
+   ],
+   [
+    151,
+    3,
+    "insp:I",
+    0,
+    0,
+    2790
+   ],
+   [
+    157,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    2784
+   ],
+   [
+    177,
+    1,
+    "insp:I",
+    0,
+    0,
+    2790
+   ],
+   [
+    179,
+    0,
+    "maint:I",
+    0,
+    0,
+    2784
+   ],
+   [
+    119,
+    2,
+    "wash:I",
+    0,
+    0,
+    3000
+   ],
+   [
+    119,
+    2,
+    "insp:I",
+    1,
+    1,
+    3012
+   ],
+   [
+    128,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    2988
+   ],
+   [
+    129,
+    1,
+    "paint_h:I",
+    0,
+    0,
+    2988
+   ],
+   [
+    136,
+    0,
+    "elec:I",
+    0,
+    0,
+    2988
+   ],
+   [
+    136,
+    0,
+    "insp:I",
+    1,
+    1,
+    3012
+   ],
+   [
+    143,
+    1,
+    "wash:I",
+    0,
+    0,
+    3006
+   ],
+   [
+    143,
+    1,
+    "insp:I",
+    1,
+    1,
+    3018
+   ],
+   [
+    158,
+    0,
+    "maint:I",
+    0,
+    0,
+    3012
+   ],
+   [
+    162,
+    0,
+    "wash:I",
+    0,
+    0,
+    3018
+   ],
+   [
+    173,
+    1,
+    "wash:I",
+    0,
+    0,
+    3000
+   ],
+   [
+    173,
+    1,
+    "insp:I",
+    1,
+    1,
+    3012
+   ],
+   [
+    175,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    3012
+   ],
+   [
+    178,
+    0,
+    "maint:I",
+    0,
+    0,
+    2988
+   ],
+   [
+    178,
+    0,
+    "wash:I",
+    1,
+    1,
+    3006
+   ],
+   [
+    178,
+    0,
+    "insp:I",
+    2,
+    2,
+    3018
+   ],
+   [
+    179,
+    1,
+    "wash:I",
+    0,
+    0,
+    2994
+   ],
+   [
+    181,
+    0,
+    "maint:I",
+    0,
+    0,
+    3000
+   ],
+   [
+    181,
+    0,
+    "wash:I",
+    1,
+    1,
+    3018
+   ],
+   [
+    77,
+    2,
+    "wash:I",
+    0,
+    0,
+    3024
+   ],
+   [
+    77,
+    2,
+    "insp:I",
+    1,
+    1,
+    3036
+   ],
+   [
+    127,
+    1,
+    "paint_h:I",
+    0,
+    0,
+    3048
+   ],
+   [
+    128,
+    2,
+    "wash:I",
+    0,
+    0,
+    3066
+   ],
+   [
+    129,
+    2,
+    "wash:I",
+    0,
+    0,
+    3036
+   ],
+   [
+    129,
+    2,
+    "insp:I",
+    1,
+    1,
+    3048
+   ],
+   [
+    158,
+    1,
+    "insp:I",
+    0,
+    0,
+    3030
+   ],
+   [
+    162,
+    1,
+    "insp:I",
+    0,
+    0,
+    3030
+   ],
+   [
+    174,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    3036
+   ],
+   [
+    174,
+    1,
+    "wash:I",
+    1,
+    1,
+    3060
+   ],
+   [
+    175,
+    2,
+    "wash:I",
+    0,
+    0,
+    3036
+   ],
+   [
+    175,
+    2,
+    "insp:I",
+    1,
+    1,
+    3048
+   ],
+   [
+    181,
+    2,
+    "insp:I",
+    0,
+    0,
+    3030
+   ],
+   [
+    184,
+    0,
+    "maint:I",
+    0,
+    0,
+    3048
+   ],
+   [
+    187,
+    0,
+    "wash:I",
+    0,
+    0,
+    3042
+   ],
+   [
+    187,
+    0,
+    "insp:I",
+    1,
+    1,
+    3054
+   ],
+   [
+    188,
+    0,
+    "body_l:I",
+    0,
+    0,
+    3048
+   ],
+   [
+    189,
+    0,
+    "wash:I",
+    0,
+    0,
+    3042
+   ],
+   [
+    189,
+    0,
+    "insp:I",
+    1,
+    1,
+    3054
+   ],
+   [
+    190,
+    0,
+    "maint:I",
+    0,
+    0,
+    3060
+   ],
+   [
+    191,
+    0,
+    "body_l:I",
+    0,
+    0,
+    3060
+   ],
+   [
+    192,
+    0,
+    "wash:I",
+    0,
+    0,
+    3060
+   ],
+   [
+    193,
+    0,
+    "body_l:I",
+    0,
+    0,
+    3060
+   ],
+   [
+    195,
+    0,
+    "body_l:I",
+    0,
+    0,
+    3060
+   ],
+   [
+    197,
+    0,
+    "wash:I",
+    0,
+    0,
+    3066
+   ],
+   [
+    125,
+    0,
+    "wash:I",
+    0,
+    0,
+    3078
+   ],
+   [
+    128,
+    3,
+    "insp:I",
+    0,
+    0,
+    3078
+   ],
+   [
+    131,
+    2,
+    "wash:I",
+    0,
+    0,
+    3084
+   ],
+   [
+    188,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    3072
+   ],
+   [
+    190,
+    1,
+    "insp:I",
+    0,
+    0,
+    3078
+   ],
+   [
+    197,
+    1,
+    "insp:I",
+    0,
+    0,
+    3078
+   ],
+   [
+    198,
+    0,
+    "maint:O",
+    0,
+    0,
+    3072
+   ],
+   [
+    199,
+    0,
+    "elec:O",
+    0,
+    0,
+    3072
+   ],
+   [
+    101,
+    1,
+    "wash:O",
+    0,
+    0,
+    3288
+   ],
+   [
+    125,
+    1,
+    "insp:I",
+    0,
+    0,
+    3276
+   ],
+   [
+    127,
+    2,
+    "wash:I",
+    0,
+    0,
+    3276
+   ],
+   [
+    127,
+    2,
+    "insp:I",
+    1,
+    1,
+    3288
+   ],
+   [
+    131,
+    3,
+    "insp:I",
+    0,
+    0,
+    3276
+   ],
+   [
+    157,
+    2,
+    "wash:I",
+    0,
+    0,
+    3300
+   ],
+   [
+    157,
+    2,
+    "insp:I",
+    1,
+    1,
+    3312
+   ],
+   [
+    172,
+    0,
+    "engine:I",
+    0,
+    0,
+    3324
+   ],
+   [
+    172,
+    0,
+    "wash:I",
+    1,
+    1,
+    3372
+   ],
+   [
+    174,
+    3,
+    "insp:I",
+    0,
+    0,
+    3318
+   ],
+   [
+    176,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    3360
+   ],
+   [
+    179,
+    2,
+    "insp:I",
+    0,
+    0,
+    3276
+   ],
+   [
+    185,
+    0,
+    "body_l:I",
+    0,
+    0,
+    3288
+   ],
+   [
+    185,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    3312
+   ],
+   [
+    188,
+    2,
+    "wash:I",
+    0,
+    0,
+    3276
+   ],
+   [
+    188,
+    2,
+    "insp:I",
+    1,
+    1,
+    3288
+   ],
+   [
+    191,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    3276
+   ],
+   [
+    191,
+    1,
+    "wash:I",
+    1,
+    1,
+    3300
+   ],
+   [
+    191,
+    1,
+    "insp:I",
+    2,
+    2,
+    3312
+   ],
+   [
+    193,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    3276
+   ],
+   [
+    193,
+    1,
+    "wash:I",
+    1,
+    1,
+    3300
+   ],
+   [
+    193,
+    1,
+    "insp:I",
+    2,
+    2,
+    3312
+   ],
+   [
+    199,
+    1,
+    "insp:I",
+    0,
+    0,
+    3360
+   ],
+   [
+    200,
+    0,
+    "wash:I",
+    0,
+    0,
+    3306
+   ],
+   [
+    200,
+    0,
+    "insp:I",
+    1,
+    1,
+    3318
+   ],
+   [
+    201,
+    0,
+    "engine:I",
+    0,
+    0,
+    3300
+   ],
+   [
+    201,
+    0,
+    "wash:I",
+    1,
+    1,
+    3348
+   ],
+   [
+    201,
+    0,
+    "insp:I",
+    2,
+    2,
+    3360
+   ],
+   [
+    205,
+    0,
+    "wash:I",
+    0,
+    0,
+    3312
+   ],
+   [
+    205,
+    0,
+    "insp:I",
+    1,
+    1,
+    3324
+   ],
+   [
+    206,
+    0,
+    "maint:I",
+    0,
+    0,
+    3312
+   ],
+   [
+    206,
+    0,
+    "wash:I",
+    1,
+    1,
+    3330
+   ],
+   [
+    206,
+    0,
+    "insp:I",
+    2,
+    2,
+    3342
+   ],
+   [
+    207,
+    0,
+    "body_l:I",
+    0,
+    0,
+    3312
+   ],
+   [
+    207,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    3360
+   ],
+   [
+    208,
+    0,
+    "engine:I",
+    0,
+    0,
+    3312
+   ],
+   [
+    208,
+    0,
+    "insp:I",
+    1,
+    1,
+    3360
+   ],
+   [
+    209,
+    0,
+    "elec:I",
+    0,
+    0,
+    3324
+   ],
+   [
+    209,
+    0,
+    "insp:I",
+    1,
+    1,
+    3348
+   ],
+   [
+    212,
+    0,
+    "elec:I",
+    0,
+    0,
+    3324
+   ],
+   [
+    212,
+    0,
+    "insp:I",
+    1,
+    1,
+    3348
+   ],
+   [
+    213,
+    0,
+    "body_l:I",
+    0,
+    0,
+    3336
+   ],
+   [
+    215,
+    0,
+    "elec:I",
+    0,
+    0,
+    3336
+   ],
+   [
+    215,
+    0,
+    "insp:I",
+    1,
+    1,
+    3360
+   ],
+   [
+    216,
+    0,
+    "maint:I",
+    0,
+    0,
+    3360
+   ],
+   [
+    218,
+    0,
+    "wash:I",
+    0,
+    0,
+    3372
+   ],
+   [
+    219,
+    0,
+    "wash:I",
+    0,
+    0,
+    3372
+   ]
+  ],
+  "trips": [
+   [
+    0,
+    0,
+    108
+   ],
+   [
+    1,
+    6,
+    114
+   ],
+   [
+    3,
+    4,
+    138
+   ],
+   [
+    4,
+    6,
+    108
+   ],
+   [
+    5,
+    6,
+    108
+   ],
+   [
+    6,
+    4,
+    174
+   ],
+   [
+    7,
+    6,
+    114
+   ],
+   [
+    8,
+    6,
+    126
+   ],
+   [
+    9,
+    3,
+    132
+   ],
+   [
+    9,
+    4,
+    150
+   ],
+   [
+    10,
+    1,
+    114
+   ],
+   [
+    10,
+    6,
+    126
+   ],
+   [
+    11,
+    3,
+    132
+   ],
+   [
+    11,
+    4,
+    150
+   ],
+   [
+    12,
+    1,
+    138
+   ],
+   [
+    14,
+    0,
+    144
+   ],
+   [
+    14,
+    1,
+    114
+   ],
+   [
+    15,
+    4,
+    174
+   ],
+   [
+    15,
+    5,
+    120
+   ],
+   [
+    16,
+    1,
+    132
+   ],
+   [
+    16,
+    4,
+    174
+   ],
+   [
+    17,
+    4,
+    174
+   ],
+   [
+    17,
+    5,
+    120
+   ],
+   [
+    19,
+    4,
+    138
+   ],
+   [
+    19,
+    5,
+    120
+   ],
+   [
+    21,
+    4,
+    150
+   ],
+   [
+    22,
+    0,
+    144
+   ],
+   [
+    23,
+    2,
+    192
+   ],
+   [
+    24,
+    6,
+    132
+   ],
+   [
+    25,
+    4,
+    138
+   ],
+   [
+    26,
+    4,
+    174
+   ],
+   [
+    29,
+    4,
+    174
+   ],
+   [
+    30,
+    0,
+    168
+   ],
+   [
+    31,
+    0,
+    168
+   ],
+   [
+    32,
+    2,
+    192
+   ],
+   [
+    0,
+    0,
+    474
+   ],
+   [
+    0,
+    1,
+    402
+   ],
+   [
+    4,
+    0,
+    444
+   ],
+   [
+    4,
+    1,
+    420
+   ],
+   [
+    8,
+    7,
+    426
+   ],
+   [
+    11,
+    5,
+    414
+   ],
+   [
+    12,
+    4,
+    414
+   ],
+   [
+    15,
+    5,
+    414
+   ],
+   [
+    17,
+    1,
+    474
+   ],
+   [
+    19,
+    1,
+    438
+   ],
+   [
+    20,
+    4,
+    414
+   ],
+   [
+    21,
+    1,
+    402
+   ],
+   [
+    22,
+    7,
+    426
+   ],
+   [
+    25,
+    5,
+    414
+   ],
+   [
+    26,
+    6,
+    462
+   ],
+   [
+    26,
+    7,
+    444
+   ],
+   [
+    28,
+    2,
+    408
+   ],
+   [
+    28,
+    3,
+    444
+   ],
+   [
+    29,
+    1,
+    432
+   ],
+   [
+    33,
+    2,
+    438
+   ],
+   [
+    34,
+    6,
+    426
+   ],
+   [
+    35,
+    0,
+    450
+   ],
+   [
+    36,
+    0,
+    396
+   ],
+   [
+    37,
+    0,
+    408
+   ],
+   [
+    38,
+    4,
+    414
+   ],
+   [
+    39,
+    2,
+    438
+   ],
+   [
+    41,
+    2,
+    408
+   ],
+   [
+    41,
+    3,
+    444
+   ],
+   [
+    42,
+    2,
+    432
+   ],
+   [
+    43,
+    2,
+    432
+   ],
+   [
+    44,
+    0,
+    462
+   ],
+   [
+    45,
+    6,
+    426
+   ],
+   [
+    45,
+    6,
+    456
+   ],
+   [
+    45,
+    7,
+    444
+   ],
+   [
+    47,
+    2,
+    468
+   ],
+   [
+    48,
+    0,
+    450
+   ],
+   [
+    49,
+    0,
+    462
+   ],
+   [
+    51,
+    2,
+    468
+   ],
+   [
+    55,
+    6,
+    474
+   ],
+   [
+    1,
+    6,
+    708
+   ],
+   [
+    1,
+    7,
+    696
+   ],
+   [
+    3,
+    1,
+    720
+   ],
+   [
+    6,
+    3,
+    750
+   ],
+   [
+    7,
+    1,
+    690
+   ],
+   [
+    9,
+    3,
+    732
+   ],
+   [
+    10,
+    1,
+    762
+   ],
+   [
+    12,
+    1,
+    726
+   ],
+   [
+    14,
+    1,
+    690
+   ],
+   [
+    18,
+    3,
+    744
+   ],
+   [
+    20,
+    3,
+    750
+   ],
+   [
+    23,
+    2,
+    702
+   ],
+   [
+    23,
+    7,
+    690
+   ],
+   [
+    23,
+    7,
+    732
+   ],
+   [
+    24,
+    3,
+    744
+   ],
+   [
+    26,
+    1,
+    726
+   ],
+   [
+    27,
+    6,
+    684
+   ],
+   [
+    28,
+    2,
+    702
+   ],
+   [
+    30,
+    3,
+    732
+   ],
+   [
+    31,
+    1,
+    762
+   ],
+   [
+    32,
+    7,
+    702
+   ],
+   [
+    34,
+    0,
+    720
+   ],
+   [
+    34,
+    1,
+    696
+   ],
+   [
+    36,
+    1,
+    714
+   ],
+   [
+    37,
+    1,
+    714
+   ],
+   [
+    37,
+    6,
+    744
+   ],
+   [
+    39,
+    7,
+    702
+   ],
+   [
+    40,
+    6,
+    684
+   ],
+   [
+    41,
+    0,
+    684
+   ],
+   [
+    43,
+    2,
+    732
+   ],
+   [
+    43,
+    7,
+    690
+   ],
+   [
+    45,
+    1,
+    696
+   ],
+   [
+    45,
+    6,
+    738
+   ],
+   [
+    46,
+    0,
+    684
+   ],
+   [
+    49,
+    7,
+    690
+   ],
+   [
+    50,
+    6,
+    750
+   ],
+   [
+    52,
+    0,
+    774
+   ],
+   [
+    53,
+    6,
+    684
+   ],
+   [
+    54,
+    6,
+    750
+   ],
+   [
+    56,
+    6,
+    684
+   ],
+   [
+    57,
+    6,
+    726
+   ],
+   [
+    58,
+    2,
+    702
+   ],
+   [
+    58,
+    7,
+    732
+   ],
+   [
+    59,
+    1,
+    786
+   ],
+   [
+    59,
+    2,
+    702
+   ],
+   [
+    60,
+    6,
+    738
+   ],
+   [
+    61,
+    6,
+    708
+   ],
+   [
+    62,
+    2,
+    732
+   ],
+   [
+    63,
+    6,
+    714
+   ],
+   [
+    64,
+    6,
+    726
+   ],
+   [
+    65,
+    6,
+    714
+   ],
+   [
+    67,
+    6,
+    714
+   ],
+   [
+    67,
+    6,
+    726
+   ],
+   [
+    67,
+    7,
+    720
+   ],
+   [
+    68,
+    0,
+    786
+   ],
+   [
+    70,
+    6,
+    726
+   ],
+   [
+    71,
+    6,
+    732
+   ],
+   [
+    72,
+    6,
+    750
+   ],
+   [
+    0,
+    7,
+    984
+   ],
+   [
+    1,
+    7,
+    1002
+   ],
+   [
+    3,
+    6,
+    978
+   ],
+   [
+    18,
+    0,
+    972
+   ],
+   [
+    24,
+    0,
+    972
+   ],
+   [
+    33,
+    1,
+    990
+   ],
+   [
+    35,
+    7,
+    978
+   ],
+   [
+    42,
+    7,
+    978
+   ],
+   [
+    53,
+    1,
+    984
+   ],
+   [
+    55,
+    1,
+    984
+   ],
+   [
+    59,
+    6,
+    972
+   ],
+   [
+    64,
+    7,
+    1002
+   ],
+   [
+    67,
+    1,
+    990
+   ],
+   [
+    69,
+    6,
+    972
+   ],
+   [
+    74,
+    6,
+    972
+   ],
+   [
+    76,
+    6,
+    972
+   ],
+   [
+    77,
+    6,
+    978
+   ],
+   [
+    80,
+    6,
+    990
+   ],
+   [
+    87,
+    0,
+    1002
+   ],
+   [
+    13,
+    1,
+    1038
+   ],
+   [
+    33,
+    6,
+    1026
+   ],
+   [
+    34,
+    1,
+    1038
+   ],
+   [
+    37,
+    1,
+    1026
+   ],
+   [
+    40,
+    7,
+    1014
+   ],
+   [
+    43,
+    7,
+    1008
+   ],
+   [
+    47,
+    1,
+    1014
+   ],
+   [
+    53,
+    0,
+    1020
+   ],
+   [
+    54,
+    7,
+    1014
+   ],
+   [
+    55,
+    6,
+    1038
+   ],
+   [
+    63,
+    1,
+    1014
+   ],
+   [
+    63,
+    6,
+    1038
+   ],
+   [
+    66,
+    6,
+    1068
+   ],
+   [
+    67,
+    6,
+    1014
+   ],
+   [
+    67,
+    6,
+    1026
+   ],
+   [
+    67,
+    7,
+    1020
+   ],
+   [
+    72,
+    1,
+    1032
+   ],
+   [
+    75,
+    6,
+    1032
+   ],
+   [
+    78,
+    6,
+    1008
+   ],
+   [
+    79,
+    6,
+    1020
+   ],
+   [
+    79,
+    6,
+    1074
+   ],
+   [
+    79,
+    7,
+    1068
+   ],
+   [
+    80,
+    1,
+    1032
+   ],
+   [
+    80,
+    6,
+    1056
+   ],
+   [
+    81,
+    6,
+    1062
+   ],
+   [
+    82,
+    6,
+    1008
+   ],
+   [
+    83,
+    0,
+    1062
+   ],
+   [
+    84,
+    6,
+    1038
+   ],
+   [
+    85,
+    0,
+    1008
+   ],
+   [
+    87,
+    6,
+    1074
+   ],
+   [
+    87,
+    7,
+    1068
+   ],
+   [
+    88,
+    6,
+    1008
+   ],
+   [
+    89,
+    0,
+    1008
+   ],
+   [
+    89,
+    6,
+    1074
+   ],
+   [
+    89,
+    7,
+    1068
+   ],
+   [
+    90,
+    6,
+    1014
+   ],
+   [
+    90,
+    6,
+    1032
+   ],
+   [
+    90,
+    7,
+    1020
+   ],
+   [
+    91,
+    6,
+    1026
+   ],
+   [
+    91,
+    7,
+    1062
+   ],
+   [
+    92,
+    6,
+    1026
+   ],
+   [
+    92,
+    7,
+    1062
+   ],
+   [
+    94,
+    0,
+    1062
+   ],
+   [
+    96,
+    6,
+    1062
+   ],
+   [
+    97,
+    6,
+    1050
+   ],
+   [
+    99,
+    6,
+    1074
+   ],
+   [
+    5,
+    6,
+    1272
+   ],
+   [
+    5,
+    7,
+    1266
+   ],
+   [
+    18,
+    1,
+    1278
+   ],
+   [
+    28,
+    7,
+    1266
+   ],
+   [
+    57,
+    1,
+    1290
+   ],
+   [
+    61,
+    6,
+    1278
+   ],
+   [
+    61,
+    7,
+    1266
+   ],
+   [
+    65,
+    6,
+    1278
+   ],
+   [
+    65,
+    7,
+    1272
+   ],
+   [
+    67,
+    1,
+    1272
+   ],
+   [
+    74,
+    1,
+    1278
+   ],
+   [
+    75,
+    1,
+    1290
+   ],
+   [
+    77,
+    1,
+    1266
+   ],
+   [
+    77,
+    6,
+    1272
+   ],
+   [
+    78,
+    6,
+    1290
+   ],
+   [
+    78,
+    7,
+    1260
+   ],
+   [
+    89,
+    1,
+    1266
+   ],
+   [
+    89,
+    6,
+    1278
+   ],
+   [
+    93,
+    0,
+    1260
+   ],
+   [
+    95,
+    0,
+    1260
+   ],
+   [
+    98,
+    6,
+    1260
+   ],
+   [
+    98,
+    6,
+    1278
+   ],
+   [
+    98,
+    7,
+    1272
+   ],
+   [
+    100,
+    6,
+    1290
+   ],
+   [
+    101,
+    6,
+    1266
+   ],
+   [
+    103,
+    6,
+    1284
+   ],
+   [
+    104,
+    6,
+    1290
+   ],
+   [
+    105,
+    6,
+    1290
+   ],
+   [
+    3,
+    7,
+    1338
+   ],
+   [
+    16,
+    7,
+    1302
+   ],
+   [
+    27,
+    7,
+    1326
+   ],
+   [
+    45,
+    7,
+    1332
+   ],
+   [
+    53,
+    0,
+    1308
+   ],
+   [
+    53,
+    1,
+    1296
+   ],
+   [
+    55,
+    3,
+    1326
+   ],
+   [
+    59,
+    7,
+    1332
+   ],
+   [
+    61,
+    3,
+    1296
+   ],
+   [
+    61,
+    4,
+    1332
+   ],
+   [
+    62,
+    3,
+    1326
+   ],
+   [
+    68,
+    7,
+    1302
+   ],
+   [
+    69,
+    7,
+    1326
+   ],
+   [
+    70,
+    1,
+    1320
+   ],
+   [
+    73,
+    6,
+    1320
+   ],
+   [
+    73,
+    7,
+    1362
+   ],
+   [
+    75,
+    4,
+    1332
+   ],
+   [
+    78,
+    1,
+    1344
+   ],
+   [
+    78,
+    6,
+    1356
+   ],
+   [
+    79,
+    1,
+    1350
+   ],
+   [
+    85,
+    1,
+    1350
+   ],
+   [
+    86,
+    0,
+    1314
+   ],
+   [
+    90,
+    3,
+    1296
+   ],
+   [
+    90,
+    4,
+    1332
+   ],
+   [
+    91,
+    0,
+    1362
+   ],
+   [
+    100,
+    1,
+    1356
+   ],
+   [
+    102,
+    6,
+    1302
+   ],
+   [
+    103,
+    1,
+    1320
+   ],
+   [
+    104,
+    1,
+    1344
+   ],
+   [
+    104,
+    6,
+    1350
+   ],
+   [
+    104,
+    7,
+    1362
+   ],
+   [
+    105,
+    1,
+    1356
+   ],
+   [
+    106,
+    6,
+    1350
+   ],
+   [
+    107,
+    6,
+    1320
+   ],
+   [
+    108,
+    2,
+    1332
+   ],
+   [
+    109,
+    6,
+    1350
+   ],
+   [
+    110,
+    6,
+    1320
+   ],
+   [
+    111,
+    6,
+    1308
+   ],
+   [
+    112,
+    6,
+    1302
+   ],
+   [
+    113,
+    2,
+    1332
+   ],
+   [
+    114,
+    6,
+    1320
+   ],
+   [
+    115,
+    6,
+    1350
+   ],
+   [
+    117,
+    6,
+    1356
+   ],
+   [
+    118,
+    6,
+    1344
+   ],
+   [
+    4,
+    3,
+    2142
+   ],
+   [
+    5,
+    1,
+    2130
+   ],
+   [
+    5,
+    6,
+    2142
+   ],
+   [
+    33,
+    3,
+    2166
+   ],
+   [
+    44,
+    1,
+    2178
+   ],
+   [
+    48,
+    1,
+    2190
+   ],
+   [
+    50,
+    7,
+    2154
+   ],
+   [
+    51,
+    7,
+    2124
+   ],
+   [
+    52,
+    7,
+    2124
+   ],
+   [
+    53,
+    3,
+    2142
+   ],
+   [
+    56,
+    7,
+    2130
+   ],
+   [
+    60,
+    1,
+    2136
+   ],
+   [
+    63,
+    7,
+    2130
+   ],
+   [
+    65,
+    1,
+    2214
+   ],
+   [
+    66,
+    1,
+    2202
+   ],
+   [
+    70,
+    6,
+    2124
+   ],
+   [
+    71,
+    1,
+    2154
+   ],
+   [
+    71,
+    6,
+    2184
+   ],
+   [
+    72,
+    6,
+    2154
+   ],
+   [
+    75,
+    3,
+    2166
+   ],
+   [
+    76,
+    1,
+    2184
+   ],
+   [
+    76,
+    6,
+    2220
+   ],
+   [
+    76,
+    7,
+    2226
+   ],
+   [
+    77,
+    7,
+    2148
+   ],
+   [
+    79,
+    6,
+    2130
+   ],
+   [
+    80,
+    1,
+    2196
+   ],
+   [
+    81,
+    7,
+    2142
+   ],
+   [
+    82,
+    1,
+    2160
+   ],
+   [
+    83,
+    1,
+    2190
+   ],
+   [
+    84,
+    1,
+    2130
+   ],
+   [
+    85,
+    0,
+    2124
+   ],
+   [
+    86,
+    7,
+    2178
+   ],
+   [
+    87,
+    1,
+    2172
+   ],
+   [
+    88,
+    1,
+    2136
+   ],
+   [
+    88,
+    6,
+    2172
+   ],
+   [
+    89,
+    1,
+    2196
+   ],
+   [
+    91,
+    7,
+    2130
+   ],
+   [
+    92,
+    6,
+    2154
+   ],
+   [
+    93,
+    1,
+    2154
+   ],
+   [
+    93,
+    6,
+    2196
+   ],
+   [
+    95,
+    1,
+    2172
+   ],
+   [
+    95,
+    6,
+    2196
+   ],
+   [
+    96,
+    7,
+    2166
+   ],
+   [
+    97,
+    1,
+    2208
+   ],
+   [
+    97,
+    6,
+    2214
+   ],
+   [
+    97,
+    7,
+    2226
+   ],
+   [
+    98,
+    1,
+    2148
+   ],
+   [
+    98,
+    6,
+    2172
+   ],
+   [
+    99,
+    1,
+    2148
+   ],
+   [
+    99,
+    6,
+    2172
+   ],
+   [
+    100,
+    6,
+    2160
+   ],
+   [
+    101,
+    1,
+    2214
+   ],
+   [
+    103,
+    6,
+    2124
+   ],
+   [
+    103,
+    7,
+    2166
+   ],
+   [
+    104,
+    6,
+    2154
+   ],
+   [
+    107,
+    1,
+    2178
+   ],
+   [
+    108,
+    1,
+    2202
+   ],
+   [
+    109,
+    6,
+    2202
+   ],
+   [
+    109,
+    7,
+    2196
+   ],
+   [
+    110,
+    7,
+    2166
+   ],
+   [
+    111,
+    1,
+    2208
+   ],
+   [
+    111,
+    6,
+    2214
+   ],
+   [
+    111,
+    7,
+    2226
+   ],
+   [
+    112,
+    1,
+    2220
+   ],
+   [
+    114,
+    1,
+    2220
+   ],
+   [
+    116,
+    0,
+    2124
+   ],
+   [
+    117,
+    1,
+    2160
+   ],
+   [
+    118,
+    1,
+    2184
+   ],
+   [
+    120,
+    6,
+    2142
+   ],
+   [
+    120,
+    6,
+    2166
+   ],
+   [
+    120,
+    7,
+    2148
+   ],
+   [
+    121,
+    6,
+    2172
+   ],
+   [
+    122,
+    6,
+    2142
+   ],
+   [
+    123,
+    6,
+    2184
+   ],
+   [
+    125,
+    6,
+    2160
+   ],
+   [
+    126,
+    6,
+    2202
+   ],
+   [
+    128,
+    6,
+    2190
+   ],
+   [
+    130,
+    6,
+    2214
+   ],
+   [
+    131,
+    6,
+    2190
+   ],
+   [
+    131,
+    7,
+    2208
+   ],
+   [
+    133,
+    6,
+    2220
+   ],
+   [
+    136,
+    6,
+    2196
+   ],
+   [
+    138,
+    6,
+    2202
+   ],
+   [
+    138,
+    7,
+    2226
+   ],
+   [
+    70,
+    1,
+    2418
+   ],
+   [
+    70,
+    6,
+    2430
+   ],
+   [
+    72,
+    1,
+    2466
+   ],
+   [
+    78,
+    1,
+    2442
+   ],
+   [
+    79,
+    0,
+    2490
+   ],
+   [
+    79,
+    1,
+    2418
+   ],
+   [
+    87,
+    6,
+    2430
+   ],
+   [
+    89,
+    6,
+    2424
+   ],
+   [
+    89,
+    6,
+    2478
+   ],
+   [
+    89,
+    7,
+    2430
+   ],
+   [
+    92,
+    1,
+    2442
+   ],
+   [
+    94,
+    1,
+    2490
+   ],
+   [
+    97,
+    6,
+    2478
+   ],
+   [
+    100,
+    0,
+    2448
+   ],
+   [
+    100,
+    1,
+    2424
+   ],
+   [
+    101,
+    6,
+    2442
+   ],
+   [
+    102,
+    1,
+    2436
+   ],
+   [
+    102,
+    1,
+    2454
+   ],
+   [
+    102,
+    6,
+    2442
+   ],
+   [
+    104,
+    1,
+    2478
+   ],
+   [
+    106,
+    1,
+    2436
+   ],
+   [
+    111,
+    6,
+    2448
+   ],
+   [
+    112,
+    6,
+    2484
+   ],
+   [
+    114,
+    6,
+    2430
+   ],
+   [
+    118,
+    6,
+    2412
+   ],
+   [
+    121,
+    1,
+    2466
+   ],
+   [
+    124,
+    0,
+    2412
+   ],
+   [
+    126,
+    7,
+    2418
+   ],
+   [
+    127,
+    1,
+    2514
+   ],
+   [
+    127,
+    6,
+    2418
+   ],
+   [
+    129,
+    6,
+    2412
+   ],
+   [
+    132,
+    6,
+    2412
+   ],
+   [
+    133,
+    1,
+    2424
+   ],
+   [
+    134,
+    0,
+    2412
+   ],
+   [
+    135,
+    6,
+    2412
+   ],
+   [
+    137,
+    6,
+    2418
+   ],
+   [
+    138,
+    6,
+    2466
+   ],
+   [
+    139,
+    0,
+    2502
+   ],
+   [
+    139,
+    1,
+    2454
+   ],
+   [
+    139,
+    6,
+    2418
+   ],
+   [
+    140,
+    0,
+    2430
+   ],
+   [
+    140,
+    1,
+    2484
+   ],
+   [
+    141,
+    6,
+    2484
+   ],
+   [
+    143,
+    6,
+    2436
+   ],
+   [
+    144,
+    0,
+    2448
+   ],
+   [
+    145,
+    1,
+    2514
+   ],
+   [
+    145,
+    6,
+    2460
+   ],
+   [
+    146,
+    6,
+    2442
+   ],
+   [
+    147,
+    0,
+    2478
+   ],
+   [
+    148,
+    6,
+    2454
+   ],
+   [
+    152,
+    0,
+    2496
+   ],
+   [
+    153,
+    6,
+    2478
+   ],
+   [
+    155,
+    0,
+    2496
+   ],
+   [
+    156,
+    6,
+    2490
+   ],
+   [
+    158,
+    0,
+    2502
+   ],
+   [
+    159,
+    6,
+    2514
+   ],
+   [
+    65,
+    6,
+    2718
+   ],
+   [
+    70,
+    1,
+    2706
+   ],
+   [
+    71,
+    3,
+    2730
+   ],
+   [
+    76,
+    6,
+    2706
+   ],
+   [
+    85,
+    1,
+    2724
+   ],
+   [
+    95,
+    1,
+    2718
+   ],
+   [
+    99,
+    1,
+    2730
+   ],
+   [
+    102,
+    0,
+    2700
+   ],
+   [
+    105,
+    6,
+    2730
+   ],
+   [
+    111,
+    6,
+    2718
+   ],
+   [
+    111,
+    7,
+    2712
+   ],
+   [
+    112,
+    6,
+    2712
+   ],
+   [
+    112,
+    7,
+    2706
+   ],
+   [
+    120,
+    7,
+    2730
+   ],
+   [
+    122,
+    3,
+    2730
+   ],
+   [
+    123,
+    1,
+    2718
+   ],
+   [
+    130,
+    7,
+    2718
+   ],
+   [
+    133,
+    6,
+    2706
+   ],
+   [
+    142,
+    6,
+    2718
+   ],
+   [
+    143,
+    1,
+    2724
+   ],
+   [
+    146,
+    1,
+    2706
+   ],
+   [
+    154,
+    6,
+    2706
+   ],
+   [
+    157,
+    6,
+    2700
+   ],
+   [
+    161,
+    6,
+    2730
+   ],
+   [
+    169,
+    6,
+    2730
+   ],
+   [
+    61,
+    7,
+    2766
+   ],
+   [
+    100,
+    1,
+    2754
+   ],
+   [
+    109,
+    1,
+    2778
+   ],
+   [
+    112,
+    1,
+    2760
+   ],
+   [
+    112,
+    6,
+    2778
+   ],
+   [
+    118,
+    6,
+    2742
+   ],
+   [
+    118,
+    7,
+    2736
+   ],
+   [
+    128,
+    1,
+    2760
+   ],
+   [
+    129,
+    1,
+    2754
+   ],
+   [
+    135,
+    1,
+    2772
+   ],
+   [
+    135,
+    6,
+    2778
+   ],
+   [
+    138,
+    7,
+    2760
+   ],
+   [
+    143,
+    6,
+    2754
+   ],
+   [
+    145,
+    6,
+    2742
+   ],
+   [
+    146,
+    6,
+    2748
+   ],
+   [
+    148,
+    1,
+    2736
+   ],
+   [
+    148,
+    6,
+    2760
+   ],
+   [
+    149,
+    6,
+    2742
+   ],
+   [
+    150,
+    6,
+    2766
+   ],
+   [
+    153,
+    1,
+    2736
+   ],
+   [
+    153,
+    6,
+    2760
+   ],
+   [
+    154,
+    1,
+    2778
+   ],
+   [
+    157,
+    1,
+    2772
+   ],
+   [
+    160,
+    6,
+    2760
+   ],
+   [
+    162,
+    0,
+    2742
+   ],
+   [
+    163,
+    6,
+    2748
+   ],
+   [
+    164,
+    6,
+    2748
+   ],
+   [
+    165,
+    6,
+    2736
+   ],
+   [
+    166,
+    6,
+    2754
+   ],
+   [
+    167,
+    6,
+    2778
+   ],
+   [
+    168,
+    6,
+    2748
+   ],
+   [
+    170,
+    6,
+    2778
+   ],
+   [
+    178,
+    6,
+    2772
+   ],
+   [
+    101,
+    3,
+    2802
+   ],
+   [
+    118,
+    1,
+    2784
+   ],
+   [
+    122,
+    6,
+    2802
+   ],
+   [
+    125,
+    3,
+    2802
+   ],
+   [
+    129,
+    0,
+    2790
+   ],
+   [
+    129,
+    7,
+    2802
+   ],
+   [
+    132,
+    1,
+    2784
+   ],
+   [
+    136,
+    3,
+    2796
+   ],
+   [
+    140,
+    6,
+    2802
+   ],
+   [
+    151,
+    6,
+    2796
+   ],
+   [
+    154,
+    0,
+    2790
+   ],
+   [
+    171,
+    6,
+    2796
+   ],
+   [
+    172,
+    6,
+    2784
+   ],
+   [
+    174,
+    6,
+    2784
+   ],
+   [
+    175,
+    6,
+    2802
+   ],
+   [
+    176,
+    6,
+    2784
+   ],
+   [
+    177,
+    6,
+    2796
+   ],
+   [
+    178,
+    3,
+    2796
+   ],
+   [
+    89,
+    6,
+    3006
+   ],
+   [
+    89,
+    7,
+    3000
+   ],
+   [
+    101,
+    6,
+    2994
+   ],
+   [
+    105,
+    1,
+    2994
+   ],
+   [
+    113,
+    1,
+    3018
+   ],
+   [
+    116,
+    1,
+    3006
+   ],
+   [
+    119,
+    6,
+    3018
+   ],
+   [
+    125,
+    6,
+    2994
+   ],
+   [
+    128,
+    6,
+    3012
+   ],
+   [
+    133,
+    7,
+    2988
+   ],
+   [
+    136,
+    6,
+    3018
+   ],
+   [
+    143,
+    1,
+    3000
+   ],
+   [
+    147,
+    7,
+    2994
+   ],
+   [
+    157,
+    6,
+    2988
+   ],
+   [
+    158,
+    1,
+    3000
+   ],
+   [
+    160,
+    1,
+    3012
+   ],
+   [
+    161,
+    7,
+    2988
+   ],
+   [
+    162,
+    1,
+    3012
+   ],
+   [
+    165,
+    6,
+    3000
+   ],
+   [
+    165,
+    7,
+    2994
+   ],
+   [
+    173,
+    6,
+    3018
+   ],
+   [
+    174,
+    1,
+    3018
+   ],
+   [
+    175,
+    1,
+    3006
+   ],
+   [
+    179,
+    6,
+    3006
+   ],
+   [
+    180,
+    0,
+    2994
+   ],
+   [
+    183,
+    6,
+    3006
+   ],
+   [
+    5,
+    1,
+    3030
+   ],
+   [
+    24,
+    0,
+    3036
+   ],
+   [
+    24,
+    7,
+    3024
+   ],
+   [
+    76,
+    1,
+    3054
+   ],
+   [
+    77,
+    6,
+    3042
+   ],
+   [
+    89,
+    1,
+    3030
+   ],
+   [
+    90,
+    1,
+    3054
+   ],
+   [
+    97,
+    1,
+    3048
+   ],
+   [
+    111,
+    1,
+    3042
+   ],
+   [
+    127,
+    0,
+    3024
+   ],
+   [
+    127,
+    1,
+    3036
+   ],
+   [
+    128,
+    1,
+    3060
+   ],
+   [
+    129,
+    6,
+    3054
+   ],
+   [
+    139,
+    1,
+    3042
+   ],
+   [
+    143,
+    6,
+    3024
+   ],
+   [
+    149,
+    7,
+    3030
+   ],
+   [
+    150,
+    1,
+    3060
+   ],
+   [
+    152,
+    7,
+    3030
+   ],
+   [
+    153,
+    1,
+    3048
+   ],
+   [
+    158,
+    6,
+    3036
+   ],
+   [
+    162,
+    6,
+    3036
+   ],
+   [
+    175,
+    6,
+    3054
+   ],
+   [
+    178,
+    0,
+    3024
+   ],
+   [
+    181,
+    6,
+    3036
+   ],
+   [
+    184,
+    0,
+    3066
+   ],
+   [
+    184,
+    6,
+    3030
+   ],
+   [
+    184,
+    7,
+    3036
+   ],
+   [
+    185,
+    6,
+    3030
+   ],
+   [
+    186,
+    6,
+    3042
+   ],
+   [
+    187,
+    6,
+    3060
+   ],
+   [
+    189,
+    6,
+    3060
+   ],
+   [
+    196,
+    6,
+    3066
+   ],
+   [
+    87,
+    1,
+    3072
+   ],
+   [
+    115,
+    1,
+    3072
+   ],
+   [
+    125,
+    7,
+    3072
+   ],
+   [
+    128,
+    2,
+    3084
+   ],
+   [
+    145,
+    7,
+    3084
+   ],
+   [
+    151,
+    7,
+    3090
+   ],
+   [
+    174,
+    4,
+    3078
+   ],
+   [
+    178,
+    6,
+    3090
+   ],
+   [
+    178,
+    7,
+    3078
+   ],
+   [
+    179,
+    7,
+    3084
+   ],
+   [
+    182,
+    4,
+    3078
+   ],
+   [
+    192,
+    0,
+    3078
+   ],
+   [
+    194,
+    4,
+    3078
+   ],
+   [
+    197,
+    2,
+    3084
+   ],
+   [
+    77,
+    1,
+    3372
+   ],
+   [
+    88,
+    1,
+    3294
+   ],
+   [
+    93,
+    1,
+    3330
+   ],
+   [
+    98,
+    1,
+    3282
+   ],
+   [
+    101,
+    6,
+    3360
+   ],
+   [
+    101,
+    7,
+    3276
+   ],
+   [
+    102,
+    1,
+    3366
+   ],
+   [
+    114,
+    1,
+    3318
+   ],
+   [
+    125,
+    6,
+    3282
+   ],
+   [
+    127,
+    6,
+    3294
+   ],
+   [
+    135,
+    1,
+    3336
+   ],
+   [
+    140,
+    1,
+    3282
+   ],
+   [
+    142,
+    1,
+    3330
+   ],
+   [
+    148,
+    1,
+    3306
+   ],
+   [
+    154,
+    1,
+    3348
+   ],
+   [
+    156,
+    1,
+    3360
+   ],
+   [
+    157,
+    1,
+    3294
+   ],
+   [
+    157,
+    6,
+    3318
+   ],
+   [
+    167,
+    1,
+    3342
+   ],
+   [
+    169,
+    1,
+    3354
+   ],
+   [
+    171,
+    1,
+    3336
+   ],
+   [
+    172,
+    1,
+    3318
+   ],
+   [
+    173,
+    7,
+    3318
+   ],
+   [
+    174,
+    1,
+    3312
+   ],
+   [
+    174,
+    6,
+    3324
+   ],
+   [
+    175,
+    6,
+    3288
+   ],
+   [
+    175,
+    7,
+    3276
+   ],
+   [
+    176,
+    1,
+    3312
+   ],
+   [
+    178,
+    1,
+    3354
+   ],
+   [
+    179,
+    6,
+    3282
+   ],
+   [
+    180,
+    1,
+    3360
+   ],
+   [
+    181,
+    1,
+    3342
+   ],
+   [
+    185,
+    6,
+    3336
+   ],
+   [
+    185,
+    7,
+    3282
+   ],
+   [
+    188,
+    6,
+    3294
+   ],
+   [
+    191,
+    6,
+    3318
+   ],
+   [
+    193,
+    6,
+    3318
+   ],
+   [
+    195,
+    0,
+    3276
+   ],
+   [
+    196,
+    1,
+    3348
+   ],
+   [
+    198,
+    6,
+    3360
+   ],
+   [
+    199,
+    0,
+    3366
+   ],
+   [
+    200,
+    6,
+    3324
+   ],
+   [
+    201,
+    6,
+    3366
+   ],
+   [
+    202,
+    6,
+    3294
+   ],
+   [
+    205,
+    6,
+    3330
+   ],
+   [
+    206,
+    6,
+    3348
+   ],
+   [
+    207,
+    6,
+    3336
+   ],
+   [
+    207,
+    7,
+    3354
+   ],
+   [
+    208,
+    6,
+    3366
+   ],
+   [
+    209,
+    6,
+    3354
+   ],
+   [
+    211,
+    0,
+    3324
+   ],
+   [
+    212,
+    6,
+    3354
+   ],
+   [
+    213,
+    1,
+    3372
+   ],
+   [
+    213,
+    6,
+    3360
+   ],
+   [
+    214,
+    6,
+    3330
+   ],
+   [
+    215,
+    6,
+    3366
+   ]
+  ],
+  "exits": [
+   [
+    2,
+    456
+   ],
+   [
+    8,
+    432
+   ],
+   [
+    11,
+    420
+   ],
+   [
+    15,
+    432
+   ],
+   [
+    17,
+    480
+   ],
+   [
+    19,
+    444
+   ],
+   [
+    21,
+    408
+   ],
+   [
+    22,
+    432
+   ],
+   [
+    25,
+    420
+   ],
+   [
+    29,
+    438
+   ],
+   [
+    6,
+    756
+   ],
+   [
+    7,
+    696
+   ],
+   [
+    9,
+    744
+   ],
+   [
+    10,
+    768
+   ],
+   [
+    12,
+    732
+   ],
+   [
+    14,
+    696
+   ],
+   [
+    20,
+    756
+   ],
+   [
+    23,
+    744
+   ],
+   [
+    26,
+    732
+   ],
+   [
+    30,
+    744
+   ],
+   [
+    31,
+    768
+   ],
+   [
+    32,
+    708
+   ],
+   [
+    36,
+    720
+   ],
+   [
+    39,
+    708
+   ],
+   [
+    49,
+    696
+   ],
+   [
+    58,
+    744
+   ],
+   [
+    0,
+    990
+   ],
+   [
+    35,
+    984
+   ],
+   [
+    42,
+    984
+   ],
+   [
+    1,
+    1008
+   ],
+   [
+    13,
+    1044
+   ],
+   [
+    34,
+    1044
+   ],
+   [
+    37,
+    1032
+   ],
+   [
+    40,
+    1020
+   ],
+   [
+    43,
+    1014
+   ],
+   [
+    47,
+    1020
+   ],
+   [
+    54,
+    1020
+   ],
+   [
+    64,
+    1008
+   ],
+   [
+    18,
+    1284
+   ],
+   [
+    28,
+    1272
+   ],
+   [
+    74,
+    1284
+   ],
+   [
+    3,
+    1344
+   ],
+   [
+    16,
+    1326
+   ],
+   [
+    27,
+    1332
+   ],
+   [
+    45,
+    1344
+   ],
+   [
+    55,
+    1332
+   ],
+   [
+    57,
+    1296
+   ],
+   [
+    59,
+    1344
+   ],
+   [
+    62,
+    1332
+   ],
+   [
+    68,
+    1308
+   ],
+   [
+    69,
+    1332
+   ],
+   [
+    4,
+    2148
+   ],
+   [
+    33,
+    2172
+   ],
+   [
+    44,
+    2184
+   ],
+   [
+    48,
+    2196
+   ],
+   [
+    50,
+    2160
+   ],
+   [
+    51,
+    2130
+   ],
+   [
+    52,
+    2130
+   ],
+   [
+    53,
+    2148
+   ],
+   [
+    56,
+    2136
+   ],
+   [
+    60,
+    2148
+   ],
+   [
+    63,
+    2136
+   ],
+   [
+    66,
+    2208
+   ],
+   [
+    67,
+    2148
+   ],
+   [
+    73,
+    2124
+   ],
+   [
+    75,
+    2172
+   ],
+   [
+    80,
+    2208
+   ],
+   [
+    81,
+    2148
+   ],
+   [
+    82,
+    2172
+   ],
+   [
+    83,
+    2196
+   ],
+   [
+    84,
+    2136
+   ],
+   [
+    86,
+    2184
+   ],
+   [
+    91,
+    2136
+   ],
+   [
+    96,
+    2172
+   ],
+   [
+    103,
+    2172
+   ],
+   [
+    107,
+    2184
+   ],
+   [
+    108,
+    2208
+   ],
+   [
+    110,
+    2172
+   ],
+   [
+    117,
+    2172
+   ],
+   [
+    72,
+    2472
+   ],
+   [
+    78,
+    2448
+   ],
+   [
+    92,
+    2448
+   ],
+   [
+    94,
+    2496
+   ],
+   [
+    104,
+    2484
+   ],
+   [
+    106,
+    2448
+   ],
+   [
+    121,
+    2472
+   ],
+   [
+    126,
+    2424
+   ],
+   [
+    70,
+    2712
+   ],
+   [
+    95,
+    2724
+   ],
+   [
+    123,
+    2724
+   ],
+   [
+    130,
+    2724
+   ],
+   [
+    61,
+    2772
+   ],
+   [
+    71,
+    2736
+   ],
+   [
+    85,
+    2736
+   ],
+   [
+    99,
+    2736
+   ],
+   [
+    100,
+    2760
+   ],
+   [
+    120,
+    2736
+   ],
+   [
+    138,
+    2766
+   ],
+   [
+    118,
+    2790
+   ],
+   [
+    132,
+    2790
+   ],
+   [
+    105,
+    3000
+   ],
+   [
+    116,
+    3012
+   ],
+   [
+    133,
+    3000
+   ],
+   [
+    147,
+    3000
+   ],
+   [
+    161,
+    3000
+   ],
+   [
+    5,
+    3036
+   ],
+   [
+    76,
+    3060
+   ],
+   [
+    89,
+    3036
+   ],
+   [
+    90,
+    3060
+   ],
+   [
+    97,
+    3060
+   ],
+   [
+    111,
+    3060
+   ],
+   [
+    113,
+    3024
+   ],
+   [
+    139,
+    3060
+   ],
+   [
+    149,
+    3048
+   ],
+   [
+    152,
+    3036
+   ],
+   [
+    153,
+    3060
+   ],
+   [
+    87,
+    3078
+   ],
+   [
+    115,
+    3078
+   ],
+   [
+    150,
+    3072
+   ],
+   [
+    88,
+    3300
+   ],
+   [
+    93,
+    3336
+   ],
+   [
+    98,
+    3288
+   ],
+   [
+    114,
+    3336
+   ],
+   [
+    140,
+    3288
+   ],
+   [
+    142,
+    3336
+   ],
+   [
+    148,
+    3312
+   ],
+   [
+    151,
+    3300
+   ],
+   [
+    167,
+    3348
+   ],
+   [
+    173,
+    3324
+   ],
+   [
+    178,
+    3360
+   ],
+   [
+    181,
+    3348
+   ]
+  ],
+  "rent": {
+   "0": 0,
+   "1": 1,
+   "2": 7,
+   "3": 30,
+   "4": 30,
+   "5": 20,
+   "6": 20,
+   "7": 22,
+   "8": 21,
+   "9": 30,
+   "10": 30,
+   "11": 30,
+   "12": 28,
+   "13": 28
+  },
+  "crew": {
+   "1@114": {
+    "mech": 1,
+    "body": 1
+   },
+   "5@120": {
+    "insp": 1
+   },
+   "2@192": {
+    "insp": 1
+   },
+   "0@474": {
+    "mech": 1
+   },
+   "1@402": {
+    "mech": 1,
+    "body": 1,
+    "insp": 1
+   },
+   "1@720": {
+    "body": 1
+   },
+   "1@726": {
+    "mech": 1
+   },
+   "2@702": {
+    "mech": 1,
+    "body": 1,
+    "insp": 1
+   },
+   "0@720": {
+    "mech": 1,
+    "body": 1
+   },
+   "1@984": {
+    "insp": 2
+   },
+   "1@1038": {
+    "mech": 3,
+    "body": 1
+   },
+   "1@1014": {
+    "mech": 1,
+    "body": 1
+   },
+   "1@1320": {
+    "mech": 3,
+    "body": 1
+   },
+   "1@1350": {
+    "body": 3
+   },
+   "1@1356": {
+    "mech": 2,
+    "body": 1
+   },
+   "2@1332": {
+    "mech": 1,
+    "body": 1
+   },
+   "1@2418": {
+    "mech": 1,
+    "body": 1
+   },
+   "1@2490": {
+    "body": 1
+   },
+   "0@2448": {
+    "mech": 3,
+    "body": 1
+   },
+   "1@2424": {
+    "mech": 3,
+    "body": 1
+   },
+   "1@2478": {
+    "mech": 1
+   },
+   "0@2412": {
+    "insp": 1
+   },
+   "0@2496": {
+    "mech": 2
+   },
+   "1@2706": {
+    "mech": 3,
+    "body": 1
+   },
+   "1@2724": {
+    "mech": 4
+   },
+   "1@2778": {
+    "mech": 1
+   },
+   "1@2760": {
+    "mech": 2
+   },
+   "1@2736": {
+    "mech": 2,
+    "body": 1
+   },
+   "1@2784": {
+    "mech": 1,
+    "insp": 1
+   },
+   "0@3036": {
+    "body": 1
+   },
+   "1@3054": {
+    "mech": 4
+   },
+   "1@3048": {
+    "mech": 3
+   },
+   "1@3036": {
+    "body": 1
+   },
+   "1@3060": {
+    "mech": 3
+   },
+   "0@3324": {
+    "body": 1,
+    "insp": 1
+   }
+  }
+ }
+}
