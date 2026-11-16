@@ -274,16 +274,19 @@ class PaperModel:
                             rhs -= eta[(i, l, t)]
                 if l == 0:                                          # G_in,b
                     tb = set(Tb(b))
+                    G = defaultdict(float)
                     for (i, j, t, col) in X:
                         md = V[i]['modes'][j]
                         if any(u in tb for u in occupancy(md, t, md.park, False)):
-                            d[col] += 1
+                            d[col] += 1; G[col] += 1
                     for (i, k, t, col) in Z:
                         tt = trips[k]
                         if tt.mode == 'tow':
                             hs = t if tt.src == 'IN' else t + tt.move - 1
                             if hs in tb:
-                                d[col] += 1
+                                d[col] += 1; G[col] += 1
+                    # eq. [10]: G_in,b <= min_t S_in,t
+                    add(dict(G), -np.inf, float(min(Sres[0][t - t0] for t in Tb(b))), '3.10')
                 d[S(l, b)] -= 1
                 if l == 1:
                     # Each date intersecting this half-open block needs enough

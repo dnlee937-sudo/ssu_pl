@@ -381,6 +381,7 @@ class WindowModel:
             caprhs -= const_in.sum(axis=0)
             caprhs[:, 0] -= y_init.sum(axis=0)
         # mode handover parking (IN): any-overlap of the profile with the block
+        hand_b, hand_c = [], []            # G_in,b terms, reused for eq. [10]
         for j in range(xv.size):
             pk = mode_profile(V[xv[j]]['modes'][xb[j]], xs[j])[2]
             nz = np.nonzero(pk)[0]
@@ -390,6 +391,7 @@ class WindowModel:
             tt_ = tt_[(tt_ >= t0) & (tt_ < t1)]
             bl = np.unique((tt_ - t0) // m)
             ent(crow(0, bl), np.full(bl.size, xcols[j]), 1)
+            hand_b.extend(bl.tolist()); hand_c.extend([int(xcols[j])] * bl.size)
         # towing handover parking at IN: departure slot s (src IN) or arrival slot s+move-1 (dst IN)
         for j in range(zv.size):
             tt = trips[zk[j]]
@@ -398,11 +400,18 @@ class WindowModel:
             hs = zs[j] if tt.src == 'IN' else zs[j] + tt.move - 1
             if t0 <= hs < t1:
                 ent([crow(0, (hs - t0) // m)], [zcols[j]], 1)
+                hand_b.append(int((hs - t0) // m)); hand_c.append(int(zcols[j]))
         # rented spaces (OUT) and slack
         bday = (t0 + np.arange(NB) * m) // SLOTS_PER_DAY
         ent(crow(1, np.arange(NB)), self.u0 + np.searchsorted(days, bday), -1)
         ent(crow(np.repeat([0, 1], NB), np.tile(np.arange(NB), 2)), self.sg0 + np.arange(2 * NB), -1)
         rhi[-1][:] = caprhs.ravel()
+        # eq. [10]: newly chosen handover spaces fit in the base internal spaces (never covered by E_b)
+        hr0 = addrows(NB, -np.inf, 0)
+        self.row_groups['handover'] = (hr0, NB)
+        rhi[-1][:] = inst.park_cap['IN'] - fpb
+        if hand_b:
+            ent(hr0 + np.array(hand_b, int), np.array(hand_c, int), 1)
 
         # A coarse block may intersect several dates. Its occupancy bound must
         # fit the rented spaces on EACH of those dates (including a partial last
