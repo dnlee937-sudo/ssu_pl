@@ -325,9 +325,22 @@ def construct(W, M, rent_lb=None, rule='edd'):
                     add[pos] = max(add[pos], nd)
         if any(rent[p_] + nd > inst.rent_max for p_, nd in add.items()):
             continue
+        snap = ({g: r_.copy() for g, r_ in resid.items()}, {kk: dict(vv) for kk, vv in crew.items()},
+                hand_in.copy(), {p_: rent[p_] for p_ in add})
         for p_, nd in add.items():
             rent[p_] += nd
-        trip_take(k1, s1); plan_trips.append((v['vid'], k1, s1)); note_tow(k1, s1)
+        trip_take(k1, s1)
+        if back and trips[back[0]].mode == 'staff':
+            tb = trips[back[0]]
+            if crew_split(back[1] - tb.pre - t0, back[1] + tb.back + REST_SLOTS - t0, tb.q + 1) is None:
+                # the outbound trip used the staff the return trip relied on: undo and try another vehicle
+                for g, r_ in snap[0].items():
+                    resid[g][:] = r_
+                crew.clear(); crew.update(snap[1]); hand_in[:] = snap[2]
+                for p_, n_ in snap[3].items():
+                    rent[p_] = n_
+                continue
+        plan_trips.append((v['vid'], k1, s1)); note_tow(k1, s1)
         new = [('IN', a, s1), ('OUT', arr1, end_out)]
         if back:
             trip_take(*back); plan_trips.append((v['vid'], back[0], back[1])); note_tow(*back)
