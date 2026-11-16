@@ -6,7 +6,7 @@ on:
       stage:
         description: '실험 단계 (A: 규칙 기반 대 LNS 120회, B: 주차 블록 120회, all: 전체 240회)'
         type: choice
-        options: [A, B, C, all]
+        options: [A, B, C, F, all]
         default: A
       budget:
         description: '재계획 1회 시간 예산(초). 본실험은 120'

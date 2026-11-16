@@ -58,6 +58,9 @@ class Rolling:
         self.repair_limit = repair_limit
         self.rng = np.random.default_rng(seed)
         self.traj = dict(modes=[], trips=[], exits=[], rent={}, crew={})
+        self.rule = 'edd'
+        if policy in ('field', 'field_out'):   # shop practice: arrival order, rush jobs first, no search
+            self.policy, self.rule = 'init', policy   # field_out: wash and engine work always outsourced
         if policy == 'lns_carry':       # optional variant: start from the carried previous plan when better
             self.policy, carry = 'lns', True
         self.carry, self.stage1_limit = carry, stage1_limit
@@ -175,13 +178,15 @@ class Rolling:
             modes = build_modes(tasks) if tasks else []
             vehs.append(dict(vid=v.vid, entry_slot=entry_slot, entry_loc=entry_loc, tasks=tasks,
                              modes=modes, hold=hold, deadline=dl, pickup_req=pickup, offset=nt,
-                             hold_start=max(t0, v.arrival if v.arrival is not None else 0)))
+                             hold_start=max(t0, v.arrival if v.arrival is not None else 0),
+                             arrival=v.arrival if v.arrival is not None else -1,
+                             rush=bool(v.fault and v.fault.get('notice', 10 ** 9) <= t0)))
         return Window(inst, t0, t1, vehs, dict(fixed_res), fixed_park, fixed_out_park=fixed_out_park)
 
     # ------------------------------------------------------------------ rule-based construction
     def construct(self, W: Window, M: WindowModel):
         from construct import construct
-        return construct(W, M, rent_lb=self.traj['rent'])
+        return construct(W, M, rent_lb=self.traj['rent'], rule=self.rule)
 
     # ------------------------------------------------------------------ helpers on column groups
     def col_groups(self, M):

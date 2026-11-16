@@ -19,7 +19,11 @@ from instance import REST_SLOTS, SLOTS_PER_DAY, INF
 from instance import mode_span, mode_profile
 
 
-def construct(W, M, rent_lb=None):
+ALWAYS_OUT = ('wash', 'engine')        # task types the shop always sends out (field rule)
+BACKLOG_SLOTS = 2 * 288                # field rule: outsource when the internal wait is two days or more
+
+
+def construct(W, M, rent_lb=None, rule='edd'):
     inst, t0, t1 = W.inst, W.t0, W.t1
     T = t1 - t0
     tX = M.tX                                   # resources are checked over the extended range T+
@@ -107,7 +111,11 @@ def construct(W, M, rent_lb=None):
                     return k, s
         return None
 
-    order = sorted(range(len(W.vehs)), key=lambda i: (W.vehs[i]['deadline'], W.vehs[i]['entry_slot'] or t0))
+    if rule in ('field', 'field_out'):     # shop practice: rush jobs (rework after a shop fault) first, then arrival order
+        order = sorted(range(len(W.vehs)), key=lambda i: (0 if W.vehs[i].get('rush') else 1,
+                                                          W.vehs[i].get('arrival', -1), W.vehs[i]['vid']))
+    else:
+        order = sorted(range(len(W.vehs)), key=lambda i: (W.vehs[i]['deadline'], W.vehs[i]['entry_slot'] or t0))
     # per vehicle timeline of physical states inside the window: list of (loc, a, b)
     life = {}
     for i in order:
@@ -150,7 +158,18 @@ def construct(W, M, rent_lb=None):
             rem_after = lambda md: M.remaining_duration[i][md.g + 1]
             internal = [o for o in opts if o[2].kind != 'O']
             pick = None
-            if internal:
+            if rule in ('field', 'field_out'):
+                outs = [o for o in opts if o[2].kind == 'O']
+                fin = lambda o: (o[0] + mode_span(o[2], o[0]), o[2].cost)
+                if rule == 'field_out' and outs and v['tasks'][kk] in ALWAYS_OUT:
+                    pick = min(outs, key=fin)
+                elif internal:
+                    pick = internal[0]
+                    if outs and internal[0][0] - ready >= BACKLOG_SLOTS:
+                        pick = min(outs, key=fin)
+                else:
+                    pick = min(opts, key=fin)
+            elif internal:
                 s, b, md = internal[0]
                 if s + mode_span(md, s) + rem_after(md) <= v['deadline']:
                     pick = internal[0]

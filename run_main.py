@@ -37,8 +37,9 @@ DAILY = (10, 20, 30, 40)
 CONDS = ('base', 'staff', 'park')
 SEEDS = (1, 2, 3, 4, 5)
 POLICIES = {'init_m1': ('init', 1), 'lns_m1': ('lns', 1), 'lns_m2': ('lns', 2), 'lns_m3': ('lns', 3),
-            'lnsc_m1': ('lns_carry', 1)}         # lnsc: optional variant that carries the previous plan
-STAGES = {'A': ('init_m1', 'lns_m1'), 'B': ('lns_m2', 'lns_m3'), 'C': ('lnsc_m1',),
+            'lnsc_m1': ('lns_carry', 1),
+            'field_m1': ('field', 1), 'fieldout_m1': ('field_out', 1)}         # lnsc: optional variant that carries the previous plan
+STAGES = {'A': ('init_m1', 'lns_m1'), 'B': ('lns_m2', 'lns_m3'), 'C': ('lnsc_m1',), 'F': ('field_m1', 'fieldout_m1'),
           'all': ('init_m1', 'lns_m1', 'lns_m2', 'lns_m3')}
 BUDGET = 120.0            # 재계획 1회 전체 예산(초)
 LNS_SEED = 11
