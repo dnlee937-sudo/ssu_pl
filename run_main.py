@@ -60,6 +60,14 @@ def resources(daily, cond):
             caps[g] = max(1, int(np.ceil(caps[g] * SHORT_FACTOR)))
     elif cond == 'park':
         park_in = max(1, int(np.ceil(park_in * SHORT_FACTOR)))
+    elif cond[:2] in ('pk', 'st') and cond[2:].isdigit():
+        # resource-level sweep: pkNN = internal parking at NN %, stNN = every staff group at NN %
+        f = int(cond[2:]) / 100.0
+        if cond[:2] == 'pk':
+            park_in = max(1, int(np.ceil(park_in * f)))
+        else:
+            for g in STAFF_GROUPS:
+                caps[g] = max(1, int(np.ceil(caps[g] * f)))
     return caps, park_in, park_out, rent_max
 
 

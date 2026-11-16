@@ -20,6 +20,9 @@ on:
       seeds:
         description: '시나리오만 골라 돌릴 때 (예: 1,2). 비우면 전체'
         default: ''
+      conds:
+        description: '자원조건만 골라 돌릴 때 (예: base,pk70,st80). 비우면 base,staff,park'
+        default: ''
 
 jobs:
   plan:
@@ -41,10 +44,12 @@ jobs:
           STAGE: ${{ inputs.stage }}
           DAILY: ${{ inputs.daily }}
           SEEDS: ${{ inputs.seeds }}
+          CONDS: ${{ inputs.conds }}
         run: |
           ARGS="--stage $STAGE"
           if [ -n "$DAILY" ]; then ARGS="$ARGS --daily $DAILY"; fi
           if [ -n "$SEEDS" ]; then ARGS="$ARGS --seeds $SEEDS"; fi
+          if [ -n "$CONDS" ]; then ARGS="$ARGS --cond $CONDS"; fi
           python run_main.py list $ARGS | grep '^d' \
             | python -c "import sys,json;print('matrix='+json.dumps({'name':[l.strip() for l in sys.stdin]}))" >> "$GITHUB_OUTPUT"
 
