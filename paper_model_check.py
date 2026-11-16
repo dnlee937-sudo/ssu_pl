@@ -324,8 +324,7 @@ class PaperModel:
             md = V[i]['modes'][j]
             for r, prof in md.res.items():
                 for u, val in occupancy(md, t, prof, r in STAFF_).items():
-                    if u < t1:
-                        use[(r, u)][col] += val
+                    use[(r, u)][col] += val          # extended range T+: counted until the alternative ends
         for (k, t), col in Wc.items():
             tt = trips[k]
             if tt.mode == 'staff':
@@ -342,8 +341,12 @@ class PaperModel:
                 hs = t if tt.src == 'IN' else t + tt.move - 1
                 use[('gen', hs)][col] += 1
         for r in sorted(inst.caps):
-            Q = inst.cap_series(r, t0, t1) - W.fixed_res.get(r, np.zeros(t1 - t0))
-            for t in range(t0, t1):
+            tX_ = max([t1] + [pend(V[i]['modes'][j], t) for (i, j, t, col) in X])
+            fx_ = np.zeros(tX_ - t0)
+            if r in W.fixed_res:
+                n_ = min(tX_ - t0, len(W.fixed_res[r])); fx_[:n_] = W.fixed_res[r][:n_]
+            Q = inst.cap_series(r, t0, tX_) - fx_
+            for t in range(t0, tX_):
                 d = dict(use.get((r, t), {}))
                 if d:
                     add(d, -np.inf, float(Q[t - t0]), '3.13')

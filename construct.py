@@ -22,7 +22,8 @@ from instance import mode_span, mode_profile
 def construct(W, M, rent_lb=None):
     inst, t0, t1 = W.inst, W.t0, W.t1
     T = t1 - t0
-    resid = {r: inst.cap_series(r, t0, t1) - W.fixed_res.get(r, np.zeros(T, int)) for r in inst.caps}
+    tX = M.tX                                   # resources are checked over the extended range T+
+    resid = {r: np.array(M.Qx[r], float).copy() for r in inst.caps}
     trips = {tt.kid: tt for tt in inst.trip_types}
     cand = defaultdict(list)
     for j in range(M.xv.size):
@@ -141,7 +142,7 @@ def construct(W, M, rent_lb=None):
                     if s < ready:
                         continue
                     sp_, res_, _pk = mode_profile(md, s)
-                    e = min(sp_, t1 - s)
+                    e = min(sp_, tX - s)
                     if all((resid[r][s - t0:s - t0 + e] >= prof[:e]).all() for r, prof in res_.items()):
                         opts.append((s, b, md)); break
             if not opts:
@@ -158,7 +159,7 @@ def construct(W, M, rent_lb=None):
             s, b, md = pick
             sp_, res_, park_ = mode_profile(md, s)
             for r, prof in res_.items():
-                e = min(sp_, t1 - s)
+                e = min(sp_, tX - s)
                 resid[r][s - t0:s - t0 + e] -= prof[:e]
             for h in np.nonzero(park_)[0]:
                 if s + h < t1:

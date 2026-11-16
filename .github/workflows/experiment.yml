@@ -82,38 +82,15 @@ jobs:
     needs: run
     if: always()
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with:
           pattern: run-*
           merge-multiple: true
-          path: /tmp/res
+          path: results/main
+      - run: ls results/main | wc -l
       - uses: actions/upload-artifact@v4
         with:
           name: results-all
-          path: /tmp/res
+          path: results/main
           retention-days: 90
-      - name: 결과를 results 브랜치에 저장
-        env:
-          STAGE: ${{ inputs.stage }}
-          BUDGET: ${{ inputs.budget }}
-          OBS: ${{ inputs.obs_days }}
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git fetch origin results:results 2>/dev/null; then
-            git checkout results
-          else
-            git checkout --orphan results
-            git rm -rf -q .
-          fi
-          DIR="runs/${GITHUB_RUN_ID}_stage${STAGE}_b${BUDGET}_d${OBS:-14}"
-          mkdir -p "$DIR"
-          cp /tmp/res/* "$DIR"/ 2>/dev/null || true
-          echo "run_id=${GITHUB_RUN_ID} sha=${GITHUB_SHA} stage=${STAGE} budget=${BUDGET} obs_days=${OBS:-14} files=$(ls "$DIR" | wc -l)" > "$DIR/RUN_INFO.txt"
-          git add runs
-          git commit -q -m "results of run ${GITHUB_RUN_ID} (stage ${STAGE}, budget ${BUDGET})"
-          git push origin results

@@ -443,17 +443,29 @@ class WindowModel:
         # (9) resources per (r, t)
         rnames = sorted(inst.caps)
         self.rnames = rnames
-        rr0 = addrows(len(rnames) * T, -np.inf, 0)
-        self.row_groups['res'] = (rr0, len(rnames) * T)
-        rrow = {r: rr0 + q * T for q, r in enumerate(rnames)}
-        rcap = np.concatenate([inst.cap_series(r, t0, t1) - W.fixed_res.get(r, np.zeros(T)) for r in rnames])
+        # extended range T+: resource use of alternatives started before t1 is constrained until it ends
+        tX = int(max(t1, (xs + xp).max(initial=t1)))
+        self.tX = tX
+        TX = tX - t0
+
+        def fixed_x(r):
+            out = np.zeros(TX)
+            a_ = W.fixed_res.get(r)
+            if a_ is not None:
+                n_ = min(TX, len(a_)); out[:n_] = a_[:n_]
+            return out
+        self.Qx = {r: inst.cap_series(r, t0, tX) - fixed_x(r) for r in rnames}
+        rr0 = addrows(len(rnames) * TX, -np.inf, 0)
+        self.row_groups['res'] = (rr0, len(rnames) * TX)
+        rrow = {r: rr0 + q * TX for q, r in enumerate(rnames)}
+        rcap = np.concatenate([self.Qx[r] for r in rnames])
         rhi[-1][:] = rcap
         for j in range(xv.size):
             md = V[xv[j]]['modes'][xb[j]]
             for r, prof in mode_profile(md, xs[j])[1].items():
                 nz = np.nonzero(prof)[0]
                 tt_ = xs[j] + nz
-                keep = tt_ < t1
+                keep = tt_ < tX
                 ent(rrow[r] + tt_[keep] - t0, np.full(keep.sum(), xcols[j]), prof[nz][keep])
         for j, (k, s) in enumerate(zip(tk, ts)):
             tt = trips[k]

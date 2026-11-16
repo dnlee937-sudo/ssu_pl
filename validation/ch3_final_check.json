@@ -1,55 +1,55 @@
 {
  "pairs": 54,
  "with_excess": 6,
- "seconds": 2.4,
+ "seconds": 2.7,
  "rows": [
   {
    "label": "internal_sequence",
    "m": 1,
    "F_star": 0.0,
-   "Z_star": 132.08333333333334,
-   "code_rows": 515,
-   "reference_rows": 291
+   "Z_star": 132.08333333333331,
+   "code_rows": 530,
+   "reference_rows": 292
   },
   {
    "label": "internal_sequence",
    "m": 2,
    "F_star": 0.0,
    "Z_star": 132.08333333333331,
-   "code_rows": 495,
-   "reference_rows": 271
+   "code_rows": 510,
+   "reference_rows": 272
   },
   {
    "label": "internal_sequence",
    "m": 3,
    "F_star": 0.0,
    "Z_star": 132.08333333333331,
-   "code_rows": 479,
-   "reference_rows": 255
+   "code_rows": 494,
+   "reference_rows": 256
   },
   {
    "label": "outsourced_return_before_qc",
    "m": 1,
    "F_star": 0.0,
    "Z_star": 186.80555555555554,
-   "code_rows": 515,
-   "reference_rows": 315
+   "code_rows": 560,
+   "reference_rows": 321
   },
   {
    "label": "outsourced_return_before_qc",
    "m": 2,
    "F_star": 0.0,
    "Z_star": 186.80555555555554,
-   "code_rows": 495,
-   "reference_rows": 295
+   "code_rows": 540,
+   "reference_rows": 301
   },
   {
    "label": "outsourced_return_before_qc",
    "m": 3,
    "F_star": 0.0,
    "Z_star": 186.80555555555554,
-   "code_rows": 479,
-   "reference_rows": 279
+   "code_rows": 524,
+   "reference_rows": 285
   },
   {
    "label": "recover_then_work",
@@ -152,24 +152,24 @@
    "m": 1,
    "F_star": 0.0,
    "Z_star": 536.25,
-   "code_rows": 569,
-   "reference_rows": 351
+   "code_rows": 599,
+   "reference_rows": 353
   },
   {
    "label": "shared_worker_capacity",
    "m": 2,
    "F_star": 0.0,
    "Z_star": 536.25,
-   "code_rows": 553,
-   "reference_rows": 335
+   "code_rows": 583,
+   "reference_rows": 337
   },
   {
    "label": "shared_worker_capacity",
    "m": 3,
    "F_star": 0.0,
    "Z_star": 536.25,
-   "code_rows": 529,
-   "reference_rows": 311
+   "code_rows": 559,
+   "reference_rows": 313
   },
   {
    "label": "known_customer_pickup",
@@ -248,24 +248,24 @@
    "m": 1,
    "F_star": 0.0,
    "Z_star": 1348.3333333333333,
-   "code_rows": 193,
-   "reference_rows": 44
+   "code_rows": 2773,
+   "reference_rows": 45
   },
   {
    "label": "end_of_business_day",
    "m": 2,
    "F_star": 0.0,
    "Z_star": 1348.3333333333333,
-   "code_rows": 174,
-   "reference_rows": 25
+   "code_rows": 2754,
+   "reference_rows": 26
   },
   {
    "label": "end_of_business_day",
    "m": 3,
    "F_star": 0.0,
    "Z_star": 1348.3333333333333,
-   "code_rows": 170,
-   "reference_rows": 21
+   "code_rows": 2750,
+   "reference_rows": 22
   },
   {
    "label": "approval_received_112",
@@ -368,24 +368,24 @@
    "m": 1,
    "F_star": 0.0,
    "Z_star": 3465.4166666666665,
-   "code_rows": 4184,
-   "reference_rows": 1146
+   "code_rows": 4379,
+   "reference_rows": 1159
   },
   {
    "label": "overnight_interruption",
    "m": 2,
    "F_star": 0.0,
    "Z_star": 3465.4166666666665,
-   "code_rows": 3794,
-   "reference_rows": 756
+   "code_rows": 3989,
+   "reference_rows": 769
   },
   {
    "label": "overnight_interruption",
    "m": 3,
    "F_star": 0.0,
    "Z_star": 3465.4166666666665,
-   "code_rows": 3650,
-   "reference_rows": 612
+   "code_rows": 3845,
+   "reference_rows": 625
   },
   {
    "label": "technician_joins_trip",
@@ -416,24 +416,24 @@
    "m": 1,
    "F_star": 0.0,
    "Z_star": 2718.1944444444443,
-   "code_rows": 515,
-   "reference_rows": 291
+   "code_rows": 950,
+   "reference_rows": 320
   },
   {
    "label": "alternative_crossing_horizon",
    "m": 2,
    "F_star": 0.0,
    "Z_star": 2718.1944444444443,
-   "code_rows": 495,
-   "reference_rows": 271
+   "code_rows": 930,
+   "reference_rows": 300
   },
   {
    "label": "alternative_crossing_horizon",
    "m": 3,
    "F_star": 0.0,
    "Z_star": 2718.1944444444443,
-   "code_rows": 479,
-   "reference_rows": 255
+   "code_rows": 914,
+   "reference_rows": 284
   }
  ]
 }

@@ -86,14 +86,15 @@ class Rolling:
     def window_state(self, t0, t1):
         inst = self.inst
         today = t0 // SLOTS_PER_DAY
-        vehs, fixed_res, fixed_park = [], defaultdict(lambda: np.zeros(t1 - t0, int)), np.zeros(t1 - t0, int)
+        EXT = 6 * SLOTS_PER_DAY            # committed resource use is carried into the extended range T+
+        vehs, fixed_res, fixed_park = [], defaultdict(lambda: np.zeros(t1 - t0 + EXT, int)), np.zeros(t1 - t0, int)
         fixed_out_park = np.zeros(t1 - t0, int)
         # fixed usage of executed modes / trips that overlap the window
         for (vid, off, md, s) in self.traj['modes']:
             sp_, res_, park_ = mode_profile(md, s)
             if s + sp_ > t0:
                 for r, prof in res_.items():
-                    a = max(t0, s); b = min(t1, s + sp_)
+                    a = max(t0, s); b = min(t1 + EXT, s + sp_)
                     if b > a:
                         fixed_res[r][a - t0:b - t0] += prof[a - s:b - s]
                 for h in np.nonzero(park_)[0]:
