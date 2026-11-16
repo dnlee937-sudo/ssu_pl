@@ -1,0 +1,53 @@
+name: small-optimal
+on:
+  workflow_dispatch:
+    inputs:
+      milp_limit:
+        description: 전체 MILP 단계별 시간 제한(초)
+        default: "1800"
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        daily: [2, 3, 4, 5, 6]
+        cond: [base, park, staff]
+        seed: [1, 2]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q numpy highspy==1.15.1
+      - run: python3 small_opt.py ${{ matrix.daily }} ${{ matrix.cond }} ${{ matrix.seed }} 120 ${{ inputs.milp_limit }} out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: small-${{ matrix.daily }}-${{ matrix.cond }}-${{ matrix.seed }}
+          path: out
+  collect:
+    needs: run
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: small-*
+          merge-multiple: true
+          path: /tmp/res
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin results:results
+          git checkout results
+          DIR="runs/${GITHUB_RUN_ID}_small"
+          mkdir -p "$DIR"
+          cp /tmp/res/* "$DIR"/ 2>/dev/null || true
+          echo "run_id=${GITHUB_RUN_ID} sha=${GITHUB_SHA} small-instance optimal comparison" > "$DIR/RUN_INFO.txt"
+          git add runs
+          git commit -q -m "small-instance results of run ${GITHUB_RUN_ID}"
+          git push origin results
