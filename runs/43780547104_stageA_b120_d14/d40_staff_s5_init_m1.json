@@ -1,0 +1,6001 @@
+{
+ "name": "d40_staff_s5_init_m1",
+ "daily": 40,
+ "cond": "staff",
+ "seed": 5,
+ "policy": "init",
+ "m": 1,
+ "budget": 120.0,
+ "hold_cost_day": 5000.0,
+ "caps": {
+  "gen": 12,
+  "mech": 8,
+  "body": 6,
+  "insp": 4,
+  "lift": 32,
+  "bodybay": 12,
+  "paintline": 4,
+  "washbay": 8,
+  "inspbay": 8,
+  "supportcar": 4,
+  "sup_wash": 16,
+  "sup_maint": 16,
+  "sup_engine": 8,
+  "sup_body": 8,
+  "sup_tow": 8
+ },
+ "park_in": 48,
+ "park_out": 72,
+ "rent_max": 60,
+ "n_vehicles": 440,
+ "meta": {
+  "daily": 40,
+  "seed": 5,
+  "days": 14,
+  "n_init": 40,
+  "p_approval": 0.2,
+  "p_fault": 0.03
+ },
+ "n_new": 400,
+ "n_init": 40,
+ "checker_ok": true,
+ "n_viol": 0,
+ "violations": [],
+ "excess_in_space_min": 2440770,
+ "excess_in_slots": 3060,
+ "tech_trip_persons": 24,
+ "staff_persons": {
+  "body": 6,
+  "gen": 12,
+  "insp": 4,
+  "mech": 8
+ },
+ "eval": {
+  "econ": 14586400.0,
+  "work": 14270000,
+  "work_internal": 14270000,
+  "work_outsourced": 0,
+  "trips": 278000,
+  "n_staff_trips": 129,
+  "n_tow": 2,
+  "rent": 0.0,
+  "late_cost": 38400.0,
+  "late_min": 1920.0,
+  "late_cnt": 2,
+  "completed": 121,
+  "ontime": 119,
+  "pickup_wait_cost": 0.0,
+  "storage_billed": 814374.9999999999,
+  "status": {
+   "done_waiting_customer": 78,
+   "released": 47,
+   "open_in_time": 89,
+   "open_overdue": 207,
+   "returned_settled": 4,
+   "wait_approval": 14,
+   "wait_fault_decision": 1
+  },
+  "residual_work_lb": 47620000.0,
+  "residual_late_lb": 27987600.0,
+  "max_in": 328,
+  "max_out": 65,
+  "daily_inventory_17h": [
+   71,
+   92,
+   104,
+   153,
+   193,
+   193,
+   193,
+   233,
+   273,
+   313,
+   353,
+   393,
+   393,
+   393
+  ],
+  "unfinished_vehicle_days": 2153.7673611111113,
+  "hold_cost": 10768836.805555556
+ },
+ "replans": 31,
+ "replans_valid": 31,
+ "replans_over_budget": 0,
+ "cum_plan_s": 148.83011779299994,
+ "wall_s": 149.19178342819214,
+ "maxrss_mb": 1052.30078125,
+ "log": [
+  {
+   "t0": 108,
+   "t1": 1080,
+   "day": 0,
+   "n_veh": 80,
+   "stats": {
+    "m": 1,
+    "ncol": 211257,
+    "nrow": 184103,
+    "nnz": 1248032,
+    "n_int": 209233,
+    "n_x": 9440,
+    "n_y": 155520,
+    "n_z": 42208,
+    "n_w": 556,
+    "n_e": 88,
+    "n_o": 179,
+    "rows": {
+     "cover": 179,
+     "defer": 103,
+     "prec": 103,
+     "release": 2,
+     "flow": 155520,
+     "cap": 1944,
+     "cap_calendar": 0,
+     "precond": 10642,
+     "res": 14580,
+     "trip": 556,
+     "crew": 412,
+     "late": 61
+    },
+    "build_s": 0.917,
+    "nnz_y": 477002
+   },
+   "build_s": 1.1986975390000225,
+   "cand_construct": [
+    0.0,
+    9419501.388888888
+   ],
+   "cand_defer_all": [
+    138100.0,
+    13226413.88888889
+   ],
+   "init_source": "construct",
+   "init_s": 1.3963261439999997,
+   "init_F": 0.0,
+   "init_obj": 9419501.388888888,
+   "init_parts": {
+    "hold": 346701.388888889,
+    "work": 6985000.0,
+    "residual": 2000000.0,
+    "pickup_wait": 0.0,
+    "trips": 68000.0,
+    "rent": 0.0,
+    "late": 19800.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 0.0,
+   "final_obj": 9419501.388888888,
+   "final_parts": {
+    "hold": 346701.388888889,
+    "work": 6985000.0,
+    "residual": 2000000.0,
+    "pickup_wait": 0.0,
+    "trips": 68000.0,
+    "rent": 0.0,
+    "late": 19800.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 1.4061859250000452,
+   "maxrss_mb": 214.87109375
+  },
+  {
+   "t0": 396,
+   "t1": 1368,
+   "day": 1,
+   "n_veh": 120,
+   "stats": {
+    "m": 1,
+    "ncol": 311961,
+    "nrow": 267581,
+    "nnz": 1510128,
+    "n_int": 309897,
+    "n_x": 7889,
+    "n_y": 233280,
+    "n_z": 64856,
+    "n_w": 556,
+    "n_e": 1872,
+    "n_o": 171,
+    "rows": {
+     "cover": 171,
+     "defer": 106,
+     "prec": 106,
+     "release": 33,
+     "flow": 233280,
+     "cap": 1944,
+     "cap_calendar": 0,
+     "precond": 16344,
+     "res": 14580,
+     "trip": 556,
+     "crew": 412,
+     "late": 48
+    },
+    "build_s": 1.015,
+    "nnz_y": 715864
+   },
+   "build_s": 1.3574248850000004,
+   "cand_construct": [
+    0.0,
+    10283344.444444444
+   ],
+   "cand_defer_all": [
+    187490.0,
+    15003027.777777776
+   ],
+   "init_source": "construct",
+   "init_s": 1.6002914889999715,
+   "init_F": 0.0,
+   "init_obj": 10283344.444444444,
+   "init_parts": {
+    "hold": 396944.4444444446,
+    "work": 7420000.0,
+    "residual": 2320000.0,
+    "pickup_wait": 0.0,
+    "trips": 108000.0,
+    "rent": 0.0,
+    "late": 38400.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 0.0,
+   "final_obj": 10283344.444444444,
+   "final_parts": {
+    "hold": 396944.4444444446,
+    "work": 7420000.0,
+    "residual": 2320000.0,
+    "pickup_wait": 0.0,
+    "trips": 108000.0,
+    "rent": 0.0,
+    "late": 38400.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 1.6156295229999955,
+   "maxrss_mb": 262.16796875
+  },
+  {
+   "t0": 447,
+   "t1": 1368,
+   "day": 1,
+   "n_veh": 108,
+   "stats": {
+    "m": 1,
+    "ncol": 260177,
+    "nrow": 228858,
+    "nnz": 1040574,
+    "n_int": 258227,
+    "n_x": 4268,
+    "n_y": 198936,
+    "n_z": 51908,
+    "n_w": 487,
+    "n_e": 1400,
+    "n_o": 113,
+    "rows": {
+     "cover": 113,
+     "defer": 64,
+     "prec": 64,
+     "release": 28,
+     "flow": 198936,
+     "cap": 1842,
+     "cap_calendar": 0,
+     "precond": 13112,
+     "res": 13815,
+     "trip": 487,
+     "crew": 361,
+     "late": 35
+    },
+    "build_s": 0.688,
+    "nnz_y": 609704
+   },
+   "build_s": 0.9408805360000088,
+   "cand_construct": [
+    0.0,
+    5992356.944444444
+   ],
+   "cand_defer_all": [
+    66925.0,
+    9208694.444444444
+   ],
+   "init_source": "construct",
+   "init_s": 1.1094424479999816,
+   "init_F": 0.0,
+   "init_obj": 5992356.944444444,
+   "init_parts": {
+    "hold": 324756.9444444445,
+    "work": 3700000.0,
+    "residual": 1885000.0,
+    "pickup_wait": 0.0,
+    "trips": 64000.0,
+    "rent": 0.0,
+    "late": 18600.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 0.0,
+   "final_obj": 5992356.944444444,
+   "final_parts": {
+    "hold": 324756.9444444445,
+    "work": 3700000.0,
+    "residual": 1885000.0,
+    "pickup_wait": 0.0,
+    "trips": 64000.0,
+    "rent": 0.0,
+    "late": 18600.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 1.1246858949999705,
+   "maxrss_mb": 262.16796875
+  },
+  {
+   "t0": 503,
+   "t1": 1368,
+   "day": 1,
+   "n_veh": 101,
+   "stats": {
+    "m": 1,
+    "ncol": 223107,
+    "nrow": 200972,
+    "nnz": 806921,
+    "n_int": 221276,
+    "n_x": 1853,
+    "n_y": 174730,
+    "n_z": 42117,
+    "n_w": 417,
+    "n_e": 1130,
+    "n_o": 74,
+    "rows": {
+     "cover": 74,
+     "defer": 46,
+     "prec": 46,
+     "release": 24,
+     "flow": 174730,
+     "cap": 1730,
+     "cap_calendar": 0,
+     "precond": 10605,
+     "res": 12975,
+     "trip": 417,
+     "crew": 309,
+     "late": 15
+    },
+    "build_s": 0.483,
+    "nnz_y": 534593
+   },
+   "build_s": 0.6812004340000044,
+   "cand_construct": [
+    0.0,
+    4543627.777777778
+   ],
+   "cand_defer_all": [
+    0.0,
+    6429906.944444444
+   ],
+   "init_source": "construct",
+   "init_s": 0.7966402669999866,
+   "init_F": 0.0,
+   "init_obj": 4543627.777777778,
+   "init_parts": {
+    "hold": 284027.77777777787,
+    "work": 2520000.0,
+    "residual": 1685000.0,
+    "pickup_wait": 0.0,
+    "trips": 36000.0,
+    "rent": 0.0,
+    "late": 18600.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 0.0,
+   "final_obj": 4543627.777777778,
+   "final_parts": {
+    "hold": 284027.77777777787,
+    "work": 2520000.0,
+    "residual": 1685000.0,
+    "pickup_wait": 0.0,
+    "trips": 36000.0,
+    "rent": 0.0,
+    "late": 18600.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 0.8104770990000247,
+   "maxrss_mb": 262.16796875
+  },
+  {
+   "t0": 684,
+   "t1": 2232,
+   "day": 2,
+   "n_veh": 141,
+   "stats": {
+    "m": 1,
+    "ncol": 529397,
+    "nrow": 483575,
+    "nnz": 2322097,
+    "n_int": 526160,
+    "n_x": 8971,
+    "n_y": 436536,
+    "n_z": 76254,
+    "n_w": 556,
+    "n_e": 2366,
+    "n_o": 195,
+    "rows": {
+     "cover": 195,
+     "defer": 127,
+     "prec": 127,
+     "release": 40,
+     "flow": 436536,
+     "cap": 3096,
+     "cap_calendar": 0,
+     "precond": 19214,
+     "res": 23220,
+     "trip": 556,
+     "crew": 412,
+     "late": 51
+    },
+    "build_s": 1.17,
+    "nnz_y": 1328437
+   },
+   "build_s": 1.7075914340000509,
+   "cand_construct": [
+    0.0,
+    12257811.805555556
+   ],
+   "cand_defer_all": [
+    301705.0,
+    22185665.972222224
+   ],
+   "init_source": "construct",
+   "init_s": 2.0475362180000047,
+   "init_F": 0.0,
+   "init_obj": 12257811.805555556,
+   "init_parts": {
+    "hold": 753211.8055555555,
+    "work": 9000000.0,
+    "residual": 2350000.0,
+    "pickup_wait": 0.0,
+    "trips": 136000.0,
+    "rent": 0.0,
+    "late": 18600.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 0.0,
+   "final_obj": 12257811.805555556,
+   "final_parts": {
+    "hold": 753211.8055555555,
+    "work": 9000000.0,
+    "residual": 2350000.0,
+    "pickup_wait": 0.0,
+    "trips": 136000.0,
+    "rent": 0.0,
+    "late": 18600.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 2.0709318640000447,
+   "maxrss_mb": 344.6328125
+  },
+  {
+   "t0": 735,
+   "t1": 2232,
+   "day": 2,
+   "n_veh": 125,
+   "stats": {
+    "m": 1,
+    "ncol": 447471,
+    "nrow": 416241,
+    "nnz": 1865443,
+    "n_int": 444352,
+    "n_x": 6294,
+    "n_y": 374250,
+    "n_z": 60443,
+    "n_w": 487,
+    "n_e": 1603,
+    "n_o": 155,
+    "rows": {
+     "cover": 155,
+     "defer": 100,
+     "prec": 100,
+     "release": 31,
+     "flow": 374250,
+     "cap": 2994,
+     "cap_calendar": 0,
+     "precond": 15267,
+     "res": 22455,
+     "trip": 487,
+     "crew": 361,
+     "late": 40
+    },
+    "build_s": 0.897,
+    "nnz_y": 1137767
+   },
+   "build_s": 1.3228458109999792,
+   "cand_construct": [
+    0.0,
+    9983829.861111112
+   ],
+   "cand_defer_all": [
+    140580.0,
+    16801779.861111112
+   ],
+   "init_source": "construct",
+   "init_s": 1.5648038819999783,
+   "init_F": 0.0,
+   "init_obj": 9983829.861111112,
+   "init_parts": {
+    "hold": 672829.861111111,
+    "work": 7005000.0,
+    "residual": 2230000.0,
+    "pickup_wait": 0.0,
+    "trips": 76000.0,
+    "rent": 0.0,
+    "late": 0.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 0.0,
+   "final_obj": 9983829.861111112,
+   "final_parts": {
+    "hold": 672829.861111111,
+    "work": 7005000.0,
+    "residual": 2230000.0,
+    "pickup_wait": 0.0,
+    "trips": 76000.0,
+    "rent": 0.0,
+    "late": 0.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 1.5870898699999998,
+   "maxrss_mb": 344.6328125
+  },
+  {
+   "t0": 791,
+   "t1": 2232,
+   "day": 2,
+   "n_veh": 113,
+   "stats": {
+    "m": 1,
+    "ncol": 382564,
+    "nrow": 363074,
+    "nnz": 1548604,
+    "n_int": 379569,
+    "n_x": 3956,
+    "n_y": 325666,
+    "n_z": 47121,
+    "n_w": 417,
+    "n_e": 1335,
+    "n_o": 112,
+    "rows": {
+     "cover": 112,
+     "defer": 77,
+     "prec": 77,
+     "release": 29,
+     "flow": 325666,
+     "cap": 2882,
+     "cap_calendar": 0,
+     "precond": 11865,
+     "res": 21615,
+     "trip": 417,
+     "crew": 309,
+     "late": 24
+    },
+    "build_s": 0.652,
+    "nnz_y": 988637
+   },
+   "build_s": 0.9999926020000203,
+   "cand_construct": [
+    0.0,
+    8281828.472222222
+   ],
+   "cand_defer_all": [
+    0.0,
+    12658261.805555556
+   ],
+   "init_source": "construct",
+   "init_s": 1.1673435440000048,
+   "init_F": 0.0,
+   "init_obj": 8281828.472222222,
+   "init_parts": {
+    "hold": 563628.4722222222,
+    "work": 6000000.0,
+    "residual": 1640000.0,
+    "pickup_wait": 0.0,
+    "trips": 46000.0,
+    "rent": 0.0,
+    "late": 32200.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 0.0,
+   "final_obj": 8281828.472222222,
+   "final_parts": {
+    "hold": 563628.4722222222,
+    "work": 6000000.0,
+    "residual": 1640000.0,
+    "pickup_wait": 0.0,
+    "trips": 46000.0,
+    "rent": 0.0,
+    "late": 32200.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 1.1885213560000238,
+   "maxrss_mb": 344.6328125
+  },
+  {
+   "t0": 972,
+   "t1": 2520,
+   "day": 3,
+   "n_veh": 153,
+   "stats": {
+    "m": 1,
+    "ncol": 578211,
+    "nrow": 522552,
+    "nnz": 2845210,
+    "n_int": 574962,
+    "n_x": 13506,
+    "n_y": 473688,
+    "n_z": 83046,
+    "n_w": 556,
+    "n_e": 2649,
+    "n_o": 231,
+    "rows": {
+     "cover": 231,
+     "defer": 156,
+     "prec": 156,
+     "release": 44,
+     "flow": 473688,
+     "cap": 3096,
+     "cap_calendar": 0,
+     "precond": 20924,
+     "res": 23220,
+     "trip": 556,
+     "crew": 412,
+     "late": 68
+    },
+    "build_s": 1.485,
+    "nnz_y": 1441567
+   },
+   "build_s": 2.113804315999971,
+   "cand_construct": [
+    0.0,
+    14841297.222222224
+   ],
+   "cand_defer_all": [
+    302050.0,
+    25077776.388888888
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 2520)",
+      "resource paintline over capacity at 180 slots (first 2520)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 2.51463226300001,
+   "init_F": 302050.0,
+   "init_obj": 25077776.388888888,
+   "init_parts": {
+    "hold": 2066076.3888888895,
+    "work": 0.0,
+    "residual": 13905000.0,
+    "pickup_wait": 6319500.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 2787200.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 302050.0,
+   "final_obj": 25077776.388888888,
+   "final_parts": {
+    "hold": 2066076.3888888895,
+    "work": 0.0,
+    "residual": 13905000.0,
+    "pickup_wait": 6319500.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 2787200.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 2.5398488899999734,
+   "maxrss_mb": 395.77734375
+  },
+  {
+   "t0": 1038,
+   "t1": 2520,
+   "day": 3,
+   "n_veh": 153,
+   "stats": {
+    "m": 1,
+    "ncol": 544529,
+    "nrow": 498197,
+    "nnz": 2628991,
+    "n_int": 541412,
+    "n_x": 11754,
+    "n_y": 453492,
+    "n_z": 71518,
+    "n_w": 468,
+    "n_e": 2854,
+    "n_o": 231,
+    "rows": {
+     "cover": 231,
+     "defer": 156,
+     "prec": 156,
+     "release": 51,
+     "flow": 453492,
+     "cap": 2964,
+     "cap_calendar": 0,
+     "precond": 18034,
+     "res": 22230,
+     "trip": 468,
+     "crew": 346,
+     "late": 68
+    },
+    "build_s": 1.289,
+    "nnz_y": 1378057
+   },
+   "build_s": 1.8461788520000368,
+   "cand_construct": [
+    18735.0,
+    15469547.222222222
+   ],
+   "cand_defer_all": [
+    296080.0,
+    25867743.05555556
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 2520)",
+      "resource paintline over capacity at 180 slots (first 2520)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 2.29298043,
+   "init_F": 296080.0,
+   "init_obj": 25867743.05555556,
+   "init_parts": {
+    "hold": 2005243.0555555564,
+    "work": 0.0,
+    "residual": 13905000.0,
+    "pickup_wait": 7170300.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 2787200.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 296080.0,
+   "final_obj": 25867743.05555556,
+   "final_parts": {
+    "hold": 2005243.0555555564,
+    "work": 0.0,
+    "residual": 13905000.0,
+    "pickup_wait": 7170300.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 2787200.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 2.320180542999992,
+   "maxrss_mb": 395.77734375
+  },
+  {
+   "t0": 1260,
+   "t1": 2808,
+   "day": 4,
+   "n_veh": 193,
+   "stats": {
+    "m": 1,
+    "ncol": 732027,
+    "nrow": 652218,
+    "nnz": 4003018,
+    "n_int": 728738,
+    "n_x": 20048,
+    "n_y": 597528,
+    "n_z": 104980,
+    "n_w": 556,
+    "n_e": 3984,
+    "n_o": 342,
+    "rows": {
+     "cover": 342,
+     "defer": 227,
+     "prec": 227,
+     "release": 58,
+     "flow": 597528,
+     "cap": 3096,
+     "cap_calendar": 0,
+     "precond": 26448,
+     "res": 23220,
+     "trip": 556,
+     "crew": 412,
+     "late": 103
+    },
+    "build_s": 2.023,
+    "nnz_y": 1818493
+   },
+   "build_s": 2.857618349000006,
+   "cand_construct": [
+    108470.0,
+    23841390.277777776
+   ],
+   "cand_defer_all": [
+    610580.0,
+    38402990.277777776
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 2808)",
+      "resource paintline over capacity at 180 slots (first 2808)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 3.7835325010000247,
+   "init_F": 610580.0,
+   "init_obj": 38402990.277777776,
+   "init_parts": {
+    "hold": 3170590.277777778,
+    "work": 0.0,
+    "residual": 20310000.0,
+    "pickup_wait": 9528300.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 5394100.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 610580.0,
+   "final_obj": 38402990.277777776,
+   "final_parts": {
+    "hold": 3170590.277777778,
+    "work": 0.0,
+    "residual": 20310000.0,
+    "pickup_wait": 9528300.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 5394100.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 3.8131984650000277,
+   "maxrss_mb": 509.6171875
+  },
+  {
+   "t0": 1326,
+   "t1": 2808,
+   "day": 4,
+   "n_veh": 193,
+   "stats": {
+    "m": 1,
+    "ncol": 688594,
+    "nrow": 621760,
+    "nnz": 3675794,
+    "n_int": 685437,
+    "n_x": 17636,
+    "n_y": 572052,
+    "n_z": 90222,
+    "n_w": 468,
+    "n_e": 3617,
+    "n_o": 338,
+    "rows": {
+     "cover": 338,
+     "defer": 224,
+     "prec": 224,
+     "release": 60,
+     "flow": 572052,
+     "cap": 2964,
+     "cap_calendar": 0,
+     "precond": 22750,
+     "res": 22230,
+     "trip": 468,
+     "crew": 346,
+     "late": 103
+    },
+    "build_s": 1.795,
+    "nnz_y": 1738333
+   },
+   "build_s": 2.563948458000027,
+   "cand_construct": [
+    254020.0,
+    26212868.75
+   ],
+   "cand_defer_all": [
+    592455.0,
+    38169143.75
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 2808)",
+      "resource paintline over capacity at 180 slots (first 2808)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 3.4262947459999964,
+   "init_F": 592455.0,
+   "init_obj": 38169143.75,
+   "init_parts": {
+    "hold": 3039843.7500000014,
+    "work": 0.0,
+    "residual": 19950000.0,
+    "pickup_wait": 9663900.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 5515400.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 592455.0,
+   "final_obj": 38169143.75,
+   "final_parts": {
+    "hold": 3039843.7500000014,
+    "work": 0.0,
+    "residual": 19950000.0,
+    "pickup_wait": 9663900.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 5515400.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 3.456397349000042,
+   "maxrss_mb": 509.6171875
+  },
+  {
+   "t0": 2124,
+   "t1": 3096,
+   "day": 7,
+   "n_veh": 233,
+   "stats": {
+    "m": 1,
+    "ncol": 617656,
+    "nrow": 503742,
+    "nnz": 4100172,
+    "n_int": 615479,
+    "n_x": 27736,
+    "n_y": 452952,
+    "n_z": 127156,
+    "n_w": 556,
+    "n_e": 5312,
+    "n_o": 451,
+    "rows": {
+     "cover": 451,
+     "defer": 297,
+     "prec": 297,
+     "release": 76,
+     "flow": 452952,
+     "cap": 1944,
+     "cap_calendar": 0,
+     "precond": 32032,
+     "res": 14580,
+     "trip": 556,
+     "crew": 412,
+     "late": 144
+    },
+    "build_s": 2.554,
+    "nnz_y": 1390229
+   },
+   "build_s": 3.3912167380000255,
+   "cand_construct": [
+    151645.0,
+    36504019.44444444
+   ],
+   "cand_defer_all": [
+    574250.0,
+    50532452.777777776
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 3096)",
+      "resource paintline over capacity at 180 slots (first 3096)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 4.38260643000001,
+   "init_F": 574250.0,
+   "init_obj": 50532452.777777776,
+   "init_parts": {
+    "hold": 2707152.7777777794,
+    "work": 0.0,
+    "residual": 25830000.0,
+    "pickup_wait": 12819900.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 9175400.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 574250.0,
+   "final_obj": 50532452.777777776,
+   "final_parts": {
+    "hold": 2707152.7777777794,
+    "work": 0.0,
+    "residual": 25830000.0,
+    "pickup_wait": 12819900.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 9175400.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 4.412316223999994,
+   "maxrss_mb": 533.23828125
+  },
+  {
+   "t0": 2227,
+   "t1": 3096,
+   "day": 7,
+   "n_veh": 233,
+   "stats": {
+    "m": 1,
+    "ncol": 531274,
+    "nrow": 446186,
+    "nnz": 3096526,
+    "n_int": 529303,
+    "n_x": 21110,
+    "n_y": 404954,
+    "n_z": 97161,
+    "n_w": 417,
+    "n_e": 4202,
+    "n_o": 451,
+    "rows": {
+     "cover": 451,
+     "defer": 297,
+     "prec": 297,
+     "release": 77,
+     "flow": 404954,
+     "cap": 1738,
+     "cap_calendar": 0,
+     "precond": 24465,
+     "res": 13035,
+     "trip": 417,
+     "crew": 309,
+     "late": 145
+    },
+    "build_s": 1.933,
+    "nnz_y": 1238861
+   },
+   "build_s": 2.563226339000039,
+   "cand_construct": [
+    254240.0,
+    40484076.38888889
+   ],
+   "cand_defer_all": [
+    521400.0,
+    50434747.222222224
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 3096)",
+      "resource paintline over capacity at 180 slots (first 3096)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 3.41506773399999,
+   "init_F": 521400.0,
+   "init_obj": 50434747.222222224,
+   "init_parts": {
+    "hold": 2462847.222222223,
+    "work": 0.0,
+    "residual": 25830000.0,
+    "pickup_wait": 12879900.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 9262000.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 521400.0,
+   "final_obj": 50434747.222222224,
+   "final_parts": {
+    "hold": 2462847.222222223,
+    "work": 0.0,
+    "residual": 25830000.0,
+    "pickup_wait": 12879900.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 9262000.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 3.4425955710000267,
+   "maxrss_mb": 533.23828125
+  },
+  {
+   "t0": 2231,
+   "t1": 3096,
+   "day": 7,
+   "n_veh": 233,
+   "stats": {
+    "m": 1,
+    "ncol": 529212,
+    "nrow": 444254,
+    "nnz": 3076188,
+    "n_int": 527249,
+    "n_x": 20920,
+    "n_y": 403090,
+    "n_z": 97161,
+    "n_w": 417,
+    "n_e": 4202,
+    "n_o": 451,
+    "rows": {
+     "cover": 451,
+     "defer": 297,
+     "prec": 297,
+     "release": 77,
+     "flow": 403090,
+     "cap": 1730,
+     "cap_calendar": 0,
+     "precond": 24465,
+     "res": 12975,
+     "trip": 417,
+     "crew": 309,
+     "late": 145
+    },
+    "build_s": 1.945,
+    "nnz_y": 1233269
+   },
+   "build_s": 2.604958528999987,
+   "cand_construct": [
+    252120.0,
+    40485581.94444444
+   ],
+   "cand_defer_all": [
+    519000.0,
+    50424052.777777776
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 3096)",
+      "resource paintline over capacity at 180 slots (first 3096)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 3.4743516439999667,
+   "init_F": 519000.0,
+   "init_obj": 50424052.777777776,
+   "init_parts": {
+    "hold": 2452152.7777777794,
+    "work": 0.0,
+    "residual": 25830000.0,
+    "pickup_wait": 12879900.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 9262000.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 519000.0,
+   "final_obj": 50424052.777777776,
+   "final_parts": {
+    "hold": 2452152.7777777794,
+    "work": 0.0,
+    "residual": 25830000.0,
+    "pickup_wait": 12879900.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 9262000.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 3.5012437919999684,
+   "maxrss_mb": 533.23828125
+  },
+  {
+   "t0": 2412,
+   "t1": 3384,
+   "day": 8,
+   "n_veh": 273,
+   "stats": {
+    "m": 1,
+    "ncol": 724388,
+    "nrow": 587453,
+    "nnz": 4627226,
+    "n_int": 722171,
+    "n_x": 33862,
+    "n_y": 530712,
+    "n_z": 149649,
+    "n_w": 556,
+    "n_e": 5514,
+    "n_o": 561,
+    "rows": {
+     "cover": 561,
+     "defer": 367,
+     "prec": 367,
+     "release": 77,
+     "flow": 530712,
+     "cap": 1944,
+     "cap_calendar": 0,
+     "precond": 37695,
+     "res": 14580,
+     "trip": 556,
+     "crew": 412,
+     "late": 181
+    },
+    "build_s": 3.076,
+    "nnz_y": 1629051
+   },
+   "build_s": 4.067748444000017,
+   "cand_construct": [
+    273745.0,
+    47846582.638888896
+   ],
+   "cand_defer_all": [
+    769615.0,
+    63721899.30555556
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 756 slots (first 3384)",
+      "resource paintline over capacity at 756 slots (first 3384)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 5.298579669999981,
+   "init_F": 769615.0,
+   "init_obj": 63721899.30555556,
+   "init_parts": {
+    "hold": 3415399.305555557,
+    "work": 0.0,
+    "residual": 31080000.0,
+    "pickup_wait": 15097500.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 14129000.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 769615.0,
+   "final_obj": 63721899.30555556,
+   "final_parts": {
+    "hold": 3415399.305555557,
+    "work": 0.0,
+    "residual": 31080000.0,
+    "pickup_wait": 15097500.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 14129000.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 5.329868553999972,
+   "maxrss_mb": 617.28515625
+  },
+  {
+   "t0": 2505,
+   "t1": 3384,
+   "day": 8,
+   "n_veh": 273,
+   "stats": {
+    "m": 1,
+    "ncol": 632858,
+    "nrow": 526941,
+    "nnz": 3628057,
+    "n_int": 630827,
+    "n_x": 26811,
+    "n_y": 479934,
+    "n_z": 117663,
+    "n_w": 431,
+    "n_e": 4389,
+    "n_o": 561,
+    "rows": {
+     "cover": 561,
+     "defer": 367,
+     "prec": 367,
+     "release": 77,
+     "flow": 479934,
+     "cap": 1758,
+     "cap_calendar": 0,
+     "precond": 29757,
+     "res": 13185,
+     "trip": 431,
+     "crew": 319,
+     "late": 184
+    },
+    "build_s": 2.402,
+    "nnz_y": 1469013
+   },
+   "build_s": 3.176547948999996,
+   "cand_construct": [
+    385835.0,
+    53498733.33333333
+   ],
+   "cand_defer_all": [
+    703200.0,
+    63474495.83333333
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 756 slots (first 3384)",
+      "resource paintline over capacity at 756 slots (first 3384)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 4.2887683889999835,
+   "init_F": 703200.0,
+   "init_obj": 63474495.83333333,
+   "init_parts": {
+    "hold": 3129895.833333334,
+    "work": 0.0,
+    "residual": 31080000.0,
+    "pickup_wait": 15097500.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 14167100.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 703200.0,
+   "final_obj": 63474495.83333333,
+   "final_parts": {
+    "hold": 3129895.833333334,
+    "work": 0.0,
+    "residual": 31080000.0,
+    "pickup_wait": 15097500.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 14167100.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 4.3187085469999715,
+   "maxrss_mb": 617.28515625
+  },
+  {
+   "t0": 2515,
+   "t1": 3384,
+   "day": 8,
+   "n_veh": 273,
+   "stats": {
+    "m": 1,
+    "ncol": 622384,
+    "nrow": 520185,
+    "nnz": 3431870,
+    "n_int": 620373,
+    "n_x": 25834,
+    "n_y": 474474,
+    "n_z": 113841,
+    "n_w": 417,
+    "n_e": 4241,
+    "n_o": 557,
+    "rows": {
+     "cover": 557,
+     "defer": 364,
+     "prec": 364,
+     "release": 78,
+     "flow": 474474,
+     "cap": 1738,
+     "cap_calendar": 0,
+     "precond": 28665,
+     "res": 13035,
+     "trip": 417,
+     "crew": 309,
+     "late": 183
+    },
+    "build_s": 2.308,
+    "nnz_y": 1451541
+   },
+   "build_s": 3.034334606000016,
+   "cand_construct": [
+    407660.0,
+    53492907.638888896
+   ],
+   "cand_defer_all": [
+    695200.0,
+    63211382.63888889
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 756 slots (first 3384)",
+      "resource paintline over capacity at 756 slots (first 3384)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 4.095163151999998,
+   "init_F": 695200.0,
+   "init_obj": 63211382.63888889,
+   "init_parts": {
+    "hold": 3079982.63888889,
+    "work": 0.0,
+    "residual": 30870000.0,
+    "pickup_wait": 15100900.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 14160500.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 695200.0,
+   "final_obj": 63211382.63888889,
+   "final_parts": {
+    "hold": 3079982.63888889,
+    "work": 0.0,
+    "residual": 30870000.0,
+    "pickup_wait": 15100900.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 14160500.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 4.125662548999969,
+   "maxrss_mb": 617.28515625
+  },
+  {
+   "t0": 2519,
+   "t1": 3384,
+   "day": 8,
+   "n_veh": 273,
+   "stats": {
+    "m": 1,
+    "ncol": 620374,
+    "nrow": 517934,
+    "nnz": 3437251,
+    "n_int": 618371,
+    "n_x": 26016,
+    "n_y": 472290,
+    "n_z": 113841,
+    "n_w": 417,
+    "n_e": 4241,
+    "n_o": 557,
+    "rows": {
+     "cover": 557,
+     "defer": 364,
+     "prec": 364,
+     "release": 78,
+     "flow": 472290,
+     "cap": 1730,
+     "cap_calendar": 0,
+     "precond": 28665,
+     "res": 12975,
+     "trip": 417,
+     "crew": 309,
+     "late": 184
+    },
+    "build_s": 2.311,
+    "nnz_y": 1444989
+   },
+   "build_s": 3.0271721249999928,
+   "cand_construct": [
+    405105.0,
+    53525204.861111104
+   ],
+   "cand_defer_all": [
+    692000.0,
+    63252279.861111104
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 756 slots (first 3384)",
+      "resource paintline over capacity at 756 slots (first 3384)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 4.099247347999949,
+   "init_F": 692000.0,
+   "init_obj": 63252279.861111104,
+   "init_parts": {
+    "hold": 3066579.8611111124,
+    "work": 0.0,
+    "residual": 30870000.0,
+    "pickup_wait": 15100900.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 14214800.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 692000.0,
+   "final_obj": 63252279.861111104,
+   "final_parts": {
+    "hold": 3066579.8611111124,
+    "work": 0.0,
+    "residual": 30870000.0,
+    "pickup_wait": 15100900.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 14214800.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 4.12849608199997,
+   "maxrss_mb": 617.28515625
+  },
+  {
+   "t0": 2700,
+   "t1": 4248,
+   "day": 9,
+   "n_veh": 313,
+   "stats": {
+    "m": 1,
+    "ncol": 1193323,
+    "nrow": 1041473,
+    "nnz": 6558760,
+    "n_int": 1189914,
+    "n_x": 40770,
+    "n_y": 969048,
+    "n_z": 171988,
+    "n_w": 556,
+    "n_e": 5568,
+    "n_o": 664,
+    "rows": {
+     "cover": 664,
+     "defer": 431,
+     "prec": 431,
+     "release": 78,
+     "flow": 969048,
+     "cap": 3096,
+     "cap_calendar": 0,
+     "precond": 43320,
+     "res": 23220,
+     "trip": 556,
+     "crew": 412,
+     "late": 216
+    },
+    "build_s": 3.593,
+    "nnz_y": 2949565
+   },
+   "build_s": 5.016010885000014,
+   "cand_construct": [
+    586910.0,
+    63469420.138888896
+   ],
+   "cand_defer_all": [
+    1540345.0,
+    94772436.80555555
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4248)",
+      "resource paintline over capacity at 180 slots (first 4248)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 6.855621959000018,
+   "init_F": 1540345.0,
+   "init_obj": 94772436.80555555,
+   "init_parts": {
+    "hold": 6433836.805555558,
+    "work": 0.0,
+    "residual": 36475000.0,
+    "pickup_wait": 21840100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 30023500.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 1540345.0,
+   "final_obj": 94772436.80555555,
+   "final_parts": {
+    "hold": 6433836.805555558,
+    "work": 0.0,
+    "residual": 36475000.0,
+    "pickup_wait": 21840100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 30023500.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 6.895647961999998,
+   "maxrss_mb": 799.05078125
+  },
+  {
+   "t0": 2706,
+   "t1": 4248,
+   "day": 9,
+   "n_veh": 313,
+   "stats": {
+    "m": 1,
+    "ncol": 1186425,
+    "nrow": 1037052,
+    "nnz": 6500520,
+    "n_int": 1183028,
+    "n_x": 39936,
+    "n_y": 965292,
+    "n_z": 169795,
+    "n_w": 548,
+    "n_e": 5491,
+    "n_o": 664,
+    "rows": {
+     "cover": 664,
+     "defer": 431,
+     "prec": 431,
+     "release": 78,
+     "flow": 965292,
+     "cap": 3084,
+     "cap_calendar": 0,
+     "precond": 42771,
+     "res": 23130,
+     "trip": 548,
+     "crew": 406,
+     "late": 216
+    },
+    "build_s": 3.504,
+    "nnz_y": 2937745
+   },
+   "build_s": 4.9071338189999665,
+   "cand_construct": [
+    630860.0,
+    64215763.19444445
+   ],
+   "cand_defer_all": [
+    1535525.0,
+    94752263.19444445
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4248)",
+      "resource paintline over capacity at 180 slots (first 4248)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 6.740455354999995,
+   "init_F": 1535525.0,
+   "init_obj": 94752263.19444445,
+   "init_parts": {
+    "hold": 6413663.194444446,
+    "work": 0.0,
+    "residual": 36475000.0,
+    "pickup_wait": 21840100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 30023500.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 1535525.0,
+   "final_obj": 94752263.19444445,
+   "final_parts": {
+    "hold": 6413663.194444446,
+    "work": 0.0,
+    "residual": 36475000.0,
+    "pickup_wait": 21840100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 30023500.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 6.781934923999984,
+   "maxrss_mb": 810.4140625
+  },
+  {
+   "t0": 2757,
+   "t1": 4248,
+   "day": 9,
+   "n_veh": 313,
+   "stats": {
+    "m": 1,
+    "ncol": 1128654,
+    "nrow": 999221,
+    "nnz": 5971976,
+    "n_int": 1125359,
+    "n_x": 34979,
+    "n_y": 933366,
+    "n_z": 149847,
+    "n_w": 479,
+    "n_e": 4875,
+    "n_o": 664,
+    "rows": {
+     "cover": 664,
+     "defer": 431,
+     "prec": 431,
+     "release": 78,
+     "flow": 933366,
+     "cap": 2982,
+     "cap_calendar": 0,
+     "precond": 37853,
+     "res": 22365,
+     "trip": 479,
+     "crew": 355,
+     "late": 216
+    },
+    "build_s": 3.121,
+    "nnz_y": 2837325
+   },
+   "build_s": 4.431904443999997,
+   "cand_construct": [
+    725000.0,
+    67422026.3888889
+   ],
+   "cand_defer_all": [
+    1490695.0,
+    94567384.72222222
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4248)",
+      "resource paintline over capacity at 180 slots (first 4248)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 6.181036034999977,
+   "init_F": 1490695.0,
+   "init_obj": 94567384.72222222,
+   "init_parts": {
+    "hold": 6228784.722222224,
+    "work": 0.0,
+    "residual": 36475000.0,
+    "pickup_wait": 21840100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 30023500.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 1490695.0,
+   "final_obj": 94567384.72222222,
+   "final_parts": {
+    "hold": 6228784.722222224,
+    "work": 0.0,
+    "residual": 36475000.0,
+    "pickup_wait": 21840100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 30023500.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 6.220121881000011,
+   "maxrss_mb": 810.4140625
+  },
+  {
+   "t0": 2793,
+   "t1": 4248,
+   "day": 9,
+   "n_veh": 313,
+   "stats": {
+    "m": 1,
+    "ncol": 1087323,
+    "nrow": 972253,
+    "nnz": 5575785,
+    "n_int": 1084100,
+    "n_x": 31818,
+    "n_y": 910830,
+    "n_z": 134903,
+    "n_w": 431,
+    "n_e": 4413,
+    "n_o": 664,
+    "rows": {
+     "cover": 664,
+     "defer": 431,
+     "prec": 431,
+     "release": 78,
+     "flow": 910830,
+     "cap": 2910,
+     "cap_calendar": 0,
+     "precond": 34117,
+     "res": 21825,
+     "trip": 431,
+     "crew": 319,
+     "late": 216
+    },
+    "build_s": 2.864,
+    "nnz_y": 2765981
+   },
+   "build_s": 4.103287636000005,
+   "cand_construct": [
+    810835.0,
+    71290497.91666667
+   ],
+   "cand_defer_all": [
+    1455000.0,
+    94422818.75
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4248)",
+      "resource paintline over capacity at 180 slots (first 4248)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 5.745339945000012,
+   "init_F": 1455000.0,
+   "init_obj": 94422818.75,
+   "init_parts": {
+    "hold": 6084218.750000002,
+    "work": 0.0,
+    "residual": 36475000.0,
+    "pickup_wait": 21840100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 30023500.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 1455000.0,
+   "final_obj": 94422818.75,
+   "final_parts": {
+    "hold": 6084218.750000002,
+    "work": 0.0,
+    "residual": 36475000.0,
+    "pickup_wait": 21840100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 30023500.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 5.7837394649999965,
+   "maxrss_mb": 810.4140625
+  },
+  {
+   "t0": 2988,
+   "t1": 4536,
+   "day": 10,
+   "n_veh": 353,
+   "stats": {
+    "m": 1,
+    "ncol": 1346446,
+    "nrow": 1171170,
+    "nnz": 7467438,
+    "n_int": 1342997,
+    "n_x": 47772,
+    "n_y": 1092888,
+    "n_z": 194100,
+    "n_w": 556,
+    "n_e": 5586,
+    "n_o": 775,
+    "rows": {
+     "cover": 775,
+     "defer": 502,
+     "prec": 502,
+     "release": 78,
+     "flow": 1092888,
+     "cap": 3096,
+     "cap_calendar": 0,
+     "precond": 48888,
+     "res": 23220,
+     "trip": 556,
+     "crew": 412,
+     "late": 252
+    },
+    "build_s": 4.113,
+    "nnz_y": 3326533
+   },
+   "build_s": 5.756259115000034,
+   "cand_construct": [
+    1041630.0,
+    81030674.30555555
+   ],
+   "cand_defer_all": [
+    1849405.0,
+    111239932.6388889
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4536)",
+      "resource paintline over capacity at 180 slots (first 4536)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 7.83769534999999,
+   "init_F": 1849405.0,
+   "init_obj": 111239932.6388889,
+   "init_parts": {
+    "hold": 7536232.638888892,
+    "work": 0.0,
+    "residual": 41755000.0,
+    "pickup_wait": 24086500.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 37862200.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 1849405.0,
+   "final_obj": 111239932.6388889,
+   "final_parts": {
+    "hold": 7536232.638888892,
+    "work": 0.0,
+    "residual": 41755000.0,
+    "pickup_wait": 24086500.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 37862200.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 7.881591280999999,
+   "maxrss_mb": 924.21875
+  },
+  {
+   "t0": 2994,
+   "t1": 4536,
+   "day": 10,
+   "n_veh": 353,
+   "stats": {
+    "m": 1,
+    "ncol": 1338819,
+    "nrow": 1166183,
+    "nnz": 7406818,
+    "n_int": 1335382,
+    "n_x": 46980,
+    "n_y": 1088652,
+    "n_z": 191581,
+    "n_w": 548,
+    "n_e": 5545,
+    "n_o": 773,
+    "rows": {
+     "cover": 773,
+     "defer": 501,
+     "prec": 501,
+     "release": 79,
+     "flow": 1088652,
+     "cap": 3084,
+     "cap_calendar": 0,
+     "precond": 48257,
+     "res": 23130,
+     "trip": 548,
+     "crew": 406,
+     "late": 251
+    },
+    "build_s": 4.09,
+    "nnz_y": 3313189
+   },
+   "build_s": 5.674167846999978,
+   "cand_construct": [
+    1064325.0,
+    81379865.97222224
+   ],
+   "cand_defer_all": [
+    1843375.0,
+    110935874.30555555
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4536)",
+      "resource paintline over capacity at 180 slots (first 4536)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 7.759413443000028,
+   "init_F": 1843375.0,
+   "init_obj": 110935874.30555555,
+   "init_parts": {
+    "hold": 7484774.305555558,
+    "work": 0.0,
+    "residual": 41695000.0,
+    "pickup_wait": 24126100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 37630000.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 1843375.0,
+   "final_obj": 110935874.30555555,
+   "final_parts": {
+    "hold": 7484774.305555558,
+    "work": 0.0,
+    "residual": 41695000.0,
+    "pickup_wait": 24126100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 37630000.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 7.812783152999998,
+   "maxrss_mb": 924.21875
+  },
+  {
+   "t0": 2995,
+   "t1": 4536,
+   "day": 10,
+   "n_veh": 353,
+   "stats": {
+    "m": 1,
+    "ncol": 1335993,
+    "nrow": 1165134,
+    "nnz": 7381075,
+    "n_int": 1332558,
+    "n_x": 46466,
+    "n_y": 1087946,
+    "n_z": 189991,
+    "n_w": 543,
+    "n_e": 5545,
+    "n_o": 773,
+    "rows": {
+     "cover": 773,
+     "defer": 501,
+     "prec": 501,
+     "release": 79,
+     "flow": 1087946,
+     "cap": 3082,
+     "cap_calendar": 0,
+     "precond": 47939,
+     "res": 23115,
+     "trip": 543,
+     "crew": 403,
+     "late": 251
+    },
+    "build_s": 4.054,
+    "nnz_y": 3311071
+   },
+   "build_s": 5.6902307789999895,
+   "cand_construct": [
+    1110145.0,
+    81842355.55555555
+   ],
+   "cand_defer_all": [
+    1842350.0,
+    110931759.72222224
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4536)",
+      "resource paintline over capacity at 180 slots (first 4536)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 7.766991669999982,
+   "init_F": 1842350.0,
+   "init_obj": 110931759.72222224,
+   "init_parts": {
+    "hold": 7480659.722222222,
+    "work": 0.0,
+    "residual": 41695000.0,
+    "pickup_wait": 24126100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 37630000.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 1842350.0,
+   "final_obj": 110931759.72222224,
+   "final_parts": {
+    "hold": 7480659.722222222,
+    "work": 0.0,
+    "residual": 41695000.0,
+    "pickup_wait": 24126100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 37630000.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 7.81137866399996,
+   "maxrss_mb": 924.21875
+  },
+  {
+   "t0": 3045,
+   "t1": 4536,
+   "day": 10,
+   "n_veh": 353,
+   "stats": {
+    "m": 1,
+    "ncol": 1273817,
+    "nrow": 1123597,
+    "nnz": 6927530,
+    "n_int": 1270482,
+    "n_x": 41618,
+    "n_y": 1052646,
+    "n_z": 168887,
+    "n_w": 479,
+    "n_e": 4929,
+    "n_o": 773,
+    "rows": {
+     "cover": 773,
+     "defer": 501,
+     "prec": 501,
+     "release": 79,
+     "flow": 1052646,
+     "cap": 2982,
+     "cap_calendar": 0,
+     "precond": 42663,
+     "res": 22365,
+     "trip": 479,
+     "crew": 355,
+     "late": 252
+    },
+    "build_s": 3.677,
+    "nnz_y": 3199895
+   },
+   "build_s": 5.197641215000033,
+   "cand_construct": [
+    1184360.0,
+    88365608.33333334
+   ],
+   "cand_defer_all": [
+    1788390.0,
+    110862120.83333334
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4536)",
+      "resource paintline over capacity at 180 slots (first 4536)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 7.247026799000025,
+   "init_F": 1788390.0,
+   "init_obj": 110862120.83333334,
+   "init_parts": {
+    "hold": 7265520.833333335,
+    "work": 0.0,
+    "residual": 41695000.0,
+    "pickup_wait": 24126100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 37775500.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 1788390.0,
+   "final_obj": 110862120.83333334,
+   "final_parts": {
+    "hold": 7265520.833333335,
+    "work": 0.0,
+    "residual": 41695000.0,
+    "pickup_wait": 24126100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 37775500.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 7.290544118000014,
+   "maxrss_mb": 924.21875
+  },
+  {
+   "t0": 3065,
+   "t1": 4536,
+   "day": 10,
+   "n_veh": 353,
+   "stats": {
+    "m": 1,
+    "ncol": 1248015,
+    "nrow": 1106668,
+    "nnz": 6706785,
+    "n_int": 1244720,
+    "n_x": 39638,
+    "n_y": 1038526,
+    "n_z": 159546,
+    "n_w": 452,
+    "n_e": 4698,
+    "n_o": 773,
+    "rows": {
+     "cover": 773,
+     "defer": 501,
+     "prec": 501,
+     "release": 79,
+     "flow": 1038526,
+     "cap": 2942,
+     "cap_calendar": 0,
+     "precond": 40240,
+     "res": 22065,
+     "trip": 452,
+     "crew": 334,
+     "late": 254
+    },
+    "build_s": 3.489,
+    "nnz_y": 3155112
+   },
+   "build_s": 4.934991900999989,
+   "cand_construct": [
+    1208590.0,
+    90519666.66666666
+   ],
+   "cand_defer_all": [
+    1765160.0,
+    111024749.99999999
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4536)",
+      "resource paintline over capacity at 180 slots (first 4536)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 6.861351690999982,
+   "init_F": 1765160.0,
+   "init_obj": 111024749.99999999,
+   "init_parts": {
+    "hold": 7173750.000000004,
+    "work": 0.0,
+    "residual": 41695000.0,
+    "pickup_wait": 24126100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 38029900.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 1765160.0,
+   "final_obj": 111024749.99999999,
+   "final_parts": {
+    "hold": 7173750.000000004,
+    "work": 0.0,
+    "residual": 41695000.0,
+    "pickup_wait": 24126100.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 38029900.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 6.903336890999981,
+   "maxrss_mb": 924.21875
+  },
+  {
+   "t0": 3276,
+   "t1": 4824,
+   "day": 11,
+   "n_veh": 393,
+   "stats": {
+    "m": 1,
+    "ncol": 1500822,
+    "nrow": 1300882,
+    "nnz": 8999059,
+    "n_int": 1497333,
+    "n_x": 55999,
+    "n_y": 1216728,
+    "n_z": 216180,
+    "n_w": 556,
+    "n_e": 5658,
+    "n_o": 891,
+    "rows": {
+     "cover": 891,
+     "defer": 579,
+     "prec": 579,
+     "release": 79,
+     "flow": 1216728,
+     "cap": 3096,
+     "cap_calendar": 0,
+     "precond": 54448,
+     "res": 23220,
+     "trip": 556,
+     "crew": 412,
+     "late": 293
+    },
+    "build_s": 4.806,
+    "nnz_y": 3703493
+   },
+   "build_s": 6.7002844880000225,
+   "cand_construct": [
+    1461620.0,
+    104901115.97222224
+   ],
+   "cand_defer_all": [
+    2158525.0,
+    129656424.30555555
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4824)",
+      "resource paintline over capacity at 180 slots (first 4824)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 9.119568834000006,
+   "init_F": 2158525.0,
+   "init_obj": 129656424.30555555,
+   "init_parts": {
+    "hold": 8616024.30555556,
+    "work": 0.0,
+    "residual": 47920000.0,
+    "pickup_wait": 26401300.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 46719100.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 2158525.0,
+   "final_obj": 129656424.30555555,
+   "final_parts": {
+    "hold": 8616024.30555556,
+    "work": 0.0,
+    "residual": 47920000.0,
+    "pickup_wait": 26401300.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 46719100.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 9.168409041000018,
+   "maxrss_mb": 1052.30078125
+  },
+  {
+   "t0": 3283,
+   "t1": 4824,
+   "day": 11,
+   "n_veh": 393,
+   "stats": {
+    "m": 1,
+    "ncol": 1489322,
+    "nrow": 1294174,
+    "nnz": 8919951,
+    "n_int": 1485847,
+    "n_x": 54745,
+    "n_y": 1211226,
+    "n_z": 211567,
+    "n_w": 543,
+    "n_e": 5581,
+    "n_o": 891,
+    "rows": {
+     "cover": 891,
+     "defer": 579,
+     "prec": 579,
+     "release": 79,
+     "flow": 1211226,
+     "cap": 3082,
+     "cap_calendar": 0,
+     "precond": 53383,
+     "res": 23115,
+     "trip": 543,
+     "crew": 403,
+     "late": 293
+    },
+    "build_s": 4.76,
+    "nnz_y": 3686275
+   },
+   "build_s": 6.5981500049999795,
+   "cand_construct": [
+    1558280.0,
+    106016786.11111113
+   ],
+   "cand_defer_all": [
+    2150100.0,
+    129623281.94444446
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4824)",
+      "resource paintline over capacity at 180 slots (first 4824)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 9.028454379999971,
+   "init_F": 2150100.0,
+   "init_obj": 129623281.94444446,
+   "init_parts": {
+    "hold": 8582881.944444444,
+    "work": 0.0,
+    "residual": 47920000.0,
+    "pickup_wait": 26401300.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 46719100.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 2150100.0,
+   "final_obj": 129623281.94444446,
+   "final_parts": {
+    "hold": 8582881.944444444,
+    "work": 0.0,
+    "residual": 47920000.0,
+    "pickup_wait": 26401300.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 46719100.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 9.077830180999968,
+   "maxrss_mb": 1052.30078125
+  },
+  {
+   "t0": 3352,
+   "t1": 4824,
+   "day": 11,
+   "n_veh": 393,
+   "stats": {
+    "m": 1,
+    "ncol": 1393425,
+    "nrow": 1230421,
+    "nnz": 8022480,
+    "n_int": 1390088,
+    "n_x": 47137,
+    "n_y": 1156992,
+    "n_z": 178783,
+    "n_w": 455,
+    "n_e": 4734,
+    "n_o": 891,
+    "rows": {
+     "cover": 891,
+     "defer": 579,
+     "prec": 579,
+     "release": 79,
+     "flow": 1156992,
+     "cap": 2944,
+     "cap_calendar": 0,
+     "precond": 45187,
+     "res": 22080,
+     "trip": 455,
+     "crew": 337,
+     "late": 297
+    },
+    "build_s": 4.123,
+    "nnz_y": 3514988
+   },
+   "build_s": 5.810041583000043,
+   "cand_construct": [
+    1632225.0,
+    113828680.55555555
+   ],
+   "cand_defer_all": [
+    2060690.0,
+    129485597.22222221
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4824)",
+      "resource paintline over capacity at 180 slots (first 4824)",
+      "resource lift over capacity at 180 slots (first 4824)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 7.99144472100005,
+   "init_F": 2060690.0,
+   "init_obj": 129485597.22222221,
+   "init_parts": {
+    "hold": 8234097.222222226,
+    "work": 0.0,
+    "residual": 47920000.0,
+    "pickup_wait": 26401300.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 46930200.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 2060690.0,
+   "final_obj": 129485597.22222221,
+   "final_parts": {
+    "hold": 8234097.222222226,
+    "work": 0.0,
+    "residual": 47920000.0,
+    "pickup_wait": 26401300.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 46930200.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 8.038289700000007,
+   "maxrss_mb": 1052.30078125
+  },
+  {
+   "t0": 3353,
+   "t1": 4824,
+   "day": 11,
+   "n_veh": 393,
+   "stats": {
+    "m": 1,
+    "ncol": 1391510,
+    "nrow": 1229216,
+    "nnz": 8015369,
+    "n_int": 1388175,
+    "n_x": 47137,
+    "n_y": 1156206,
+    "n_z": 177616,
+    "n_w": 452,
+    "n_e": 4788,
+    "n_o": 888,
+    "rows": {
+     "cover": 888,
+     "defer": 577,
+     "prec": 577,
+     "release": 80,
+     "flow": 1156206,
+     "cap": 2942,
+     "cap_calendar": 0,
+     "precond": 44798,
+     "res": 22065,
+     "trip": 452,
+     "crew": 334,
+     "late": 296
+    },
+    "build_s": 4.074,
+    "nnz_y": 3512630
+   },
+   "build_s": 5.765337602999978,
+   "cand_construct": [
+    1627500.0,
+    113494749.30555555
+   ],
+   "cand_defer_all": [
+    2059310.0,
+    129186565.97222221
+   ],
+   "init_rejected": [
+    [
+     "construct",
+     [
+      "resource bodybay over capacity at 180 slots (first 4824)",
+      "resource paintline over capacity at 180 slots (first 4824)",
+      "resource lift over capacity at 180 slots (first 4824)"
+     ]
+    ]
+   ],
+   "init_source": "defer_all",
+   "init_s": 7.926437494999959,
+   "init_F": 2059310.0,
+   "init_obj": 129186565.97222221,
+   "init_parts": {
+    "hold": 8202065.972222226,
+    "work": 0.0,
+    "residual": 47620000.0,
+    "pickup_wait": 26469700.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 46894800.0,
+    "sigma": 0.0
+   },
+   "op_use": {},
+   "op_acc": {},
+   "lns_iter": 0,
+   "lns_acc": 0,
+   "final_F": 2059310.0,
+   "final_obj": 129186565.97222221,
+   "final_parts": {
+    "hold": 8202065.972222226,
+    "work": 0.0,
+    "residual": 47620000.0,
+    "pickup_wait": 26469700.0,
+    "trips": 0.0,
+    "rent": 0.0,
+    "late": 46894800.0,
+    "sigma": 0.0
+   },
+   "valid": true,
+   "prefix_check": true,
+   "total_s": 7.972472433999997,
+   "maxrss_mb": 1052.30078125
+  }
+ ],
+ "trajectory": {
+  "modes": [
+   [
+    1,
+    0,
+    "insp:I",
+    0,
+    0,
+    144
+   ],
+   [
+    6,
+    0,
+    "engine:I",
+    0,
+    0,
+    108
+   ],
+   [
+    6,
+    0,
+    "wash:I",
+    1,
+    1,
+    156
+   ],
+   [
+    6,
+    0,
+    "insp:I",
+    2,
+    2,
+    168
+   ],
+   [
+    7,
+    0,
+    "insp:I",
+    0,
+    0,
+    108
+   ],
+   [
+    8,
+    0,
+    "wash:I",
+    0,
+    0,
+    108
+   ],
+   [
+    8,
+    0,
+    "insp:I",
+    1,
+    1,
+    120
+   ],
+   [
+    9,
+    0,
+    "insp:I",
+    0,
+    0,
+    114
+   ],
+   [
+    10,
+    0,
+    "insp:I",
+    0,
+    0,
+    108
+   ],
+   [
+    11,
+    0,
+    "insp:I",
+    0,
+    0,
+    126
+   ],
+   [
+    12,
+    0,
+    "wash:I",
+    0,
+    0,
+    108
+   ],
+   [
+    12,
+    0,
+    "insp:I",
+    1,
+    1,
+    138
+   ],
+   [
+    14,
+    0,
+    "maint:I",
+    0,
+    0,
+    108
+   ],
+   [
+    14,
+    0,
+    "insp:I",
+    1,
+    1,
+    126
+   ],
+   [
+    15,
+    0,
+    "insp:I",
+    0,
+    0,
+    114
+   ],
+   [
+    16,
+    0,
+    "elec:I",
+    0,
+    0,
+    108
+   ],
+   [
+    16,
+    0,
+    "insp:I",
+    1,
+    1,
+    132
+   ],
+   [
+    17,
+    0,
+    "maint:I",
+    0,
+    0,
+    108
+   ],
+   [
+    17,
+    0,
+    "insp:I",
+    1,
+    1,
+    126
+   ],
+   [
+    19,
+    0,
+    "insp:I",
+    0,
+    0,
+    108
+   ],
+   [
+    20,
+    0,
+    "insp:I",
+    0,
+    0,
+    108
+   ],
+   [
+    22,
+    0,
+    "paint_l:I",
+    0,
+    0,
+    108
+   ],
+   [
+    22,
+    0,
+    "wash:I",
+    1,
+    1,
+    132
+   ],
+   [
+    22,
+    0,
+    "insp:I",
+    2,
+    2,
+    144
+   ],
+   [
+    24,
+    0,
+    "maint:I",
+    0,
+    0,
+    108
+   ],
+   [
+    24,
+    0,
+    "insp:I",
+    1,
+    1,
+    126
+   ],
+   [
+    25,
+    0,
+    "wash:I",
+    0,
+    0,
+    108
+   ],
+   [
+    25,
+    0,
+    "insp:I",
+    1,
+    1,
+    138
+   ],
+   [
+    26,
+    0,
+    "body_h:I",
+    0,
+    0,
+    108
+   ],
+   [
+    26,
+    0,
+    "paint_h:I",
+    1,
+    1,
+    156
+   ],
+   [
+    26,
+    0,
+    "wash:I",
+    2,
+    2,
+    204
+   ],
+   [
+    28,
+    0,
+    "paint_h:I",
+    0,
+    0,
+    108
+   ],
+   [
+    28,
+    0,
+    "wash:I",
+    1,
+    1,
+    156
+   ],
+   [
+    28,
+    0,
+    "insp:I",
+    2,
+    2,
+    168
+   ],
+   [
+    29,
+    0,
+    "engine:I",
+    0,
+    0,
+    108
+   ],
+   [
+    29,
+    0,
+    "insp:I",
+    1,
+    1,
+    156
+   ],
+   [
+    31,
+    0,
+    "paint_l:I",
+    0,
+    0,
+    108
+   ],
+   [
+    31,
+    0,
+    "wash:I",
+    1,
+    1,
+    132
+   ],
+   [
+    31,
+    0,
+    "insp:I",
+    2,
+    2,
+    144
+   ],
+   [
+    32,
+    0,
+    "elec:I",
+    0,
+    0,
+    108
+   ],
+   [
+    32,
+    0,
+    "insp:I",
+    1,
+    1,
+    132
+   ],
+   [
+    33,
+    0,
+    "wash:I",
+    0,
+    0,
+    108
+   ],
+   [
+    33,
+    0,
+    "insp:I",
+    1,
+    1,
+    120
+   ],
+   [
+    34,
+    0,
+    "wash:I",
+    0,
+    0,
+    108
+   ],
+   [
+    34,
+    0,
+    "insp:I",
+    1,
+    1,
+    120
+   ],
+   [
+    35,
+    0,
+    "insp:I",
+    0,
+    0,
+    114
+   ],
+   [
+    36,
+    0,
+    "insp:I",
+    0,
+    0,
+    114
+   ],
+   [
+    38,
+    0,
+    "wash:I",
+    0,
+    0,
+    120
+   ],
+   [
+    38,
+    0,
+    "insp:I",
+    1,
+    1,
+    132
+   ],
+   [
+    39,
+    0,
+    "insp:I",
+    0,
+    0,
+    120
+   ],
+   [
+    40,
+    0,
+    "wash:I",
+    0,
+    0,
+    114
+   ],
+   [
+    40,
+    0,
+    "insp:I",
+    1,
+    1,
+    132
+   ],
+   [
+    41,
+    0,
+    "maint:I",
+    0,
+    0,
+    120
+   ],
+   [
+    41,
+    0,
+    "insp:I",
+    1,
+    1,
+    138
+   ],
+   [
+    43,
+    0,
+    "body_l:I",
+    0,
+    0,
+    120
+   ],
+   [
+    43,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    144
+   ],
+   [
+    43,
+    0,
+    "wash:I",
+    2,
+    2,
+    168
+   ],
+   [
+    43,
+    0,
+    "insp:I",
+    3,
+    3,
+    180
+   ],
+   [
+    44,
+    0,
+    "body_h:I",
+    0,
+    0,
+    132
+   ],
+   [
+    45,
+    0,
+    "wash:I",
+    0,
+    0,
+    126
+   ],
+   [
+    45,
+    0,
+    "insp:I",
+    1,
+    1,
+    138
+   ],
+   [
+    46,
+    0,
+    "elec:I",
+    0,
+    0,
+    132
+   ],
+   [
+    46,
+    0,
+    "insp:I",
+    1,
+    1,
+    156
+   ],
+   [
+    47,
+    0,
+    "wash:I",
+    0,
+    0,
+    132
+   ],
+   [
+    47,
+    0,
+    "insp:I",
+    1,
+    1,
+    144
+   ],
+   [
+    49,
+    0,
+    "maint:I",
+    0,
+    0,
+    132
+   ],
+   [
+    49,
+    0,
+    "wash:I",
+    1,
+    1,
+    150
+   ],
+   [
+    49,
+    0,
+    "insp:I",
+    2,
+    2,
+    162
+   ],
+   [
+    50,
+    0,
+    "wash:I",
+    0,
+    0,
+    138
+   ],
+   [
+    50,
+    0,
+    "insp:I",
+    1,
+    1,
+    150
+   ],
+   [
+    51,
+    0,
+    "body_l:I",
+    0,
+    0,
+    144
+   ],
+   [
+    51,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    168
+   ],
+   [
+    51,
+    0,
+    "wash:I",
+    2,
+    2,
+    192
+   ],
+   [
+    51,
+    0,
+    "insp:I",
+    3,
+    3,
+    204
+   ],
+   [
+    52,
+    0,
+    "wash:I",
+    0,
+    0,
+    138
+   ],
+   [
+    52,
+    0,
+    "insp:I",
+    1,
+    1,
+    150
+   ],
+   [
+    53,
+    0,
+    "maint:I",
+    0,
+    0,
+    144
+   ],
+   [
+    53,
+    0,
+    "wash:I",
+    1,
+    1,
+    162
+   ],
+   [
+    53,
+    0,
+    "insp:I",
+    2,
+    2,
+    174
+   ],
+   [
+    54,
+    0,
+    "maint:I",
+    0,
+    0,
+    144
+   ],
+   [
+    54,
+    0,
+    "wash:I",
+    1,
+    1,
+    162
+   ],
+   [
+    54,
+    0,
+    "insp:I",
+    2,
+    2,
+    174
+   ],
+   [
+    55,
+    0,
+    "body_h:I",
+    0,
+    0,
+    144
+   ],
+   [
+    56,
+    0,
+    "wash:I",
+    0,
+    0,
+    144
+   ],
+   [
+    56,
+    0,
+    "insp:I",
+    1,
+    1,
+    156
+   ],
+   [
+    58,
+    0,
+    "wash:I",
+    0,
+    0,
+    150
+   ],
+   [
+    58,
+    0,
+    "insp:I",
+    1,
+    1,
+    162
+   ],
+   [
+    60,
+    0,
+    "wash:I",
+    0,
+    0,
+    156
+   ],
+   [
+    60,
+    0,
+    "insp:I",
+    1,
+    1,
+    168
+   ],
+   [
+    61,
+    0,
+    "maint:I",
+    0,
+    0,
+    156
+   ],
+   [
+    61,
+    0,
+    "insp:I",
+    1,
+    1,
+    174
+   ],
+   [
+    63,
+    0,
+    "body_l:I",
+    0,
+    0,
+    168
+   ],
+   [
+    63,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    192
+   ],
+   [
+    64,
+    0,
+    "maint:I",
+    0,
+    0,
+    168
+   ],
+   [
+    64,
+    0,
+    "wash:I",
+    1,
+    1,
+    186
+   ],
+   [
+    64,
+    0,
+    "insp:I",
+    2,
+    2,
+    198
+   ],
+   [
+    65,
+    0,
+    "maint:I",
+    0,
+    0,
+    168
+   ],
+   [
+    65,
+    0,
+    "wash:I",
+    1,
+    1,
+    186
+   ],
+   [
+    65,
+    0,
+    "insp:I",
+    2,
+    2,
+    198
+   ],
+   [
+    66,
+    0,
+    "wash:I",
+    0,
+    0,
+    162
+   ],
+   [
+    66,
+    0,
+    "insp:I",
+    1,
+    1,
+    174
+   ],
+   [
+    68,
+    0,
+    "body_h:I",
+    0,
+    0,
+    168
+   ],
+   [
+    69,
+    0,
+    "wash:I",
+    0,
+    0,
+    168
+   ],
+   [
+    69,
+    0,
+    "insp:I",
+    1,
+    1,
+    180
+   ],
+   [
+    70,
+    0,
+    "maint:I",
+    0,
+    0,
+    168
+   ],
+   [
+    70,
+    0,
+    "wash:I",
+    1,
+    1,
+    186
+   ],
+   [
+    70,
+    0,
+    "insp:I",
+    2,
+    2,
+    198
+   ],
+   [
+    71,
+    0,
+    "wash:I",
+    0,
+    0,
+    174
+   ],
+   [
+    71,
+    0,
+    "insp:I",
+    1,
+    1,
+    186
+   ],
+   [
+    74,
+    0,
+    "body_l:I",
+    0,
+    0,
+    180
+   ],
+   [
+    77,
+    0,
+    "wash:I",
+    0,
+    0,
+    186
+   ],
+   [
+    77,
+    0,
+    "insp:I",
+    1,
+    1,
+    198
+   ],
+   [
+    78,
+    0,
+    "maint:I",
+    0,
+    0,
+    192
+   ],
+   [
+    78,
+    0,
+    "insp:I",
+    1,
+    1,
+    210
+   ],
+   [
+    79,
+    0,
+    "maint:I",
+    0,
+    0,
+    192
+   ],
+   [
+    0,
+    0,
+    "body_l:I",
+    0,
+    0,
+    396
+   ],
+   [
+    0,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    420
+   ],
+   [
+    0,
+    0,
+    "wash:I",
+    2,
+    2,
+    444
+   ],
+   [
+    4,
+    0,
+    "insp:I",
+    0,
+    0,
+    396
+   ],
+   [
+    21,
+    0,
+    "insp:I",
+    0,
+    0,
+    396
+   ],
+   [
+    23,
+    0,
+    "insp:I",
+    0,
+    0,
+    396
+   ],
+   [
+    26,
+    3,
+    "insp:I",
+    0,
+    0,
+    396
+   ],
+   [
+    42,
+    0,
+    "engine:I",
+    0,
+    0,
+    396
+   ],
+   [
+    42,
+    0,
+    "insp:I",
+    1,
+    1,
+    444
+   ],
+   [
+    44,
+    1,
+    "paint_h:I",
+    0,
+    0,
+    396
+   ],
+   [
+    44,
+    1,
+    "wash:I",
+    1,
+    1,
+    444
+   ],
+   [
+    48,
+    0,
+    "body_l:I",
+    0,
+    0,
+    420
+   ],
+   [
+    48,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    444
+   ],
+   [
+    59,
+    0,
+    "engine:I",
+    0,
+    0,
+    396
+   ],
+   [
+    59,
+    0,
+    "wash:I",
+    1,
+    1,
+    444
+   ],
+   [
+    63,
+    2,
+    "wash:I",
+    0,
+    0,
+    396
+   ],
+   [
+    63,
+    2,
+    "insp:I",
+    1,
+    1,
+    408
+   ],
+   [
+    68,
+    1,
+    "paint_h:I",
+    0,
+    0,
+    396
+   ],
+   [
+    68,
+    1,
+    "wash:I",
+    1,
+    1,
+    444
+   ],
+   [
+    74,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    396
+   ],
+   [
+    74,
+    1,
+    "wash:I",
+    1,
+    1,
+    420
+   ],
+   [
+    74,
+    1,
+    "insp:I",
+    2,
+    2,
+    432
+   ],
+   [
+    75,
+    0,
+    "body_h:I",
+    0,
+    0,
+    396
+   ],
+   [
+    75,
+    0,
+    "paint_h:I",
+    1,
+    1,
+    444
+   ],
+   [
+    79,
+    1,
+    "wash:I",
+    0,
+    0,
+    396
+   ],
+   [
+    79,
+    1,
+    "insp:I",
+    1,
+    1,
+    408
+   ],
+   [
+    80,
+    0,
+    "body_h:I",
+    0,
+    0,
+    444
+   ],
+   [
+    82,
+    0,
+    "body_l:I",
+    0,
+    0,
+    408
+   ],
+   [
+    82,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    432
+   ],
+   [
+    83,
+    0,
+    "elec:I",
+    0,
+    0,
+    408
+   ],
+   [
+    83,
+    0,
+    "insp:I",
+    1,
+    1,
+    432
+   ],
+   [
+    84,
+    0,
+    "wash:I",
+    0,
+    0,
+    402
+   ],
+   [
+    84,
+    0,
+    "insp:I",
+    1,
+    1,
+    414
+   ],
+   [
+    85,
+    0,
+    "wash:I",
+    0,
+    0,
+    402
+   ],
+   [
+    85,
+    0,
+    "insp:I",
+    1,
+    1,
+    414
+   ],
+   [
+    86,
+    0,
+    "maint:I",
+    0,
+    0,
+    408
+   ],
+   [
+    86,
+    0,
+    "insp:I",
+    1,
+    1,
+    426
+   ],
+   [
+    88,
+    0,
+    "elec:I",
+    0,
+    0,
+    408
+   ],
+   [
+    88,
+    0,
+    "insp:I",
+    1,
+    1,
+    432
+   ],
+   [
+    90,
+    0,
+    "wash:I",
+    0,
+    0,
+    408
+   ],
+   [
+    90,
+    0,
+    "insp:I",
+    1,
+    1,
+    420
+   ],
+   [
+    91,
+    0,
+    "engine:I",
+    0,
+    0,
+    420
+   ],
+   [
+    92,
+    0,
+    "elec:I",
+    0,
+    0,
+    420
+   ],
+   [
+    92,
+    0,
+    "wash:I",
+    1,
+    1,
+    444
+   ],
+   [
+    93,
+    0,
+    "wash:I",
+    0,
+    0,
+    414
+   ],
+   [
+    93,
+    0,
+    "insp:I",
+    1,
+    1,
+    426
+   ],
+   [
+    94,
+    0,
+    "engine:I",
+    0,
+    0,
+    420
+   ],
+   [
+    97,
+    0,
+    "maint:I",
+    0,
+    0,
+    432
+   ],
+   [
+    99,
+    0,
+    "maint:I",
+    0,
+    0,
+    432
+   ],
+   [
+    100,
+    0,
+    "wash:I",
+    0,
+    0,
+    432
+   ],
+   [
+    100,
+    0,
+    "insp:I",
+    1,
+    1,
+    444
+   ],
+   [
+    101,
+    0,
+    "engine:I",
+    0,
+    0,
+    432
+   ],
+   [
+    102,
+    0,
+    "body_l:I",
+    0,
+    0,
+    444
+   ],
+   [
+    103,
+    0,
+    "elec:I",
+    0,
+    0,
+    444
+   ],
+   [
+    105,
+    0,
+    "body_l:I",
+    0,
+    0,
+    444
+   ],
+   [
+    106,
+    0,
+    "engine:I",
+    0,
+    0,
+    444
+   ],
+   [
+    107,
+    0,
+    "wash:I",
+    0,
+    0,
+    444
+   ],
+   [
+    108,
+    0,
+    "maint:I",
+    0,
+    0,
+    444
+   ],
+   [
+    0,
+    3,
+    "insp:I",
+    0,
+    0,
+    456
+   ],
+   [
+    27,
+    0,
+    "insp:I",
+    0,
+    0,
+    450
+   ],
+   [
+    30,
+    0,
+    "wash:I",
+    0,
+    0,
+    450
+   ],
+   [
+    30,
+    0,
+    "insp:I",
+    1,
+    1,
+    462
+   ],
+   [
+    44,
+    3,
+    "insp:I",
+    0,
+    0,
+    456
+   ],
+   [
+    48,
+    2,
+    "wash:I",
+    0,
+    0,
+    468
+   ],
+   [
+    48,
+    2,
+    "insp:I",
+    1,
+    1,
+    480
+   ],
+   [
+    57,
+    0,
+    "body_h:I",
+    0,
+    0,
+    456
+   ],
+   [
+    59,
+    2,
+    "insp:I",
+    0,
+    0,
+    468
+   ],
+   [
+    68,
+    3,
+    "insp:I",
+    0,
+    0,
+    456
+   ],
+   [
+    75,
+    2,
+    "wash:I",
+    0,
+    0,
+    492
+   ],
+   [
+    82,
+    2,
+    "wash:I",
+    0,
+    0,
+    456
+   ],
+   [
+    82,
+    2,
+    "insp:I",
+    1,
+    1,
+    468
+   ],
+   [
+    91,
+    1,
+    "wash:I",
+    0,
+    0,
+    468
+   ],
+   [
+    91,
+    1,
+    "insp:I",
+    1,
+    1,
+    480
+   ],
+   [
+    92,
+    2,
+    "insp:I",
+    0,
+    0,
+    456
+   ],
+   [
+    94,
+    1,
+    "insp:I",
+    0,
+    0,
+    468
+   ],
+   [
+    97,
+    1,
+    "insp:I",
+    0,
+    0,
+    450
+   ],
+   [
+    99,
+    1,
+    "insp:I",
+    0,
+    0,
+    450
+   ],
+   [
+    101,
+    1,
+    "insp:I",
+    0,
+    0,
+    480
+   ],
+   [
+    102,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    468
+   ],
+   [
+    102,
+    1,
+    "wash:I",
+    1,
+    1,
+    492
+   ],
+   [
+    103,
+    1,
+    "wash:I",
+    0,
+    0,
+    468
+   ],
+   [
+    103,
+    1,
+    "insp:I",
+    1,
+    1,
+    480
+   ],
+   [
+    105,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    468
+   ],
+   [
+    105,
+    1,
+    "wash:I",
+    1,
+    1,
+    492
+   ],
+   [
+    106,
+    1,
+    "insp:I",
+    0,
+    0,
+    492
+   ],
+   [
+    107,
+    1,
+    "insp:I",
+    0,
+    0,
+    462
+   ],
+   [
+    108,
+    1,
+    "insp:I",
+    0,
+    0,
+    462
+   ],
+   [
+    109,
+    0,
+    "wash:I",
+    0,
+    0,
+    450
+   ],
+   [
+    109,
+    0,
+    "insp:I",
+    1,
+    1,
+    462
+   ],
+   [
+    110,
+    0,
+    "wash:I",
+    0,
+    0,
+    462
+   ],
+   [
+    110,
+    0,
+    "insp:I",
+    1,
+    1,
+    474
+   ],
+   [
+    113,
+    0,
+    "wash:I",
+    0,
+    0,
+    462
+   ],
+   [
+    113,
+    0,
+    "insp:I",
+    1,
+    1,
+    474
+   ],
+   [
+    116,
+    0,
+    "body_l:I",
+    0,
+    0,
+    480
+   ],
+   [
+    117,
+    0,
+    "maint:I",
+    0,
+    0,
+    480
+   ],
+   [
+    118,
+    0,
+    "elec:I",
+    0,
+    0,
+    480
+   ],
+   [
+    119,
+    0,
+    "elec:I",
+    0,
+    0,
+    480
+   ],
+   [
+    5,
+    0,
+    "insp:I",
+    0,
+    0,
+    684
+   ],
+   [
+    57,
+    1,
+    "paint_h:I",
+    0,
+    0,
+    684
+   ],
+   [
+    57,
+    1,
+    "wash:I",
+    1,
+    1,
+    732
+   ],
+   [
+    62,
+    0,
+    "wash:I",
+    0,
+    0,
+    684
+   ],
+   [
+    62,
+    0,
+    "insp:I",
+    1,
+    1,
+    696
+   ],
+   [
+    67,
+    0,
+    "maint:I",
+    0,
+    0,
+    684
+   ],
+   [
+    67,
+    0,
+    "insp:I",
+    1,
+    1,
+    702
+   ],
+   [
+    75,
+    3,
+    "insp:I",
+    0,
+    0,
+    690
+   ],
+   [
+    102,
+    3,
+    "insp:I",
+    0,
+    0,
+    684
+   ],
+   [
+    105,
+    3,
+    "insp:I",
+    0,
+    0,
+    684
+   ],
+   [
+    112,
+    0,
+    "body_l:I",
+    0,
+    0,
+    684
+   ],
+   [
+    112,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    708
+   ],
+   [
+    112,
+    0,
+    "wash:I",
+    2,
+    2,
+    732
+   ],
+   [
+    116,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    684
+   ],
+   [
+    116,
+    1,
+    "wash:I",
+    1,
+    1,
+    708
+   ],
+   [
+    116,
+    1,
+    "insp:I",
+    2,
+    2,
+    720
+   ],
+   [
+    117,
+    1,
+    "wash:I",
+    0,
+    0,
+    684
+   ],
+   [
+    117,
+    1,
+    "insp:I",
+    1,
+    1,
+    696
+   ],
+   [
+    118,
+    1,
+    "insp:I",
+    0,
+    0,
+    690
+   ],
+   [
+    119,
+    1,
+    "insp:I",
+    0,
+    0,
+    684
+   ],
+   [
+    122,
+    0,
+    "body_h:I",
+    0,
+    0,
+    732
+   ],
+   [
+    123,
+    0,
+    "elec:I",
+    0,
+    0,
+    696
+   ],
+   [
+    123,
+    0,
+    "insp:I",
+    1,
+    1,
+    720
+   ],
+   [
+    125,
+    0,
+    "maint:I",
+    0,
+    0,
+    696
+   ],
+   [
+    125,
+    0,
+    "insp:I",
+    1,
+    1,
+    714
+   ],
+   [
+    126,
+    0,
+    "body_l:I",
+    0,
+    0,
+    696
+   ],
+   [
+    126,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    720
+   ],
+   [
+    128,
+    0,
+    "maint:I",
+    0,
+    0,
+    708
+   ],
+   [
+    128,
+    0,
+    "wash:I",
+    1,
+    1,
+    726
+   ],
+   [
+    130,
+    0,
+    "elec:I",
+    0,
+    0,
+    708
+   ],
+   [
+    130,
+    0,
+    "insp:I",
+    1,
+    1,
+    732
+   ],
+   [
+    131,
+    0,
+    "engine:I",
+    0,
+    0,
+    708
+   ],
+   [
+    132,
+    0,
+    "body_l:I",
+    0,
+    0,
+    720
+   ],
+   [
+    133,
+    0,
+    "body_l:I",
+    0,
+    0,
+    720
+   ],
+   [
+    135,
+    0,
+    "body_l:I",
+    0,
+    0,
+    720
+   ],
+   [
+    138,
+    0,
+    "maint:I",
+    0,
+    0,
+    732
+   ],
+   [
+    139,
+    0,
+    "wash:I",
+    0,
+    0,
+    732
+   ],
+   [
+    140,
+    0,
+    "body_l:I",
+    0,
+    0,
+    732
+   ],
+   [
+    141,
+    0,
+    "maint:I",
+    0,
+    0,
+    732
+   ],
+   [
+    142,
+    0,
+    "elec:I",
+    0,
+    0,
+    732
+   ],
+   [
+    57,
+    3,
+    "insp:I",
+    0,
+    0,
+    744
+   ],
+   [
+    81,
+    0,
+    "wash:I",
+    0,
+    0,
+    744
+   ],
+   [
+    81,
+    0,
+    "insp:I",
+    1,
+    1,
+    756
+   ],
+   [
+    95,
+    0,
+    "wash:I",
+    0,
+    0,
+    738
+   ],
+   [
+    95,
+    0,
+    "insp:I",
+    1,
+    1,
+    750
+   ],
+   [
+    112,
+    3,
+    "insp:I",
+    0,
+    0,
+    744
+   ],
+   [
+    126,
+    2,
+    "wash:I",
+    0,
+    0,
+    756
+   ],
+   [
+    126,
+    2,
+    "insp:I",
+    1,
+    1,
+    768
+   ],
+   [
+    128,
+    2,
+    "insp:I",
+    0,
+    0,
+    738
+   ],
+   [
+    131,
+    1,
+    "insp:I",
+    0,
+    0,
+    756
+   ],
+   [
+    132,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    744
+   ],
+   [
+    132,
+    1,
+    "wash:I",
+    1,
+    1,
+    768
+   ],
+   [
+    132,
+    1,
+    "insp:I",
+    2,
+    2,
+    780
+   ],
+   [
+    133,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    744
+   ],
+   [
+    133,
+    1,
+    "wash:I",
+    1,
+    1,
+    768
+   ],
+   [
+    133,
+    1,
+    "insp:I",
+    2,
+    2,
+    780
+   ],
+   [
+    135,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    744
+   ],
+   [
+    135,
+    1,
+    "wash:I",
+    1,
+    1,
+    768
+   ],
+   [
+    135,
+    1,
+    "insp:I",
+    2,
+    2,
+    780
+   ],
+   [
+    138,
+    1,
+    "wash:I",
+    0,
+    0,
+    750
+   ],
+   [
+    138,
+    1,
+    "insp:I",
+    1,
+    1,
+    762
+   ],
+   [
+    139,
+    1,
+    "insp:I",
+    0,
+    0,
+    744
+   ],
+   [
+    140,
+    1,
+    "paint_l:I",
+    0,
+    0,
+    756
+   ],
+   [
+    140,
+    1,
+    "wash:I",
+    1,
+    1,
+    780
+   ],
+   [
+    141,
+    1,
+    "wash:I",
+    0,
+    0,
+    750
+   ],
+   [
+    141,
+    1,
+    "insp:I",
+    1,
+    1,
+    762
+   ],
+   [
+    142,
+    1,
+    "insp:I",
+    0,
+    0,
+    756
+   ],
+   [
+    144,
+    0,
+    "body_l:I",
+    0,
+    0,
+    744
+   ],
+   [
+    144,
+    0,
+    "paint_l:I",
+    1,
+    1,
+    768
+   ],
+   [
+    145,
+    0,
+    "body_l:I",
+    0,
+    0,
+    768
+   ],
+   [
+    147,
+    0,
+    "wash:I",
+    0,
+    0,
+    756
+   ],
+   [
+    147,
+    0,
+    "insp:I",
+    1,
+    1,
+    768
+   ],
+   [
+    150,
+    0,
+    "wash:I",
+    0,
+    0,
+    744
+   ],
+   [
+    150,
+    0,
+    "insp:I",
+    1,
+    1,
+    756
+   ],
+   [
+    152,
+    0,
+    "body_l:I",
+    0,
+    0,
+    768
+   ],
+   [
+    154,
+    0,
+    "wash:I",
+    0,
+    0,
+    750
+   ],
+   [
+    154,
+    0,
+    "insp:I",
+    1,
+    1,
+    762
+   ],
+   [
+    155,
+    0,
+    "wash:I",
+    0,
+    0,
+    750
+   ],
+   [
+    155,
+    0,
+    "insp:I",
+    1,
+    1,
+    762
+   ],
+   [
+    157,
+    0,
+    "maint:I",
+    0,
+    0,
+    768
+   ],
+   [
+    157,
+    0,
+    "insp:I",
+    1,
+    1,
+    786
+   ],
+   [
+    159,
+    0,
+    "maint:I",
+    0,
+    0,
+    768
+   ],
+   [
+    159,
+    0,
+    "insp:I",
+    1,
+    1,
+    786
+   ]
+  ],
+  "trips": [
+   [
+    7,
+    0,
+    114
+   ],
+   [
+    8,
+    0,
+    126
+   ],
+   [
+    9,
+    0,
+    132
+   ],
+   [
+    10,
+    0,
+    114
+   ],
+   [
+    13,
+    0,
+    108
+   ],
+   [
+    14,
+    0,
+    132
+   ],
+   [
+    15,
+    0,
+    120
+   ],
+   [
+    16,
+    0,
+    138
+   ],
+   [
+    17,
+    0,
+    132
+   ],
+   [
+    18,
+    0,
+    108
+   ],
+   [
+    19,
+    0,
+    120
+   ],
+   [
+    20,
+    0,
+    120
+   ],
+   [
+    24,
+    0,
+    132
+   ],
+   [
+    32,
+    0,
+    138
+   ],
+   [
+    33,
+    0,
+    126
+   ],
+   [
+    34,
+    0,
+    126
+   ],
+   [
+    35,
+    0,
+    138
+   ],
+   [
+    36,
+    0,
+    120
+   ],
+   [
+    38,
+    1,
+    114
+   ],
+   [
+    39,
+    0,
+    126
+   ],
+   [
+    39,
+    1,
+    114
+   ],
+   [
+    41,
+    0,
+    144
+   ],
+   [
+    45,
+    0,
+    144
+   ],
+   [
+    46,
+    0,
+    162
+   ],
+   [
+    47,
+    0,
+    150
+   ],
+   [
+    53,
+    0,
+    180
+   ],
+   [
+    54,
+    0,
+    180
+   ],
+   [
+    56,
+    0,
+    162
+   ],
+   [
+    58,
+    0,
+    168
+   ],
+   [
+    60,
+    0,
+    174
+   ],
+   [
+    61,
+    0,
+    180
+   ],
+   [
+    65,
+    0,
+    204
+   ],
+   [
+    70,
+    0,
+    204
+   ],
+   [
+    77,
+    0,
+    204
+   ],
+   [
+    4,
+    0,
+    402
+   ],
+   [
+    6,
+    0,
+    396
+   ],
+   [
+    8,
+    1,
+    426
+   ],
+   [
+    15,
+    1,
+    426
+   ],
+   [
+    19,
+    1,
+    438
+   ],
+   [
+    23,
+    0,
+    402
+   ],
+   [
+    29,
+    0,
+    408
+   ],
+   [
+    31,
+    0,
+    402
+   ],
+   [
+    33,
+    1,
+    438
+   ],
+   [
+    35,
+    1,
+    402
+   ],
+   [
+    38,
+    0,
+    408
+   ],
+   [
+    39,
+    1,
+    414
+   ],
+   [
+    46,
+    1,
+    414
+   ],
+   [
+    50,
+    0,
+    408
+   ],
+   [
+    51,
+    0,
+    396
+   ],
+   [
+    60,
+    1,
+    414
+   ],
+   [
+    63,
+    0,
+    420
+   ],
+   [
+    64,
+    0,
+    408
+   ],
+   [
+    71,
+    0,
+    396
+   ],
+   [
+    74,
+    0,
+    438
+   ],
+   [
+    78,
+    0,
+    396
+   ],
+   [
+    79,
+    0,
+    414
+   ],
+   [
+    83,
+    0,
+    444
+   ],
+   [
+    84,
+    0,
+    420
+   ],
+   [
+    85,
+    0,
+    420
+   ],
+   [
+    86,
+    0,
+    432
+   ],
+   [
+    88,
+    0,
+    438
+   ],
+   [
+    90,
+    0,
+    426
+   ],
+   [
+    93,
+    0,
+    432
+   ],
+   [
+    0,
+    0,
+    462
+   ],
+   [
+    10,
+    1,
+    474
+   ],
+   [
+    17,
+    1,
+    474
+   ],
+   [
+    27,
+    0,
+    456
+   ],
+   [
+    30,
+    0,
+    468
+   ],
+   [
+    34,
+    1,
+    462
+   ],
+   [
+    41,
+    1,
+    462
+   ],
+   [
+    69,
+    0,
+    450
+   ],
+   [
+    82,
+    0,
+    474
+   ],
+   [
+    92,
+    0,
+    462
+   ],
+   [
+    99,
+    0,
+    456
+   ],
+   [
+    100,
+    0,
+    450
+   ],
+   [
+    103,
+    0,
+    486
+   ],
+   [
+    108,
+    0,
+    468
+   ],
+   [
+    110,
+    0,
+    480
+   ],
+   [
+    113,
+    0,
+    480
+   ],
+   [
+    5,
+    6,
+    690
+   ],
+   [
+    7,
+    1,
+    690
+   ],
+   [
+    14,
+    1,
+    690
+   ],
+   [
+    23,
+    1,
+    732
+   ],
+   [
+    26,
+    0,
+    696
+   ],
+   [
+    36,
+    1,
+    714
+   ],
+   [
+    44,
+    0,
+    684
+   ],
+   [
+    47,
+    1,
+    726
+   ],
+   [
+    53,
+    1,
+    702
+   ],
+   [
+    59,
+    0,
+    684
+   ],
+   [
+    61,
+    1,
+    726
+   ],
+   [
+    62,
+    0,
+    702
+   ],
+   [
+    64,
+    1,
+    714
+   ],
+   [
+    67,
+    0,
+    708
+   ],
+   [
+    70,
+    1,
+    690
+   ],
+   [
+    74,
+    1,
+    702
+   ],
+   [
+    75,
+    0,
+    696
+   ],
+   [
+    77,
+    1,
+    690
+   ],
+   [
+    94,
+    0,
+    696
+   ],
+   [
+    97,
+    0,
+    684
+   ],
+   [
+    101,
+    0,
+    708
+   ],
+   [
+    103,
+    1,
+    726
+   ],
+   [
+    109,
+    0,
+    684
+   ],
+   [
+    116,
+    0,
+    726
+   ],
+   [
+    117,
+    0,
+    702
+   ],
+   [
+    118,
+    0,
+    696
+   ],
+   [
+    119,
+    6,
+    690
+   ],
+   [
+    123,
+    0,
+    732
+   ],
+   [
+    125,
+    0,
+    720
+   ],
+   [
+    6,
+    1,
+    750
+   ],
+   [
+    9,
+    1,
+    738
+   ],
+   [
+    20,
+    1,
+    750
+   ],
+   [
+    45,
+    1,
+    762
+   ],
+   [
+    51,
+    1,
+    738
+   ],
+   [
+    58,
+    1,
+    738
+   ],
+   [
+    65,
+    1,
+    738
+   ],
+   [
+    83,
+    1,
+    750
+   ],
+   [
+    95,
+    0,
+    756
+   ],
+   [
+    102,
+    0,
+    744
+   ],
+   [
+    105,
+    0,
+    744
+   ],
+   [
+    112,
+    0,
+    756
+   ],
+   [
+    128,
+    0,
+    744
+   ],
+   [
+    130,
+    0,
+    744
+   ],
+   [
+    132,
+    0,
+    786
+   ],
+   [
+    133,
+    0,
+    786
+   ],
+   [
+    138,
+    0,
+    768
+   ],
+   [
+    139,
+    0,
+    750
+   ],
+   [
+    141,
+    0,
+    768
+   ],
+   [
+    142,
+    0,
+    762
+   ],
+   [
+    150,
+    0,
+    762
+   ],
+   [
+    154,
+    0,
+    768
+   ],
+   [
+    155,
+    0,
+    768
+   ]
+  ],
+  "exits": [
+   [
+    8,
+    432
+   ],
+   [
+    11,
+    420
+   ],
+   [
+    15,
+    432
+   ],
+   [
+    19,
+    444
+   ],
+   [
+    22,
+    432
+   ],
+   [
+    33,
+    444
+   ],
+   [
+    35,
+    408
+   ],
+   [
+    39,
+    420
+   ],
+   [
+    40,
+    444
+   ],
+   [
+    46,
+    420
+   ],
+   [
+    49,
+    408
+   ],
+   [
+    60,
+    420
+   ],
+   [
+    2,
+    456
+   ],
+   [
+    10,
+    480
+   ],
+   [
+    17,
+    480
+   ],
+   [
+    34,
+    468
+   ],
+   [
+    37,
+    456
+   ],
+   [
+    41,
+    468
+   ],
+   [
+    52,
+    480
+   ],
+   [
+    7,
+    696
+   ],
+   [
+    12,
+    732
+   ],
+   [
+    14,
+    696
+   ],
+   [
+    21,
+    696
+   ],
+   [
+    25,
+    708
+   ],
+   [
+    28,
+    696
+   ],
+   [
+    36,
+    720
+   ],
+   [
+    43,
+    720
+   ],
+   [
+    47,
+    732
+   ],
+   [
+    53,
+    708
+   ],
+   [
+    61,
+    732
+   ],
+   [
+    64,
+    720
+   ],
+   [
+    70,
+    696
+   ],
+   [
+    74,
+    708
+   ],
+   [
+    77,
+    696
+   ],
+   [
+    103,
+    732
+   ],
+   [
+    6,
+    756
+   ],
+   [
+    9,
+    744
+   ],
+   [
+    20,
+    756
+   ],
+   [
+    23,
+    744
+   ],
+   [
+    45,
+    768
+   ],
+   [
+    48,
+    756
+   ],
+   [
+    51,
+    744
+   ],
+   [
+    58,
+    744
+   ],
+   [
+    65,
+    744
+   ],
+   [
+    66,
+    768
+   ],
+   [
+    83,
+    756
+   ],
+   [
+    107,
+    744
+   ]
+  ],
+  "rent": {
+   "0": 0,
+   "1": 0,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 0,
+   "6": 0,
+   "7": 0,
+   "8": 0,
+   "9": 0,
+   "10": 0,
+   "11": 0,
+   "12": 0,
+   "13": 0
+  },
+  "crew": {
+   "0@114": {
+    "mech": 1,
+    "body": 1
+   },
+   "0@108": {
+    "mech": 1
+   },
+   "0@408": {
+    "mech": 3,
+    "insp": 2
+   },
+   "0@468": {
+    "mech": 1
+   },
+   "0@684": {
+    "mech": 6
+   },
+   "0@732": {
+    "mech": 2
+   },
+   "0@744": {
+    "mech": 4,
+    "insp": 1
+   },
+   "0@750": {
+    "mech": 2
+   }
+  }
+ }
+}
