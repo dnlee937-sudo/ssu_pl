@@ -1,0 +1,109 @@
+name: Chapter 3 revalidation
+
+on:
+  push:
+    branches: [codex/ch3-revalidation-20261117]
+    paths: ['.github/workflows/chapter3-revalidation.yml']
+
+permissions:
+  contents: read
+
+jobs:
+  equation-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - name: Compare Chapter 3 equations and run regression checks
+        run: |
+          python verify_ch3_final.py
+          for test in tests/test_*.py; do python "$test"; done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ch3-equation-check
+          path: validation/ch3_final_check.json
+          if-no-files-found: error
+
+  small-optimal:
+    needs: equation-check
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        daily: [2, 3, 4, 5, 6]
+        cond: [base, park, staff]
+        seed: [1, 2]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.txt
+      - name: Compare LNS and the full MILP
+        run: python small_opt.py ${{ matrix.daily }} ${{ matrix.cond }} ${{ matrix.seed }} 120 1800 out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ch3-small-${{ matrix.daily }}-${{ matrix.cond }}-${{ matrix.seed }}
+          path: out/*.json
+          if-no-files-found: error
+
+  summarize:
+    if: always()
+    needs: [equation-check, small-optimal]
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: ch3-*
+          merge-multiple: true
+          path: results
+      - name: Summarize validation and optimality
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          root = Path("results")
+          equation_file = root / "ch3_final_check.json"
+          equations = json.loads(equation_file.read_text()) if equation_file.exists() else {}
+          cases = [json.loads(path.read_text()) for path in sorted(root.glob("small_*.json"))]
+          certified = [case for case in cases
+                       if case.get("s1_status") == case.get("s2_status") == "Optimal"
+                       and case.get("milp_Z") is not None]
+          exact = 0
+          cost_gaps = []
+          lines = [f"Equation comparisons: {equations.get('pairs', 0)}/54",
+                   f"Comparisons with positive optimal overflow: {equations.get('with_excess', 0)}",
+                   f"Small cases collected: {len(cases)}/30",
+                   f"Full MILP certified in both stages: {len(certified)}/30"]
+          for case in certified:
+              case_id = f"{case['daily']}/{case['cond']}/{case['seed']}"
+              if abs(case["lns_F"] - case["milp_F"]) > 1e-6:
+                  lines.append(f"Case {case_id}: overflow {case['lns_F']} vs {case['milp_F']}")
+                  continue
+              cost_diff = case["lns_Z"] - case["milp_Z"]
+              if abs(cost_diff) <= 1e-4:
+                  exact += 1
+              elif case["milp_Z"] > 0:
+                  gap = 100 * cost_diff / case["milp_Z"]
+                  cost_gaps.append(gap)
+                  lines.append(f"Case {case_id}: cost gap {gap:.6f}% at equal overflow")
+              else:
+                  lines.append(f"Case {case_id}: absolute cost difference {cost_diff}")
+          lines.append(f"LNS matches the lexicographic optimum: {exact}/{len(certified)}")
+          if cost_gaps:
+              lines.append(f"Largest reported cost gap at equal overflow: {max(cost_gaps):.6f}%")
+          print("\n".join(lines))
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
+              summary.write("## Chapter 3 revalidation\n\n" + "\n".join(f"- {line}" for line in lines) + "\n")
+          assert equations.get("pairs") == 54, "Incomplete equation comparisons"
+          assert len(cases) == 30, "Incomplete small-case results"
+          assert len(certified) == 30, "Some full MILP solutions were not certified"
+          PY
